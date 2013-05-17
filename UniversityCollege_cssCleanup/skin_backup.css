@@ -1,0 +1,2912 @@
+/* Table of Contents 
+a. Reset
+1. Universals
+2. Top Bar
+3. Masthead
+	3-A. Navigation
+	3-B. Rotating Banner
+	3-C. XML Job Feed
+4. Main Body
+	4-A. Calendar
+	4-B. Calendar Detail View
+5. Footer
+6. Interior Content
+7. Modules
+	7-A. FAQ
+	7-B. Twitter Feed
+	7-C. Professional Connection Central
+8. Campus Emergency Alert Message
+9. Temporary Faculty Directory Table :-(
+10. Building Hours Table
+11. BLC SI Hours Table
+12. Call to Action Button
+13. Barbara D. Jackson OFYSA Award 2012 Nomination Form
+14. Free Departmental Tutoring Table
+15. IUPUI Major Profiles Table
+16. IUPUI Mentoring Bulletin Table
+17. Application Needs for Summer Work Initiative Form
+18. Overview Table for National Learning Communities Conference
+19. NLCC Registration Table
+20. Scholar Days / College Visits Table
+21. Externship Timeline Table
+22. UltraMediaGallery
+23. Summer Work Initiative Funding Request Form
+24. Mindsweep List
+25. BRC Schedule
+26. Legacy Initiative
+XX. Print Styles
+*/
+
+/********	a. Reset	********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	list-style-position: outside;
+	list-style-type: circle;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********	END reset	********/
+/*******************************************
+ * For Mobile Browsers *
+*******************************************/
+@media screen and (max-device-width: 480px) {
+	input.TxtSearch {
+		width: 140px;
+		height: 23px;
+	}
+	div.quicklinks a {
+		font: 5pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	ul.footer-links li {
+		font: 5pt Arial, Helvetica, sans-serif;
+	}
+}
+/*******************************************
+ * End Mobile Browsers *
+*******************************************/
+strong{ font-weight: bold;}	 /*** Enables use of <strong></strong> - other text styles are disabled ***/
+em{font-style:italic;}  /*** Enable use of <em></em> - other text styles are disabled ***/
+
+.notification{
+	padding: 7px 0 0;
+	display: none;}
+	
+.notification .container{
+	margin: 0 auto;
+	width: 960px;}
+	
+.notification .container div{
+	float: left;
+	}
+	
+.notification-content{
+	padding: 0 0 7px;}
+	
+#notification-icon{
+	width: 42px; height: 44px;
+	background: url('img/notification.png') -4px 0;
+	position: absolute;
+	margin-top: -13px;}
+.notification-content a:link {
+	font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+	color: #f8f3d2;
+	text-decoration: underline;
+}
+.notification-content a:hover {
+	text-decoration: none;
+}
+.notification-content a:visited {
+	color: #f8f3d2;
+}
+.notification p{
+	font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+	color: #f8f3d2;
+	width: 660px;
+	line-height: 1.2em;
+	display: inline;
+	margin: 0 8px 10px 40px;
+}
+.notification p:first-child {
+	margin-left: 60px;
+}
+.notification p:last-child{
+	margin-bottom: 0;}
+
+.notification h3.notification-title{
+	font: italic 11pt/11pt Georgia, "Times New Roman", serif;
+	text-transform: uppercase;
+	color: #f8f3d2;
+	/*display: inline;*/
+	padding-right: 30px;
+	margin-left: 65px;
+	display: none;
+}
+
+/********	1. Universals	********/
+
+body{
+	font: 10pt/12pt Arial, Helvetica, sans-serif;
+	color: #444444;
+	background: /*#f8f8f8*/#121212;}
+	
+a:link, a:visited, a:active{
+	color: #7d110c;}
+	
+a:hover{
+	color: #990000;}
+	
+.container{
+	width: 960px;
+	padding: 0 40px;
+	margin: 0 auto;}
+
+.left{
+	float: left;}
+	
+.right{
+	float: right;
+	width:175px;}
+	
+.masthead-interior .ght{
+	width: 169px;}
+	
+::selection {
+        background: #7d110c;
+		color: #f8f3d2;}
+::-moz-selection {
+        background: #7d110c;
+		color: #f8f3d2;}
+		
+.c_footer{
+	clear: left;}
+		
+.hide-element{
+	display: none;}
+/********	END Universals	********/
+/********	2. Top Bar	********/
+.topbar{
+	background: #121212;
+	border-bottom: 2px solid #b0b2b4;
+	width: 100%;
+	min-width: 1200px;}
+	
+.topbar .container a{
+	display: block;
+	background: url('img/iupui_wordmark.png') no-repeat 0 14px;
+	height: 45px;
+	width: 410px;}
+/********	END Top Bar	********/
+/* 3. Mast Head */
+.all {
+	width: 100%;
+	min-width: 1200px;
+}
+.masthead{
+	width: 100%;
+	min-width: 1200px;
+	background: #990000;
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+	background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+	background: -moz-linear-gradient(top,  #990000,  #7d110c);
+	}	
+.masthead .container{
+	background: url('img/jag_logo_main.png') no-repeat 705px 0;}
+
+#ucol-home{
+	display: block;
+	padding: 10px 0 0;
+	height: 17px;
+	width: 129px;
+	background: url('img/ucol_home.png') no-repeat 0 10px;}
+	
+#logo{
+	margin: 15px 0 35px;}
+/********	END Mast Head		********/
+/********	3-A: Navigation		********/	
+#navigation li a:link, #navigation li a:visited, #user a:link, #user a:visited{
+	color: #f8f3d2;
+	text-decoration: none;}
+
+#navigation{
+	clear: both;
+	height: 41px;}
+
+#navigation .RadMenu{
+	float: none;}
+	
+#navigation .RadMenu_Default a.rmLink {
+	font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+	
+#navigation .RadMenu_Default .rmRootGroup {
+	border: none;
+	background: transparent;}
+	
+#navigation .RadMenu_Default .rmRootGroup, #navigation .RadMenu_Default a.rmLink, #navigation .RadMenu_Default .rmGroup .rmText, #navigation .RadMenu_Default .rmVertical .rmText, #navigation .RadMenu_Default .rmLeftArrow, #navigation .RadMenu_Default .rmRightArrow, #navigation .RadMenu_Default .rmTopArrow, #navigation .RadMenu_Default .rmBottomArrow {
+	background-image: none;
+	background: transparent;}
+	
+#navigation span.rmText{
+	padding: 0;}
+	
+#navigation span.rmText:hover{
+	border-bottom: 2px solid #f8f3d2;}
+
+#navigation li.rmItem{
+	padding: 0 15px;}
+	
+#navigation li.rmFirst{
+	padding-left: 0;}
+.rmSlide {
+	overflow-x: visible !important;
+	overflow-y: visible !important;
+}
+.nav .rmSlide{
+	width: 200px;}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmExpandRight{
+	background: url('img/dropdown-right.png') no-repeat 150px 5px;}
+	
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, div.rotate-header-2{
+	background-image: url('img/rotate/80.png');
+	background-repeat: repeat;
+	background: rgba(0,0,0,.8);
+	color: #f8f3d2;}
+	
+#navigation .rmSlide ul.rmGroup{
+	background: #f8f3d2;
+	padding: 15px 20px 25px;
+	margin: 10px 0 0;
+	border: 1px solid #7d110c;
+	border-top: none;}
+	
+#navigation .rmSlide ul.rmGroup li.rmItem a{
+	color: #858372;
+	font-size: 9pt;
+	padding: 10px 0;
+	text-shadow: 0px 1px 0px #ffffff;
+	border-bottom: 1px solid #adaa93;
+	border-top: 1px solid #fcf9e9;}
+	
+#navigation .rmSlide ul.rmGroup li.rmFirst a{
+	border-top: none;}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem{
+	padding: 0;
+	width: 160px;
+	white-space: pre-line;}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText{
+	margin: 0;}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText:hover{
+	border: none;
+	color: #7d110c;}
+
+div#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2{
+	border: 1px solid #7d110c;
+	margin-left: 25px;
+	margin-top: -46px;
+	padding-top: 0;
+}
+div#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel3 {
+	border: 1px solid #7d110c;
+	margin-left: 25px;
+	margin-top: -46px;
+	padding-top: 0;
+}
+	
+div#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2 li.rmFirst a{
+	border-top: 1px solid #adaa93;}
+/********	End Navigation		********/
+/********	3-B. Rotating Banner	********/
+#dnn_BannerPane{
+position: relative;
+border: 4px solid #f8f3d2;
+overflow: visible;
+width: 952px;
+height: 452px;
+outline: 1px solid #7d110c;}
+
+.rotate-header-1{
+	padding: 15px;
+	width: 450px;
+	background: #990000;
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+	background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+	background: -moz-linear-gradient(top,  #990000,  #7d110c);
+	}
+.rotate-header-1 h1{
+	line-height: 16pt;
+	margin: 0 0 10px 0;
+	color: #f8f3d2;
+	font-weight: bold;
+	font-size: 16pt;
+	display: block;
+	text-transform: none;
+	background: none;
+	width: 100%;
+	height: auto;}
+.rotate-header-1 p{
+	color: #f8f3d2;
+	}
+.rotate-header-1 ul{
+	color: #f8f3d2;
+	padding-left: 15px;
+}
+.rotate-header-1 a{
+	color: #f8f3d2;
+	text-decoration: underline;
+}
+.rotate-header-2 a{
+	color: #f8f3d2;
+	text-decoration: underline;
+}
+.rotate-header-2{
+	margin-top: 5px;
+	border-left: 5px solid #7d110c;
+	padding: 10px 15px 15px 10px;
+	width: 450px;}
+.rotate-header-2 h1{
+	font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+	border-bottom: 1px solid;
+	margin: 0 0 10px 0;
+	padding-top: 5px;
+	background: none;
+	width: 100%;
+	height: auto;}
+.iupui-template-wrap, .uc-folio-rotator {
+    overflow: hidden;
+    width: 952px;
+    height: 452px;
+    position:relative;
+}
+.iupui-template .rotate-wrap .engage-content {
+    z-index: 500;
+    width: 952px !important;
+    height: 452px !important;
+}
+.iupui-template .info {
+    position:absolute;
+    top: 80px;
+    left: 435px;
+    width:260px;
+    height:120px;
+    padding:20px;
+}
+.iupui-template h2.title {
+    color:#fff;
+    text-align:left;
+}
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, #dnn_BannerPane .uc-folio-rotator .rotator-footer {
+    position:absolute;
+    bottom: 0px;
+    z-index: 999;
+    width: 952px;
+    height: 30px;
+    /*padding: 0 10px 0 0;*/
+}
+div.uc-folio-rotator div.rotator-footer {
+	position: absolute;
+	bottom: 0px;
+	z-index: 999;
+	width: 952px;
+	height: auto !important;
+	/*padding: 0 10px 0 0;*/
+	background-image: url('img/rotate/80.png');
+	background-repeat: repeat;
+	/*padding: 10px 10px 10px 20px !important;*/
+	color: #F8F3D2;
+}
+div.desc a {
+	color: #f8f3d2;
+	text-decoration: underline;
+}
+div.title-desc-container {
+	padding: 15px;
+}
+div.title-desc-container  div.title h1 {
+	padding-bottom: 14px;
+}
+.uc-folio-rotator .title h1 {
+	font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+}
+.iupui-template-wrap .pagers, .uc-folio-rotator .pagers {
+    float: right;
+}
+.iupui-template-wrap .pagers a, .uc-folio-rotator .pagers a {
+	padding: 0;
+	margin: 0 0 0 0;
+	background: url('images/stagnate.png') no-repeat;
+	color: transparent;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 7px;
+}
+.iupui-template-wrap .pagers a.activeSlide, .uc-folio-rotator .pagers a.activeSlide {
+    background: url('images/selected.png') no-repeat;
+}
+.iupui-template-wrap .pagers .rotator-pager {
+    margin: 8px 6px 0 0;
+}
+.uc-folio-rotator .pagers .rotator-pager {
+	margin: 0;
+}
+/********	End Rotating Banner	********/
+/*******************************************
+ * 3-C. JagJobs XML Job Feed *
+*******************************************/
+span.JobTitle, span.OrgName_Exp {
+	display: block;
+}
+span.OrgName_Exp {
+	padding-top: 4px;
+}
+.DNN_Feed_Item a {
+	font: 10pt Georgia, "Times New Roman", serif;
+	text-transform: uppercase;
+}
+div.DNN_Feed_Item {
+	display: none;
+	border-bottom: 1px solid #c6c6c6;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+span.JobsLink {
+	display: block;
+}
+span.JobsLink a {
+	color: #444;
+	text-decoration: underline;
+}
+/*******************************************
+ * End JagJobs XML Job Feed *
+*******************************************/
+#user a:hover{
+	text-decoration: underline;}
+	
+#user{
+	font: 10pt Arial, Helvetica, sans-serif;
+	margin: 13px 0 0;
+	color: #f8f3d2;
+	display: inline-block;
+	float: right;
+	margin-bottom: 10px;}
+	
+/**** Old Search Bar, Old Search Results Page;
+Can probably be removed ****/	
+
+ #dnn_VivoSearchPane{
+	clear: right;
+	display: block;}
+	
+div#SearchBorder{
+	border: none;
+	margin: 0;}
+	
+div#SearchBorder input.search_box{
+	color: #ba826f;
+	padding: 0 3px;
+	height: 23px;
+	width: 155px;
+	font: 8pt Arial, Helvetica, sans-serif;
+	background: #f8f3d2;
+	line-height: 200%;
+	float: left;
+	border: 1px solid #444444;
+	border-right: none;
+	height: 21px;
+	background-color: #f8f8f8;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+	
+div#SearchBorder input.search_box:focus{
+	position: relative;
+	z-index: 9999;}
+	
+.vivoSearch .CommandButton{
+	background: url('img/search_btn.gif') 0 -1px;
+	height: 23px;
+	width: 25px;
+	display: block;
+	text-indent: -9999px;
+	float: right;
+	clear: left;
+	margin-top: -23px;}
+.vivoSearch #SearchContainer{
+	height: 23px;
+	width: 165px;
+	overflow: hidden;}
+div#SearchBorder input.ac_input {
+	color: #ba826f;
+	padding: 0 3px;
+	height: 23px;
+	width: 155px;
+	font: 8pt Arial, Helvetica, sans-serif;
+	border: 0;
+	background: #f8f3d2;
+	line-height: 200%;
+}
+div#SearchButton {
+	width: auto;
+}
+div.vsdarticleHeadline a strong {
+	background: #f8f8f8;
+	font: normal 11pt Arial, Helvetica, sans-serif;
+}
+div.vsdarticleHeadline {
+	padding: 0 0 10px 0;
+}
+div.results {
+	padding-top: 10px;
+}
+div.vsdarticle {
+	padding: 15px 0 15px 0;
+	background: none;
+	margin: 0;
+	border-bottom: 1px solid #c6c6c6;
+}
+div.vsdarticle:first-child {
+	padding: 0 0 15px 0;
+}
+div.vsdarticle:last-child {
+	border: none;
+}
+.vsaticleSummary {
+	margin-left: -2px;
+}
+div.resultsWrap {
+	padding: 26px 0 0 0;
+}
+
+/* END OLD SEARCH */
+
+/*******************************************
+ * Experimental SearchCrawler *
+*******************************************/
+div.sc_item a.sc_title {
+	font: 11pt Arial, Helvetica, sans-serif;
+	color: #990000;
+	text-decoration: none;
+}
+div.sc_item a.sc_title:hover {
+	text-decoration: underline;
+}
+div.sc_item {
+	margin: 0;
+	padding: 15px 0 15px 0;
+	border-bottom: 1px solid #c6c6c6;
+}
+div.sc_sample {
+	padding: 10px 0 10px 0;
+	font: 9pt Arial, Helvetica, sans-serif;
+	color: #444444;
+	line-height: 145%;
+}
+span.sc_path {
+	color: #B0B2B4	;
+}
+div.sc_sample:last-child {
+	display: none;
+}
+div.ModSearchCrawlerInputC {
+	height: 23px;
+}
+input.CmdSearch {
+	background: url('img/search_btn.gif') 0 -1px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	height: 23px;
+	width: 25px;
+	text-indent: -9999px;
+	/*margin-left: -2px;*/
+	border: 0;
+	float: left;
+	clear: right;
+}
+.TxtSearch {
+	color: #ba826f;
+	height: 23px;
+	width: 142px;
+	padding: 0 3px;
+	/*width: 140px;*/
+	font: 8pt Arial, Helvetica, sans-serif;
+	border: 0;
+	background: #f8f3d2;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	float: left;
+}
+div.sc_navigation {
+	padding: 10px 0 0 0;
+}
+a.navigation {
+	border: 1px solid #c6c6c6;
+}
+a.navigation:hover {
+	background: #7d110c;
+	color: #f8f3d2;
+	border: 1px solid #c6c6c6;
+}
+/*******************************************
+ * END EXPERIMENTAL SEARCHCRAWLER *
+*******************************************/
+
+#dnn_QuicklinksPane{
+	height: 25px;
+	text-align: center;}
+
+#quicklinks{
+	font: 8pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #f8f3d2;
+	text-align: center;
+	padding: 12px 0;
+	margin: 0 auto;}
+
+#quicklinks ul li.first{
+	padding: 0;}
+
+#quicklinks span{
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline;
+	float: left;}
+	
+#quicklinks .quicklinks{
+	display: inline;
+	float: left;}
+	
+#quicklinks div.quicklinks ul li{
+	display: inline;
+	padding: 0 0 0 12px;}
+	
+#quicklinks ul li a:link, #quicklinks ul li a:visited, #quicklinks ul li a:active{
+	color: #f8f3d2;
+	text-decoration: none;}
+	
+#quicklinks ul li a:hover{
+	text-decoration: underline;}
+
+/* 4. Main Body */
+.main-body{
+	background: #f2f2f2 url('img/content_bg.jpg');}
+
+.main-body .container{
+	background: url('img/content_bg_top.jpg') no-repeat 0 0;
+	clear: both;}
+
+.float-clear{
+	clear: both;}
+	
+.container #ContentPane{
+	width: 100%;
+	display: block;}
+	
+#dnn_FirstPane, #dnn_SecondPane{
+	float: left;
+	width: 320px;
+	margin-right: 40px;}
+	
+#dnn_ThirdPane{
+	float: left;
+	width: 240px;
+	margin: 0 0 20px 0;}
+	
+#dnn_FirstPane, #dnn_SecondPane, #dnn_ThirdPane{
+	margin-top: 25px;}
+	
+h1, h2, h3, h4, h5 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-weight: normal;}
+	
+.h11, .h13, .h15 {
+	font-family: Georgia, "Times New Roman", serif;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.h12, .h14 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.h11 {
+	font-weight: none;
+	font-size: 28px;
+}
+
+.h12 {
+	font-size: 18px;
+}
+
+.h13 {
+	font-size: 16px;
+	color: #900;
+}
+
+.h14 {
+	font-size: 12px;
+	color: #333;
+}
+
+.h15 {
+	font-size: 12px;
+	font-weigh: bold;
+	color: #333;
+}
+	
+h2, h2 .primHead {
+	font-style: italic;
+	color: #990000;
+	padding-bottom: 20px;
+}
+
+h3, h3 .secHead {
+	font-style: italic;
+	color: #990000;
+	}
+
+h1{
+	text-transform: uppercase;
+	font-size: 9pt;
+	padding: 0 0 6px 0;}
+	
+h2{
+	font-size: 18pt;
+	margin: 2px 0 7px;}
+	
+h3{
+	font-size:13pt;
+	margin: 20px 0px 10px;
+}
+h4 {
+	text-transform: uppercase;
+	font-size: 12pt;
+	margin: 25px 0 10px;
+}
+h5 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	font-size: 10pt;
+	margin: 10px 0 10px;
+}
+
+/*.secondary-content h2 {
+	padding: 0;
+}*/
+
+#dnn_FirstPane ol, #dnn_FirstPane ul, #dnn_SecondPane ol, #dnn_SecondPane ul, #dnn_ThirdPane ol, #dnn_ThirdPane ul {
+	font-size: 10pt;
+	line-height: 16px;
+	list-style-position: outside;
+	padding: 0 0 15px 15px;
+}
+#dnn_FirstPane p{
+	/*border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #c6c6c6;*/
+	/*padding: 15px 0;*/
+	padding-bottom: 15px;
+	font-size: 10pt;}
+	
+#dnn_SecondPane .event{
+	background: url('img/event-border.png') repeat-x 0 0;}
+#dnn_SecondPane .first{
+	background: none;}
+#dnn_SecondPane p, table {
+	font-size: 10pt;
+	padding-bottom: 15px;}
+#dnn_SecondPane .PDP_Gallery_Module {
+	padding: 20px 0;
+	border-bottom: 1px solid #C6C6C6;}
+#dnn_SecondPane .PDP_Gallery_Module:last-child {
+	border: none;}
+#news p:first-child{
+	border-top: 0;}
+#news p:last-child{
+	border-bottom: 0;}
+
+.events {
+	height: auto;
+	overflow-x: hidden;
+}
+.calPubSpan {
+	float: left;
+	clear: left;
+	margin-right:20px;
+}
+acronym.calPubSpan{
+	background: url('img/event_date.png') no-repeat;
+	width: 45px; height: 45px;
+	text-align: center;
+	color: #f8f3d2;
+	font: italic 9pt/6pt Georgia, "Times New Roman", serif;
+	margin-top: 18px;
+	margin-bottom:18px;
+	border: none;
+}
+acronym.calPubSpan span.calPubMonth {
+	display: block;
+	padding: 8px 0 0;
+	background-color: transparent;
+}
+.calPubDate {
+	font-size: 14pt;
+	line-height: 110%;}
+.title-desc{overflow:hidden;margin:0 0 18px 65px;}
+.title-desc .ListTitle{margin-top:14px;}
+.cal-view-more {display:block;margin:20px 0;}
+.ListTitle {
+	float: left;
+	text-transform: uppercase;
+	padding: 2px 0 0 0;
+	font: normal 10pt Georgia, "Times New Roman", serif;
+	display:block;
+	margin:0 0 8px;}
+	
+.ListEventDate, .ListEventDate span , .ListVenue{
+	float: left;
+	clear: left;
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	padding: 0 0 6px 0;
+	color: #555;}
+	
+.ListVenue{
+	padding: 0 0 8px;
+	width:100%;}
+	
+.ListContent {
+	float: left;
+	clear: both;
+	font-size: 10pt;
+	display:block;
+	width:100%;}
+
+.ListReadMore a{
+	font-size: 12px;
+	text-transform: lowercase;
+	padding-top: 8px;}
+	
+/*.evtLinks, .evtLinks a:link, .evtLinks a, .evtLinks a:visited, .evtLinks a:hover {
+	float: left;
+	clear: both;}
+	This was forcing the 'Return' link in the Detail view underneath the 'Export To Desktop' link*/
+	
+.events-header{
+	padding-bottom: 4px;}
+	
+.event_info {
+	width: 255px;
+	margin: 16px 0 16px 0px;
+	float: left;}
+
+.event_info:first-child{
+	margin-top: 0;}
+	
+.DNN_ANN_viewtypeSelector{
+	display: none;}
+	
+#dnn_SecondPane div.ListTitleRow{
+	font: inherit;
+	background: none;}
+
+#dnn_ThirdPane em, #dnn_ThirdPane strong{
+	font-weight: 600;
+	color: #555555;}
+	
+#dnn_ThirdPane p{
+	margin: 0;}
+	
+#dnn_ThirdPane div.Normal{
+	margin-bottom: 20px;}
+	
+#dnn_ThirdPane .secHead{
+	font-size: 13pt;}
+	
+#current-feature a:link, #current-feature a:visited, #current-feature a:active{
+	color: #444444;}
+	
+#current-feature a:hover{
+	color: #666666;}
+	
+div.feature-body{
+	width: 230px;}
+	
+#play-video{
+	background: url('img/play_video.png') no-repeat 0 0;
+	display: block;
+	padding: 0 0 5px 20px;
+	float: left;}
+	
+#view-all{
+	float: right;}
+	
+.ucol-news{
+	border-top: 1px solid #c6c6c6;
+	padding: 15px 0;}
+	
+.ucol-news a{
+	font-size:9pt;}
+	
+div#ucol-news div.ucol-news h4{
+	color: #666;
+	font-size: 10pt;}
+	
+.ucol-news:first-child{
+	border: none;}
+.articleSummary {
+	display: inline-block;
+	width: 86%;
+}
+.articleLatestSummary {
+	display: inline-block;
+	width: 76%;
+}
+.articleLatestSummary a {
+	display: block;
+	padding-top: 10px;
+}
+.articleImage {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}
+.cal-month{
+	background: url('img/cal-month.png');
+	height: 27px;
+	width: 63px;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;}
+	
+.cal-agenda{
+	background: url('img/cal-agenda.png');
+	height: 27px;
+	width: 62px;
+	display: block;
+	float: left;}
+	
+.cal-week{
+	background: url('img/cal-week.png');
+	height: 27px;
+	width: 62px;
+	display: block;
+	float: left;}
+.cal-day{
+	background: url('img/cal-day.png');
+	height: 27px;
+	width: 62px;
+	display: block;
+	float: left;}
+.cal-active, .cal-day:hover, .cal-week:hover, .cal-agenda:hover, .cal-month:hover{
+	background-position: bottom left;}
+.cal-add{
+	background: url('img/cal-new-event.png');
+	width: 71px;
+	height: 27px;
+	display: block;
+	float: right;
+	margin-left: 10px;}
+div.evtbarbtn{
+	padding: 0;
+	margin-bottom: 25px;}
+	
+/********	4-A. Calendar	********/	
+#dnn_Calendar{
+	width: 736px;
+	float: left;
+	padding-left: 7px;}
+td.evtDayHeader{
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding-left: 5px;
+	background-color: transparent;
+	color: #9e9c9c;}
+td.evtDay{
+	color: #9e9c9c;
+	border: 1px solid #cfcfcf;
+	height: 115px;
+	padding: 3px 0 0 5px;
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	background: rgba(0,0,0,.02);}
+td.evtWeekendDay{
+	background: rgba(0,0,0,.05) !important;
+	background-color: rgb(236,236,236); /* FOR IE */
+}
+td.evtDay a{
+	text-decoration: underline;
+	padding: 0;
+	font-weight: regular;
+	font-size: 9pt;
+	font-family: Arial, Helvetica, sans-serif;}
+td.evtDay a:hover{
+	font: regular 9pt Arial, Helvetica, sans-serif;}
+td.evtSelDay{
+	background: transparent;
+	outline: 1px solid #990000;}
+table.evt{
+	background-color: transparent;
+	border: none;}
+td.evtDay a.evtDayLink:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	background: transparent;
+}
+a.evtDayLink {
+	background: transparent;
+}
+div.evtDayScroll{
+	padding-left: 0;
+	padding-top: 4px;}
+td.evtOtherMonDay  a, td.evtOtherMonDay a:hover{
+	background-color: transparent;}
+td.evtOtherMonDay{
+	background: rgba(0,0,0,.05) !important;
+	background-color: rgb(236,236,236); /* FOR IE */
+}
+table.tblNavLinks { /* FOR FIXING SPACING ISSUES WITH NAV AND CAL IN IE */
+	margin-bottom: 20px;
+}
+div.pop, div.pop div a:hover{
+	color: #7d110c;
+	font-size: 9pt;
+	font-family: Arial, Helvetica, sans-serif;}
+div.pop div a:hover{
+	color: #990000;}
+ul.calendar-visibility{
+	color: #999999;
+	margin-top: 25px;}
+ul.calendar-visibility li{
+	display: inline;
+	list-style: none;
+	padding: 10px;}
+ul.calendar-visibility li:first-child{
+	padding-left: 0;}
+ul.calendar-visibility li a{
+	font-size: 9pt;
+	font-weight: bold;}
+div.calendar-list span{
+	float: left;}
+span.Cal-EventTitle a img{
+	height:12px; width: 12px;}
+span.Cal-EventTitle{
+	padding-bottom:10px;}
+span.Cal-EventDate{
+	width: 145px;}
+span.Cal-EventDate a, span.Cal-EventTitle a{
+	font: bold 10pt Arial, Helvetica, sans-serif;}
+div.Cal-EventInfo{
+	float: left;
+	width: 480px;}
+span.Cal-EventVenue, span.Cal-LongTime, span.Cal-Description, span.Cal-Readmore{
+	clear: left;}
+span.Cal-EventTime{
+	width: 90px;
+	height: 12px;
+	color: #6a6a6a;
+	font: 9pt Arial, Helvetica, sans-serif;}
+div.calendar-list{
+	padding: 10px 0;}
+span.Cal-EventVenue, span.Cal-LongTime{
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	color: #666;}
+span.Cal-LongTime{
+	padding-bottom: 7px;}
+span.Cal-Description{
+	font: 10pt Arial, Helvetica, sans-serif;
+	color: #666;
+	padding: 0 10px 0 0;}
+span.Cal-ReadMore{
+	padding-bottom: 10px;}
+h2.trigger{
+	margin: 0 5px 10px 0;
+	padding: 0 0 0 16px;
+	background: url('img/colexp.png') no-repeat;
+	height:16px;
+	display: block;
+	float: left;
+	font: bold 10pt Arial, Helvetica, sans-serif;}
+h2.trigger a{
+	overflow: hidden;
+	display: block;}
+h2.active{
+	background-position: left bottom;}
+.Cal-display{
+	margin-left: 251px;
+	clear: left;}
+div.wvHeader{
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	color: #8e8e8e;
+	margin-left: 60px;
+	margin-top: 20px;}
+td.dvAllDay div.pop div{
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	border: 1px solid #d2d2d2;
+	padding: 5px;}
+td.dvAllDay{
+	border-bottom: none;}
+td.dvAllDay:first-child{
+	width: 61px;}
+td.dvtime2{
+	border-right: 0;
+	border-bottom: 1px solid #d2d2d2;
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;}
+table.dvtable{
+	border: 0;}
+tr td.dvNoEvent{
+	border-color: #d2d2d2 !important;}
+td.dvEvent div.pop div{
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	padding: 1px 0 0 5px;}
+td.dvTime{
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: lowercase;
+	font-size: 8pt;
+	padding: 3px 5px 0 0;
+	border-left: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+	border-top: 1px solid #d2d2d2;}
+td.dvEvent{
+	background: url('img/10.png');}
+.cal-left{
+	background: url('img/cal-prev.png');
+	width: 27px;
+	height: 27px;
+	display: block;
+	float: left;
+	margin-left: 70px;}
+.cal-right{
+	background: url('img/cal-next.png');
+	width: 26px;
+	height: 27px;
+	display: block;
+	float: left;}
+.cal-left:hover, .cal-right:hover{
+	background-position: bottom left;}
+.disp-test{
+	position: absolute;
+	left: 50%;
+	margin-left: -277px;
+	
+	height: 27px;
+	width: 63px;
+	display: block;
+	background-position: bottom left;}
+.disp-test a{
+	display: block;
+	width: 63px;
+	height: 27px;
+	background: url('img/cal-today.png');}
+.disp-test:hover{
+	background-position: top left;}
+span.evtTitle{
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	color: #666;}
+/*******************************************
+* 4-B. Calendar Detail View *
+*******************************************/
+div.DetailTitleRow {
+	font: 10pt Georgia, sans-serif;
+	color: #666666;
+}
+span.DetailTitle {
+	display: block;
+	font-weight: bold;
+	font-size: 11pt;
+	color: #7d110c;
+	padding-top: 64px;
+}
+span.DetailVenue {
+	display: block;
+	color: #7d110c;
+}
+span.DetailEventDate {
+	display: block;
+}
+span.DetailVenue {
+	padding-top: 10px;
+}
+span.DetailVenue a {
+	text-decoration: underline;
+}
+span.DetailEventDate {
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+span.DetailEventTime {
+	display: block;
+}
+div.DetailContent {
+	font: 10pt Georgia, sans-serif;
+	color: #666666;
+	width: 596px;
+}
+span.DetailExportReturn {
+	font: 10pt Georgia, sans-serif;
+	color: #7d110c;
+}
+div.DetailBorder {
+	border-bottom: 1px solid #d2d2d2;
+	width: 131px;
+}
+div.DetailBorderBtm {
+	border-bottom: 1px solid #d2d2d2;
+	width: 159px;
+}
+div.DetailBorder, div.DetailBorderBtm {
+	margin: 14px 0;
+}
+div.backBtnCont {
+	position: relative;
+}
+span.backbtn {
+	position: absolute;
+	top: 0;
+	left: 70px;
+	display: block;
+	width: 36px;
+	height: 27px;
+	background: url('img/BackButton.png');
+	background-position: top left;
+}
+span.backbtn:hover {
+	background-position: bottom left;
+}
+/*******************************************
+* End Calendar Detail View *
+*******************************************/
+/********	5. Footer	********/
+.footer{
+	clear: both;
+	background: #121212;
+	color: #858372;
+	border-top: 3px solid #7d110c;
+	text-shadow: 0px 1px 0px #000000;
+	width: 100%;
+	/*min-width: 1200px;*/}
+	
+/*.min*/ #sub-navigation{
+	height: 20px;
+	margin: 20px 0 15px 0;}
+
+.footer #sub-navigation li{
+	display: inline;
+	padding: 0 15px;
+	border-left: 1px solid #2a2a2a;}
+
+.footer #sub-navigation li:last-child{
+	padding-right: 0;}
+	
+.footer .first, .footer #sub-navigation .first{
+	border: none;
+	padding-left: 0;}
+
+#sub-navigation .RadMenu{
+	float: none;}
+	
+#sub-navigation .RadMenu_Default a.rmLink {
+	font: 10pt "Trebuchet MS", Arial, Helvetica, sans-serif;}
+	
+#sub-navigation .RadMenu_Default .rmRootGroup {
+	border: none;
+	background: transparent;}
+	
+#sub-navigation .RadMenu_Default .rmRootGroup, #sub-navigation .RadMenu_Default a.rmLink, #sub-navigation .RadMenu_Default .rmGroup .rmText, #sub-navigation .RadMenu_Default .rmVertical .rmText, #sub-navigation .RadMenu_Default .rmLeftArrow, #sub-navigation .RadMenu_Default .rmRightArrow, #sub-navigation .RadMenu_Default .rmTopArrow, #sub-navigation .RadMenu_Default .rmBottomArrow {
+	background-image: none;
+	background: transparent;}
+	
+#sub-navigation span.rmText{
+	padding: 0;
+	color: #858372;}
+	
+#sub-navigation span.rmText:hover{
+	border-bottom: 1px solid #858372;}
+
+#sub-navigation li.rmItem{
+	padding: 0 12px;}
+	
+#sub-navigation li.rmFirst{
+	padding-left: 0;
+	border-left: none;}
+	
+#left-footer{
+	float: left;}
+	
+.footer a:link, .footer a:visited, .footer a:active{
+	color: #858372;
+	text-decoration: none;}
+
+.footer a:hover{
+	text-decoration: underline;}
+	
+.footer-links, .footer-links li{
+	display: inline;}
+	
+.footer-links{
+	padding: 0 10px;
+	border-left: 1px solid #2a2a2a;
+	font-size: 7pt;}
+	
+.footer-links li{
+	color: #858372;
+	padding-bottom: 15px;}
+	
+.footer-info{
+	width: 180px;
+	float: right;
+	margin: 20px 0;
+	border-left: 1px solid #2a2a2a;
+	padding: 0 0 0 40px;
+	font-size: 11pt;}
+	
+.footer-info a{
+	font: 10pt "Trebuchet MS", Arial, Helvetica, sans-serif;}
+	
+.footer-info div{
+	margin: 0 0 15px 0;
+	font-size: 8pt;}
+	
+.footer-info #dnn_ContentPane{
+	margin: 0;}
+	
+.footer-info table{
+	font-size: 8pt;}
+
+tr td.footer-numbers{
+	padding: 0 0 0 10px;}
+/********	END Footer		********/
+/******** 	6. Interior Content 	********/
+.masthead-interior{
+	padding: 0 0 20px;}
+
+.interior-head{
+	background: url('img/int-content-top.jpg') repeat-x -6px 0px;
+	width: 960px; height: 79px;
+	margin: 0 auto;}
+	
+.interior-container{
+	width: 960px;
+	margin: 0 auto;
+	background: url('img/content_bg.jpg');}
+	
+.interior-content{
+	width: 920px;
+	margin: 0 auto;
+	overflow: visible;}
+
+.interior-header{
+	padding: 20px 0 0;}
+	
+#interior-bar{
+	width: 100%;
+	height: 2px;
+	margin: 8px 0 0;
+	background: url('img/bar.png') repeat-x 0 0;}
+	
+#side-navigation{
+	float: left;
+	width: 176px;
+	clear: left;}
+	
+#side-navigation #main-navigation{
+	font: 12px Georgia, "Times New Roman", serif;
+	margin: 0 0 20px;}
+	
+#side-navigation a:link, #side-navigation a:visited, #side-navigation a:active{
+	text-decoration: none;}
+	
+#side-navigation a:hover{
+	text-decoration: underline;}
+	
+#main-navigation li{
+	border-bottom: 2px dotted #999999;
+	width: 97%;
+	padding: 6px 0;}
+	
+#main-navigation .first{
+	padding-top: 0;}
+
+#quicklinks-int{
+	margin: 0 0 10px;
+	background: url('img/quick-links.png') 0 0 no-repeat;
+	padding: 25px 0 0;}
+	
+#quicklinks-int .first{
+	padding: 0 0 6px;}
+	
+#quicklinks-int li{
+	padding: 2px 0 0;
+	font-size: 8pt;
+	list-style: none;}
+	
+.RadPanelBar span.rpText{
+	padding: 4px 0;
+	font: 12px Georgia, "Times New Roman", serif;}
+	
+#side-navigation .RadPanelBar{
+	width: 97%;}
+	
+#side-navigation .RadPanelBar .rpLink{
+	border: none;
+}
+#side-navigation .RadPanelBar .rpItem{
+	border-top: 2px dotted #999999;}
+#side-navigation .RadPanelBar .rpFirst{
+	border-top: 0;}
+#side-navigation .RadPanelBar .rpLast{
+	border-bottom: 2px dotted #999999;}
+	
+#side-navigation .rpSlide .rpItem{
+	border: none;
+	border-bottom: 1px solid #e2e2e2;}
+#side-navigation .rpSlide .rpLast{
+	border: none;}
+	
+#side-navigation .RadPanelBar .rpRootGroup{
+	border: none;
+	margin-bottom: 40px;}
+	
+#side-navigation .RadPanelBar .rpHeaderTemplate, #side-navigation .RadPanelBar .rpOut{
+	border: none;
+	padding: 0;}
+	
+#side-navigation .RadPanelBar .rpSlide{
+	margin-left: 12px;}
+	
+#side-navigation .RadPanelBar .rpSlide li.rpItem a{
+	padding: 5px 0;
+	color: #555;}
+	
+#interior-body{
+	float: right;
+	width: 736px;
+	margin: 0 0 20px;}
+	
+.interior-body-type{
+	width: 550px;
+	font-size: 9pt;
+	float: left;}
+.interior-body-type-no-banner {
+	width: 550px;
+	font-size: 9pt;
+	float: left;
+}
+.interior-body-type-full-width {
+	width: 735px;
+	font-size: 9pt;
+	float: left;
+}
+.interior-body-type-wide {
+	width: 735px;
+	font-size: 9pt;
+	float: left;
+}
+.interior-body-type ul, .interior-body-type ol{
+	margin: 10px 0;
+	padding-left: 15px;}
+.interior-body-type-no-banner ul, .interior-body-type-no-banner ol {
+	margin: 10px 0;
+	padding-left: 15px;
+}	
+.interior-body-type h1{
+	background: none;
+	color: #444444;
+	text-transform: none;
+	font-size: 18pt;
+	width: 100%;
+	margin: 30px 0 20px;
+	padding: 5px 0 0;}
+	
+.interior-body-type h2{
+	font-style: normal;
+	color: #444444;
+	font-size: 14pt;
+	margin: 30px 0 15px;}
+.interior-body-type-no-banner h2{
+	font-style: normal;
+	color: #444444;
+	font-size: 14pt;
+	margin: 0 0 15px;
+}
+.interior-body-type p{
+	margin: 0 0 10px;}
+.interior-body-type-no-banner p {
+	margin: 0 0 10px;
+}
+.interior-body-type-full-width p {
+	margin: 0 0 10px;
+}
+.caption .Normal{
+	font-size: 7pt;
+	color: #666666;
+	margin-bottom: 20px;}
+
+#dnn_IntSecondaryContent{
+	width: 160px;
+	float: left;
+	margin: 0 0 0 20px;}
+.intSecondaryContent{
+	width: 160px;}
+.intSecondaryContent ul{
+	list-style-position: inside;
+	list-style-type: circle;}
+#dnn_IntSecondaryContent #current-feature div{
+	display: block;
+	width: 160px;}
+	
+#dnn_IntSecondaryContent #current-feature img{
+	float: left;
+	margin: 3px 0;}
+#dnn_IntSecondaryContent #current-feature #play-video{
+	clear: left;
+	margin: 5px 0;}
+#dnn_IntSecondaryContent h3{
+	color: #444444;
+	font: normal 12pt Georgia, "Times New Roman", serif;}
+
+#dnn_BannerPane, #dnn_QuicklinksPane{
+	clear: both;}
+
+.paneOutline{
+	outline: 1px dotted #CCC;
+	border: none;}
+
+.dnnRibbonGroup .footer{
+	text-shadow: none;
+	color: #444;
+	margin-top: 4px;}
+
+.InteriorH1{
+	height: 25px;}
+
+div.interior-body-type div.Normal{
+	font: 9pt/12pt Arial, Helvetica, sans-serif;
+	color: #444444;}
+div.interior-body-type-no-banner div.Normal {
+	font: 9pt/12pt Arial, Helvetica, sans-serif;
+	color: #444444;
+}
+div.interior-body-type-full-width div.Normal {
+	font: 9pt/12pt Arial, Helvetica, sans-serif;
+	color: #444;
+}
+/******** 	END Interior Content 	********/	
+/******** 	7. Modules 		********/
+/*******************************************
+ * 7-A. FAQ *
+*******************************************/
+.interior-faq a:hover {
+	text-decoration: none;
+}
+.faq-question {
+	width: 100%;
+	background-color: #E0E0E0;
+	font-weight: bold;
+	padding: 5px 0 5px 5px;
+	color: #444;
+}
+.faq-question div p {
+	display: inline;
+}
+.faq-question:hover {
+	text-decoration: underline;
+}	
+.faq-answer {
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+.faq-answer strong {
+	font-weight: bold;
+	/*display: block;*/
+}
+span#dnn_ctr14234_dnnTITLE_lblTitle {
+	font: 9pt Arial, Helvetica, sans-serif;
+}
+/*******************************************
+ * END FAQ *
+*******************************************/
+/*******************************************
+ * 7-B. Twitter Feed *
+*******************************************/
+/* See dnn...DesktopModules...CodingStaff.CS_Twitter...module.css */
+/*******************************************
+ * END Twitter Feed *
+*******************************************/
+/*******************************************
+ * 7-C. Professional Connection Central *
+*******************************************/
+div.breadCrumbs {
+	font: 8pt Arial, sans-serif;
+	color: #8e8e8e;
+	display: inline;
+}
+div.breadCrumbs a {
+	font: 9pt Arial, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+div.breadCrumbs a:last-child {
+	font-style: italic;
+	color: #8e8e8e;
+	text-decoration: none;
+}
+div.divSort {
+	display: inline;
+	float: right;
+}
+span.SubHead {
+	font: 9pt Arial, sans-serif;
+	color: #666666;
+}
+div.separate {
+	border-bottom: 1px solid #d2d2d2;
+	margin: 10px 0 0 0;
+}
+div.photo-frame {
+	float: left;
+}
+div.PCC_Content {
+	float: left;
+	font: 10pt Georgia, sans-serif;
+	color: #7d110c;
+	margin: 0 0 20px 20px;
+}
+div.PCC_Wrap {
+	margin: 0 0 20px 0;
+}
+span.name {
+	display: block;
+	font-size: 11pt;
+}
+span.name a:hover {
+	text-decoration: underline;
+}
+span.email {
+	display: block;
+	color: #666666;
+	margin: 5px 0;
+}
+span.email span {
+	color: #666666;
+}
+span.companyName {
+	display: block;
+	color: #333333;
+	margin: 10px 0;
+}
+span.companyName span {
+	color: #666666;
+}
+span.hometown {
+	display: block;
+	color: #333333;
+	margin: 20px 0 10px 0;
+}
+span.hometown span {
+	color: #666666;
+}
+span.companyLocation {
+	display: block;
+	color: #333333;
+	margin: 10px 0;
+}
+span.companyLocation span {
+	color: #666666;
+}
+span.jobTitle {
+	display: block;
+	color: #333333;
+	margin: 10px 0;
+}
+span.jobTitle span {
+	color: #666666;
+}
+/*div.PCC_BorderSeparator {
+	border-bottom: 1px solid #d2d2d2;
+}*/
+table#dnn_ctr14259_Default_ViewType_dlProperty tbody tr  td{
+	border-bottom: 1px solid #d2d2d2;
+	padding-top: 20px;
+}
+table#dnn_ctr14259_Default_ViewType_dlProperty tbody tr td:first-child {
+	
+}
+table#dnn_ctr14259_Default_ViewType_dlProperty tbody tr td:last-child {
+	border: none;
+	padding-top: 0px;
+	margin-bottom: 10px;
+}
+div.PCC_footer {
+	padding-top: 10px;
+}
+div.page {
+	display: inline;
+	font: 8pt Arial, sans-serif;
+	color: #666;
+}
+div.pageNav {
+	float: right;
+	font: 8pt Arial, sans-serif;
+	color: #666;
+}
+a.CommandButton:link {
+	color: #7d110c;
+}
+div.pageNav a.CommandButton:hover {
+	color: #7d110c;
+	text-decoration: underline;
+}
+div.pageNav a.CommandButton:visited {
+	color: #7d110c;
+}
+div.pageNav a.CommandButton:first-child {
+	background: url(img/FirstPageNav.png) no-repeat 0 0;
+	color: transparent;
+	width: 10px;
+	height: 7px;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999px;
+}
+div.pageNav a.CommandButton:nth-child(2) {
+	background: url(img/PreviousPageNav.png) no-repeat 0 0;
+	color: transparent;
+	width: 6px;
+	height: 7px;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999px;
+}
+div.pageNav a.CommandButton:nth-child(3) {
+	
+}
+div.pageNav a.CommandButton:nth-last-child(-n+2) {
+	background: url(img/NextPageNav.png) no-repeat 0 0;
+	color: transparent;
+	width: 6px;
+	height: 7px;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999px;
+}
+div.pageNav a.CommandButton:last-child {
+	background: url(img/LastPageNav.png) no-repeat 0 0;
+	color: transparent;
+	width: 10px;
+	height: 7px;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999px;
+}
+/*******************************************
+ * End Professional Connection Central *
+*******************************************/
+/*******************************************
+ * 8. Campus Emergency Alert Message *
+*******************************************/
+.campus_status_messages {
+	color: #858372;
+	font-family: Arial, Georgia, sans-serif;
+	font-size: .8em;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+.campus_status_messages a {
+	color: #858372;
+	text-decoration: underline;
+}
+.campus_status_messages a img {
+	border: none;
+}
+/* Large Size */
+/* wrappers for the large size */
+.campus_status_messages-normal {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+	background-color: #f8f3d2;
+	margin: 0 auto;
+}
+.campus_status_messages-advisory {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+	background-color: #f8f3d2;
+	margin: 0 auto;
+}
+.campus_status_messages-alert {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+	background-color: #f8f3d2;
+	margin: 0 auto;
+}
+.campus_status_messages-emergency {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+	background-color: #f8f3d2;
+	margin: 0 auto;
+}
+.campus_status_messages .large,
+.campus_status_messages .cmpstat_large {
+	min-height: 90px;
+	text-align: left;
+}
+.campus_status_messages .cmpstat_custom-large {
+	left: 562px;
+	min-height: 90px;
+	position: relative;
+	top: 0;
+}
+.campus_status_messages .cmpstat_custom-large h4 {
+	/*display: block;*/
+	/*float: left;*/
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*height: 75px;*/
+	/*width: 290px;*/
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+	/*font-size: 24px;*/
+	/*font-family:"Trade Gothic LT Std", Helvetica, sans-serif;*/
+	/*padding: 36px 0px 38px 0px;*/
+	/*margin-right: -17px;*/
+	
+	/*display: block;*/
+	/*position: absolute;*/
+	/*height: auto;*/
+	/*width: 400px;*/
+	/*top: 36px;*/
+	/*left: 542px;*/
+	/*font-weight: bold;*/
+	/*text-transform: uppercase;*/
+	/*font-size: 18pt;*/
+	/*font-family: "Trade Gothic LT Std", Helvetica, sans-serif;*/
+	/*text-align: left;*/
+	/*line-height: 1em;*/
+	/*color: #990000;*/
+	
+	color: #990000;
+	float: left;
+	font-family: "Trade Gothic LT Std", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16pt;
+	height: auto;
+	line-height: 1;
+	padding: 38px 30px 0 0;
+	text-align: left;
+	text-transform: uppercase;
+	width: auto;
+}
+/*.campus_status_messages .cmpstat_custom-large h4.green,
+.campus_status_messages .cmpstat_custom-large h4.cmpstat_green {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 220px 20px no-repeat;
+	padding-left: 300px;
+	color: #990000;
+}*/
+/*.campus_status_messages .cmpstat_custom-large h4.yellow,
+.campus_status_messages .cmpstat_custom-large h4.cmpstat_yellow {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 220px 20px no-repeat;
+	padding-left: 300px;
+	color: #990000;
+}*/
+/*.campus_status_messages .cmpstat_custom-large h4.orange,
+.campus_status_messages .cmpstat_custom-large h4.cmpstat_orange {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 220px 20px no-repeat;
+	padding-left: 300px;
+	color: #990000;
+}*/
+/*.campus_status_messages .cmpstat_custom-large h4.red,
+.campus_status_messages .cmpstat_custom-large h4.cmpstat_red {
+	background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 220px 20px no-repeat;
+	padding-left: 300px;
+	color: #990000;
+}*/
+.campus_status_messages .large img,
+.campus_status_messages .cmpstat_large img {
+	display: none;
+	float: left;
+}
+.campus_status_messages .large.green,
+.campus_status_messages .cmpstat_custom-large.green,
+.campus_status_messages .cmpstat_large.cmpstat_green {
+	background-color: #f8f3d2;
+}
+.campus_status_messages .large.yellow,
+.campus_status_messages .cmpstat_custom-large.yellow,
+.campus_status_messages .cmpstat_large.cmpstat_yellow {
+	background-color: #f8f3d2;
+}
+.campus_status_messages .cmpstat_custom-large.cmpstat_yellow {
+	color: #858372;
+}
+.campus_status_messages .large.yellow a,
+.campus_status_messages .cmpstat_custom-large.yellow a,
+.campus_status_messages .cmpstat_custom-large.cmpstat_yellow a,
+.campus_status_messages .cmpstat_large.cmpstat_yellow a {
+	color: #858372;
+}
+.campus_status_messages .large.orange,
+.campus_status_messages .cmpstat_custom-large.orange,
+.campus_status_messages .cmpstat_large.cmpstat_orange {
+	background-color: #f8f3d2;
+}
+.campus_status_messages .large.red,
+.campus_status_messages .cmpstat_custom-large.red,
+.campus_status_messages .cmpstat_large.cmpstat_red {
+	background-color: #f8f3d2;
+}
+.campus_status_messages .large p,
+.campus_status_messages .cmpstat_custom-large p,
+.campus_status_messages .cmpstat_large p {
+	float: left;
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	padding: 29px 0 0 0;
+	text-align: left;
+}
+/*******************************************
+ * End Campus Emergency Alert Message *
+*******************************************/
+.date, .event, .event-info {
+	float: left;
+}
+.date {
+	background: url('img/event_date.png') no-repeat;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	color: #f8f3d2;
+	font: italic 9pt/6pt Georgia, "Times New Roman", serif;
+	margin: 18px 0;
+}
+.date.first {
+	background: url('img/event_date.png') no-repeat;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	color: #f8f3d2;
+	font: italic 9pt/6pt Georgia, "Times New Roman", serif;
+	margin-top: 0;
+}
+.date small {
+	display: block;
+	padding: 8px 0 0;
+}
+.date big {
+	font-size: 14pt;
+	line-height: 110%;
+}
+.event-info {
+	width: 255px;
+	margin: 24px 0 8px 20px;
+}
+.event-info:nth-child(1) {
+	margin-top: 0;
+}
+div#events {
+	margin-top: 20px;
+}
+div#events div.event {
+	background: url('img/event-border.png') repeat-x 0 0;
+}
+div#events div.event.first {
+	background: none;
+}
+/*.event-first {
+	margin-top: 0;
+}*/
+/*******************************************
+ * 9. Faculty Directory Table *
+ * uc.iupui.edu/aboutus/ucolorganization/faculty.aspx *
+*******************************************/
+#facDirTbl th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+#facDirTbl td:first-child {
+	padding: 0 10px 0 2px;
+}
+#facDirTbl td:nth-child(2) {
+	padding: 0 10px 0 0;
+}
+#facDirTbl td:nth-child(3) {
+	width: 150px;
+}
+#facDirTbl td:nth-child(4) {
+	padding: 0 20px 0 0;
+	width: 70px;
+}
+#facDirTbl td:last-child {
+	padding: 0 2px 0 0;
+}
+#facDirTbl td {
+	height: 30px;
+	text-align: left;
+}
+#facDirTbl tr:nth-child(odd) { /* FOR ALL THE OTHER BROWSERS */
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#facDirTbl tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#facDirTbl tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+#facDirTbl td + td + td + td { /* FOR IE...to select the 4th cell in each row */
+	padding-right: 20px;
+	width: 70px;
+}
+/*******************************************
+ * End Temporary Faculty Directory Table *
+*******************************************/
+/*******************************************
+ * 9A. General Table *
+ * uc.iupui.edu - all sites *
+*******************************************/
+#genTbl {
+	margin:10px 0px 15px 0px;
+	width:100%;
+}
+
+#genTbl th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+
+#genTbl td {
+	height: 30px;
+	text-align: left;
+	padding: 0 10px 0 10px;
+}
+#genTbl tr:nth-child(odd) { /* FOR ALL THE OTHER BROWSERS */
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#genTbl tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#genTbl tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+#genTbl td + td + td + td { /* FOR IE...to select the 4th cell in each row */
+	padding-right: 20px;
+	width: 70px;
+}
+/*******************************************
+ * End General Table *
+*******************************************/
+/*******************************************
+ * 10. Building Hours Table *
+ * uc.iupui.edu/AboutUs/Hours.aspx *
+*******************************************/
+table#bldHrs.main {
+	/*width: 550px;*/
+	width: 100%;
+}
+/*table#bldHrs.main:nth-child(1) {
+	margin-top: 20px;
+}
+table#bldHrs.main:nth-child(2) {
+	margin: 20px 0 0 0;
+}*/
+table.subTbl {
+	float: left;
+	/*margin: 20px 0 20px 0;*/
+	width: 362px;
+	/*width: 550px;*/
+}
+#bldHrsMAC.subTbl {
+	margin: 20px 10px 0 0;
+}
+#bldHrsAAH.subTbl {
+	margin: 20px 0 60px 0;
+}
+#bldHrsACD.subTbl {
+	margin: 20px 10px 0 0;
+}
+#bldHrsBLC.subTbl {
+	margin: 20px 0 30px 0;
+}
+#bldHrsCCW.subTbl {
+	margin: 20px 10px 0 0;
+}
+#bldHrsOSE.subTbl {
+	margin: 20px 0 0 0;
+}
+#bldHrs.main td {
+	/*border-top: 1px solid #d2d2d2;*/
+	/*width: 275px;*/
+	width: 367px;
+}
+.subTbl td {
+	/*border-top: 1px solid #d2d2d2;*/
+	width: 173px;
+	/*width: 275px;*/
+}
+#bldHrs th,
+.subTbl th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	height: 30px;
+	/*padding-bottom: 6px;*/
+	text-align: left;
+}
+#bldHrs td:first-child,
+.subTbl td:first-child {
+	padding: 0 0 0 2px;
+}
+#bldHrs td,
+.subTbl td {
+	height: 32px;
+	text-align: left;
+}
+#bldHrs tr:nth-child(odd),
+.subTbl tr:nth-child(odd) { /* FOR OTHER BROWSERS */
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table.main tr:nth-child(odd)").addClass("oddRow");
+			$("table.subTbl tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+table#bldHrs tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+table.subTbl tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+/*******************************************
+ * End Building Hours Table *
+*******************************************/
+/*******************************************
+ * 11. BLC SI Hours Tables *
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/BIOLN261.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/BIOLN217.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/BIOLN214.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/BUSX100.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/HERH102.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/PHILP162.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/PHILP265.aspx
+ * blc.uc.iupui.edu/AcademicMentoring/AcademicMentoring/SupplementalInstructionSI/SPEAJ101.aspx *
+*******************************************/
+table#blc-si {
+	width: 550px;
+}
+#blc-si td:first-child {
+	padding: 0 0 0 2px;
+	width: 127px;
+}
+#blc-si td:nth-child(2) {
+	padding-right: 1px;
+	width: 167px;
+}
+#blc-si td:nth-child(3) {
+	padding-right: 1px;
+	width: 117px;
+}
+#blc-si td:nth-child(4) {
+	width: 135px;
+}
+#blc-si td:last-child {
+	padding-right: 4px;
+}
+#blc-si th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	height: 30px;
+	text-align: left;
+}
+#blc-si td {
+	height: 30px;
+	text-align: left;
+}
+#blc-si tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#blc-si tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#blc-si tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+/*******************************************
+ * End BLC SI Hours Tables *
+*******************************************/
+/*******************************************
+ * 12. Call to Action Button *
+ * Used on various sites *
+*******************************************/
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/Chunkfive-webfont.eot');
+    src: url('fonts/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Chunkfive-webfont.woff') format('woff'),
+         url('fonts/Chunkfive-webfont.ttf') format('truetype'),
+         url('fonts/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+div.cta{
+	float: left;
+	clear: both;
+	margin: 5px 0;
+	width: 100%;
+	padding: 10px 0;}
+div.cta:hover{
+	opacity: .9;}
+a.cta{
+	font-family: ChunkFive, "Arial Black";
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 11pt;
+	height: 40px;
+	background: url('img/cta-bg.png');
+	line-height: 42px;
+	float: left;}
+span.cta{
+	width: 12px;
+	height: 40px;
+	float: left;}
+span.cta-before{
+	background: url('img/cta-bg-left.png');}
+span.cta-after{
+	background: url('img/cta-bg-right.png');}
+a.cta:link, a.cta:visited{
+	color: #f8f3d2;
+	text-shadow: #4b1210 0 1px;}
+/*******************************************
+ * End Call to Action Button *
+*******************************************/
+/*******************************************
+ * 13. Barbara D. Jackson OFYSA Award 2012 Nomination Form *
+ * http://uc.iupui.edu/NewsAwards/Awards/OutstandingFirstYearStudentAdvocate/NominationForm2012.aspx *
+*******************************************/
+div.DnnModule.DnnModule-DynamicForms.DNnModule-14874 div.interior-body-type {
+	font: 12pt Arial, Helvetica, sans-serif;
+}
+.nomineeInfo {
+	text-decoration: underline;
+	display: block;
+	padding: 0 0 0 0;
+}
+.nominatorInfo {
+	text-decoration: underline;
+	display: block;
+}
+/*hr {
+	width: 500px;
+}*/
+td#dnn_ctr14874_DynamicForms_Cell_268727f3-8365-4b91-9467-a28241683172 {
+	width: 199px;
+	padding: 0;
+	margin: 0;
+}
+table.DynamicForms_QuestionTable {
+	border-collapse: separate;
+}
+
+.DynamicForms_Label {
+	font-weight:bold;
+}
+
+.DynamicForms_CheckBoxList td {
+	padding:10px 0px 10px 0px;
+}
+/*******************************************
+ * End Barbara D. Jackson OFYSA Award 2012 Nomination Form *
+*******************************************/
+/*******************************************
+ * 14. Free Departmental Tutoring Table *
+ * https://blc.uc.iupui.edu/TutorialSupport/FreeDepartmentalTutoring.aspx *
+*******************************************/
+table#deptTutoring {
+	font-size: 0.9em;
+	width: 100%;	
+}
+#deptTutoring td {
+	border-right: 1px solid #444;
+	padding: 4px 4px;
+	text-align: left;
+}
+#deptTutoring td:first-child {
+	width: 105px;
+}
+#deptTutoring td:nth-child(2) {
+	width: 90px;
+}
+#deptTutoring td:nth-child(3) {
+	width: 90px;
+}
+#deptTutoring td:nth-child(4) {
+	width: 90px;
+}
+#deptTutoring td:nth-child(5) {
+	width: 90px;
+}
+#deptTutoring td:nth-child(6) {
+	width: 90px;
+}
+#deptTutoring td:nth-child(7) {
+	width: 90px;
+}
+#deptTutoring td:last-child {
+	border: none;
+	width: 90px;
+}
+#deptTutoring th {
+	border-bottom: 1px solid #444;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-align: left;
+}
+#deptTutoring tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#deptTutoring tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#deptTutoring tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+/*******************************************
+ * End Free Departmental Tutoring Table *
+*******************************************/
+/*******************************************
+ * 15. IUPUI Major Profiles Table *
+ * http://career.uc.iupui.edu/Students/ConnectMajorstoCareers/AlphabeticallybyMajor.aspx *
+*******************************************/
+div.tabCont {
+	width: 550px;
+}
+table#majProf {
+	width: 270px;
+}
+table#majProf.tab1 {
+	float: left;
+	margin-right: 10px;
+}
+table#majProf.tab2 {
+	float: left;
+}
+#majProf th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-align: left;
+}
+#majProf td {
+	height: 34px;
+	padding: 0 2px;
+}
+#majProf tr:nth-child(even) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table.tab1 tr:nth-child(even)").addClass("evenRow");
+			$("table.tab2 tr:nth-child(even)").addClass("evenRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#majProf tr.evenRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+div.link a {
+	float: left;
+	padding-top: 10px;
+}
+/*******************************************
+ * End IUPUI Major Profiles Table *
+*******************************************/
+/*******************************************
+ * 16. IUPUI Mentoring Bulletin Table *
+ * https://blc.uc.iupui.edu/academicmentoring/currentmentorresources/mentoringbulletinarchive.aspx *
+*******************************************/
+table#mentBulletin {
+	width: 100%;
+}
+#mentBulletin th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+#mentBulletin td {
+	height: 30px;
+	padding: 0 2px;
+	width: 50%;
+}
+#mentBulletin tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#mentBulletin tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#mentBulletin tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+/*******************************************
+ * End IUPUI Mentoring Bulletin Table *
+*******************************************/
+/*******************************************
+ * 17. Application Needs for Summer Work Initiative Form *
+ * https://employment.uc.iupui.edu/Employers/HiringStudents/SummerWorkInitiative2012/FundingRequest.aspx *
+*******************************************/
+span.fundingReqLabelBold {
+	font-weight: bold;
+}
+table.fundingReqCheckBoxField {
+	margin-top: 10px;
+}
+span.fundingReqNotice {
+	color: #990000;
+	display: block;
+}
+.fundingReqLabel {
+	display: block;
+}
+/*******************************************
+ * End Application Needs for Summer Work Initiative Form *
+*******************************************/
+/*******************************************
+ * 18. Overview Table for National Learning Communities Conference *
+ * http://nlcc.uc.iupui.edu/nlcc2012/Schedule/AtaGlance.aspx *
+*******************************************/
+table#nlccTable {
+	margin-bottom: 20px;
+	width: 100%;
+}
+#nlccTable th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+#nlccTable tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table.tab1 tr:nth-child(odd)").addClass("oddRow");
+			$("table.tab2 tr:nth-child(odd)").addClass("oddRow");
+			$("table.tab3 tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#nlccTable tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+#nlccTable td {
+	height: 30px;
+	padding: 0 2px;
+	width: 50%;
+}
+/*******************************************
+ * End Overview Table for National Learning Communities Conference *
+*******************************************/
+/*******************************************
+ * 19. NLCC Registration Table *
+ * http://nlcc.uc.iupui.edu/nlcc2012/Registration/RegistrationCategories.aspx *
+*******************************************/
+table#nlccRegistrationTable {
+	margin-bottom: 20px;
+	width: 100%;
+}
+#nlccRegistrationTable th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+#nlccRegistrationTable tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#nlccRegistrationTable tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#nlccRegistrationTable tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+#nlccRegistrationTable td {
+	height: 32px;
+	padding: 4px 2px;
+}
+#nlccRegistrationTable em {
+	font-size: 9pt;
+}
+/*******************************************
+ * End NLCC Registration Table *
+*******************************************/
+/*******************************************
+ * 20. Scholar Days / College Visits Table *
+ * http://scholars.uc.iupui.edu/Events/ScholarDays.aspx *
+*******************************************/
+table#SchlrDaysTbl {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#SchlrDaysTbl th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+#SchlrDaysTbl tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table#SchlrDaysTbl tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+#SchlrDaysTbl tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+#SchlrDaysTbl td {
+	height: 32px;
+	padding: 4px 2px;
+}
+/*******************************************
+ * End Scholar Days / College Visits Table *
+*******************************************/
+/*******************************************
+ * 21. Externship Timeline Table *
+ * http://career.uc.iupui.edu/Externships/Timeline.aspx *
+*******************************************/
+table.exTimelineTbl {
+	width: 100%;
+	margin: 20px 0;
+}
+.exTimelineTbl th {
+	border-bottom: 1px solid #d2d2d2;
+	background-color: #f8f8f8;
+	color: #990000;
+	font-weight: bold;
+	padding-bottom: 6px;
+	text-align: left;
+}
+.exTimelineTbl tr:nth-child(odd) {
+	background-color: #d2d2d2;
+}
+/* <!--[if IE]>
+<script>
+	$(document).ready(
+		function() {
+			$("table.exTimelineTbl tr:nth-child(odd)").addClass("oddRow");
+		});
+</script>
+<![endif]-->
+This snippet of jQuery is a workaround for nth-child() in IE
+to get alternating rows background color.
+IN FOOTER OF MODULE SETTINGS! */
+.exTimelineTbl tr.oddRow { /* FOR IE */
+	background-color: #d2d2d2;
+}
+.exTimelineTbl td {
+	height: 32px;
+	padding: 4px 2px;
+	width: 50%;
+}
+/*******************************************
+ * End Externship Timeline Table *
+*******************************************/
+/*******************************************
+ * 22. UltraMediaGallery *
+*******************************************/
+div.nivoSlider {
+	width: 100%;
+}
+.nivoSlider img {
+	height: 90px;
+	width: 90px;
+}
+.nivoSlider a {
+	float: left;
+	padding: 0 10px 20px 10px;
+}
+/*******************************************
+ * End UltraMediaGallery *
+*******************************************/
+/*******************************************
+ * 23. Summer Work Initiative Funding Request Form *
+ * http://employment.uc.iupui.edu/Employers/HiringStudents/SummerWorkInitiative2012/FundingRequest.aspx *
+*******************************************/
+a.DynamicForms_Link {
+	display: none;
+}
+/*******************************************
+ * End Summer Work Initiative Funding Request Form *
+*******************************************/
+/*******************************************
+ * 24. Mindsweep List *
+ * http://blc.uc.iupui.edu/AcademicEnrichment/StudySkills/GoalSetting/Mindsweep.aspx *
+*******************************************/
+div#listWrap {
+	width: 100%;
+}
+div.col1 {
+	float: left;
+	width: 50%;
+}
+div.col2 {
+	float: left;
+	width: 50%;
+}
+div#listWrap br {
+	clear: left;
+}
+div#listWrap ul {
+	margin-bottom: 20px;
+}
+div#listWrap li {
+	border-bottom: 1px solid #d2d2d2;
+	height: 20px;
+	list-style: none;
+	margin-left: -15px;
+	padding: 4px 0;
+	width: 248px;
+}
+div#listWrap li:first-child {
+	border-top: 1px solid #d2d2d2;
+}
+/*******************************************
+ * End Mindsweep List *
+*******************************************/
+/*******************************************
+ * 25. BRC Schedule *
+ * http://blc.uc.iupui.edu/TutorialSupport/BiologyResourceCenter.aspx *
+*******************************************/
+table#brcSched {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#brcSched th {
+	color: #444;
+}
+#brcSched td:first-child {
+    border-right: 1px solid #000;
+    text-align: right;
+}
+#brcSched td {
+    border-top: 1px solid #000;
+    font-size: 9pt;
+}
+.monday {
+    border-right: 1px solid #000 !important;
+}
+.tuesday {
+    border-right: 1px solid #000 !important;
+}
+.wednesday {
+    border-right: 1px solid #000 !important;
+}
+.thursday {
+    border-right: 1px solid #000 !important;
+}
+.n217 {
+    background-color: #7D110C;
+    border: none;
+    color: #fff;
+}
+.k341 {
+    background-color: #F8F3D2;
+    border: none;
+}
+.k101 {
+    background-color: #B0B2B4;
+    border: none;
+}
+.k103 {
+    background-color: #AF906A;
+    border: none;
+}
+.k324 {
+    background-color: #2D637F;
+    border: none;
+    color: #fff;
+}
+.k322 {
+    background-color: #6D6E70;
+    border: none;
+    color: #fff;
+}
+.n261 {
+    background-color: #808A53;
+    border: none;
+    color: #fff;
+}
+.n214 {
+    background-color: #6F679D;
+    border: none;
+    color: #fff;
+}
+/*******************************************
+ * End BRC Schedule *
+*******************************************/
+/*******************************************
+ * 26. Legacy Initiative *
+ * http://uc.iupui.edu/Giving/LegacyInitiative/CreatingaVision.aspx *
+ * http://uc.iupui.edu/Giving/LegacyInitiative/BuildingaBridge.aspx *
+ * http://uc.iupui.edu/Giving/LegacyInitiative/SustainingaLegacy.aspx *
+*******************************************/
+a.SubHead img {
+	display: none;
+}
+p.donateAmount {
+	/*clear: right;*/
+	/*display: inline-block;*/
+	/*float: right;*/
+	margin: 0;
+	padding-bottom: 10px;
+}
+a.SubHead h4 {
+	/*clear: left;*/
+	/*display: inline-block;*/
+	/*float: left;*/
+	margin: 0;
+}
+/*******************************************
+ * End Legacy Initiative *
+*******************************************/
+.adminContentPane {
+	margin: 0 40px 0 40px;
+	padding: 2px 0 0 0;
+}
+.adminContentPane table.Settings {
+	width: 100% !important;
+}
+/*******************************************
+ * XX. Print Styles *
+*******************************************/
+
+@media print {
+	.footer{display:none;}
+	.masthead-interior{background-color:#FFF !important;}
+	.masthead{background-color:#FFF !important;
+	filter:none}}
+	
+}
