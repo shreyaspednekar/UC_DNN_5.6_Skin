@@ -1,0 +1,120 @@
+/** 
+ * -------------------------------------------
+ * Navigation styles
+ * -------------------------------------------
+ **/
+ 
+#navigation{
+	height: 41px;
+	@include clearfix;
+	.RadMenu{
+		float:none;
+	}
+	.RadMenu_Default{
+		a.rmlink{
+			font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+		}
+		.rmRootGroup{
+			border: none;
+			background: transparent;
+		}
+	}
+	span.rmText{
+		padding:0;
+		&:hover{
+			border-bottom: 2px solid #f8f3d2;
+		}
+	}
+	li{
+		.rmItem{
+			padding: 0 15px;
+		}
+		.rmFirst{
+			padding-left: 0;
+		}
+	}
+}
+
+#navigation, #user{
+	li a{
+		&:link, &:visited{
+			color: #f8f3d2;
+			text-decoration: none;			
+		}
+	}
+}
+	
+#navigation .RadMenu_Default .rmRootGroup, #navigation .RadMenu_Default a.rmLink, #navigation .RadMenu_Default .rmGroup .rmText, #navigation .RadMenu_Default .rmVertical .rmText, #navigation .RadMenu_Default .rmLeftArrow, #navigation .RadMenu_Default .rmRightArrow, #navigation .RadMenu_Default .rmTopArrow, #navigation .RadMenu_Default .rmBottomArrow {
+	background-image: none;
+	background: transparent;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmExpandRight{
+	background: url('img/dropdown-right.png') no-repeat 150px 5px;
+}
+
+#navigation .rmSlide ul.rmGroup{
+	background: #f8f3d2;
+	padding: 15px 20px 25px;
+	margin: 10px 0 0;
+	border: 1px solid #7d110c;
+	border-top: none;
+}
+	
+#navigation .rmSlide ul.rmGroup li.rmItem a{
+	color: #858372;
+	font-size: 9pt;
+	padding: 10px 0;
+	text-shadow: 0px 1px 0px #ffffff;
+	border-bottom: 1px solid #adaa93;
+	border-top: 1px solid #fcf9e9;
+}
+	
+#navigation .rmSlide ul.rmGroup li.rmFirst a{
+	border-top: none;
+}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem{
+	padding: 0;
+	width: 160px;
+	white-space: pre-line;
+}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText{
+	margin: 0;
+}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText:hover{
+	border: none;
+	color: #7d110c;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2{
+	border: 1px solid #7d110c;
+	margin-left: 25px;
+	margin-top: -46px;
+	padding-top: 0;
+}
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel3 {
+	border: 1px solid #7d110c;
+	margin-left: 25px;
+	margin-top: -46px;
+	padding-top: 0;
+}
+	
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2 li.rmFirst a{
+	border-top: 1px solid #adaa93;
+}
+
+.nav{
+	z-index: 10;
+}
+
+.rmSlide {
+	overflow-x: visible !important;
+	overflow-y: visible !important;
+}
+
+.nav .rmSlide{
+	width: 200px;
+}

@@ -1,0 +1,17 @@
+/** 
+ * -------------------------------------------
+ * Responsive styles
+ * -------------------------------------------
+ **/
+@media screen and (max-width: 480px) {
+	input.TxtSearch {
+		width: 140px;
+		height: 23px;
+	}
+	div.quicklinks a {
+		font: 5pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	ul.footer-links li {
+		font: 5pt Arial, Helvetica, sans-serif;
+	}
+}

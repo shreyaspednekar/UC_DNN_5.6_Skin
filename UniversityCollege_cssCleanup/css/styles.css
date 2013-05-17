@@ -1,0 +1,596 @@
+/** 
+ * -------------------------------------------
+ * Reset all the default styles
+ * -------------------------------------------
+ **/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+  list-style-position: outside;
+  list-style-type: circle;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** 
+ * -------------------------------------------
+ * General styles
+ * -------------------------------------------
+ **/
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/** 
+ * -------------------------------------------
+ * Universal styles
+ * -------------------------------------------
+ **/
+body {
+  font: 13px Arial, Helvetica, sans-serif;
+  color: #444444;
+  background: #121212;
+}
+
+a:link, a:visited, a:active {
+  color: #7d110c;
+}
+
+a:hover {
+  color: #990000;
+}
+
+::-webkit-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::-moz-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::-o-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+.container {
+  width: 960px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  width: 175px;
+}
+
+.c_footer {
+  zoom: 1;
+}
+.c_footer:before, .c_footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.c_footer:after {
+  clear: both;
+}
+
+.hide-element {
+  display: none;
+}
+
+/** 
+ * -------------------------------------------
+ * Topbar styles
+ * -------------------------------------------
+ **/
+.topbar {
+  background: #121212;
+  border-bottom: 2px solid #b0b2b4;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.topbar .container a {
+  display: block;
+  background: url("img/iupui_wordmark.png") no-repeat 0 14px;
+  height: 45px;
+  width: 410px;
+}
+
+/** 
+ * -------------------------------------------
+ * Masthead styles
+ * -------------------------------------------
+ **/
+.all {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.masthead {
+  width: 100%;
+  min-width: 1200px;
+  background: #990000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+  background: -moz-linear-gradient(top, #990000, #7d110c);
+}
+
+.masthead .container {
+  background: url("img/jag_logo_main.png") no-repeat 705px 0;
+}
+
+.masthead-interior .ght {
+  width: 169px;
+}
+
+#ucol-home {
+  display: block;
+  padding: 10px 0 0;
+  height: 17px;
+  width: 129px;
+  background: url("img/ucol_home.png") no-repeat 0 10px;
+}
+
+#logo {
+  margin: 15px 0 35px;
+}
+
+/** 
+ * -------------------------------------------
+ * Navigation styles
+ * -------------------------------------------
+ **/
+#navigation {
+  height: 41px;
+  zoom: 1;
+}
+#navigation:before, #navigation:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#navigation:after {
+  clear: both;
+}
+#navigation .RadMenu {
+  float: none;
+}
+#navigation .RadMenu_Default a.rmlink {
+  font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#navigation .RadMenu_Default .rmRootGroup {
+  border: none;
+  background: transparent;
+}
+#navigation span.rmText {
+  padding: 0;
+}
+#navigation span.rmText:hover {
+  border-bottom: 2px solid #f8f3d2;
+}
+#navigation li .rmItem {
+  padding: 0 15px;
+}
+#navigation li .rmFirst {
+  padding-left: 0;
+}
+
+#navigation li a:link, #navigation li a:visited, #user li a:link, #user li a:visited {
+  color: #f8f3d2;
+  text-decoration: none;
+}
+
+#navigation .RadMenu_Default .rmRootGroup, #navigation .RadMenu_Default a.rmLink, #navigation .RadMenu_Default .rmGroup .rmText, #navigation .RadMenu_Default .rmVertical .rmText, #navigation .RadMenu_Default .rmLeftArrow, #navigation .RadMenu_Default .rmRightArrow, #navigation .RadMenu_Default .rmTopArrow, #navigation .RadMenu_Default .rmBottomArrow {
+  background-image: none;
+  background: transparent;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmExpandRight {
+  background: url("img/dropdown-right.png") no-repeat 150px 5px;
+}
+
+#navigation .rmSlide ul.rmGroup {
+  background: #f8f3d2;
+  padding: 15px 20px 25px;
+  margin: 10px 0 0;
+  border: 1px solid #7d110c;
+  border-top: none;
+}
+
+#navigation .rmSlide ul.rmGroup li.rmItem a {
+  color: #858372;
+  font-size: 9pt;
+  padding: 10px 0;
+  text-shadow: 0px 1px 0px #ffffff;
+  border-bottom: 1px solid #adaa93;
+  border-top: 1px solid #fcf9e9;
+}
+
+#navigation .rmSlide ul.rmGroup li.rmFirst a {
+  border-top: none;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem {
+  padding: 0;
+  width: 160px;
+  white-space: pre-line;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText {
+  margin: 0;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem span.rmText:hover {
+  border: none;
+  color: #7d110c;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2 {
+  border: 1px solid #7d110c;
+  margin-left: 25px;
+  margin-top: -46px;
+  padding-top: 0;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel3 {
+  border: 1px solid #7d110c;
+  margin-left: 25px;
+  margin-top: -46px;
+  padding-top: 0;
+}
+
+#navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel2 li.rmFirst a {
+  border-top: 1px solid #adaa93;
+}
+
+.nav {
+  z-index: 10;
+}
+
+.rmSlide {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+.nav .rmSlide {
+  width: 200px;
+}
+
+/** 
+ * -------------------------------------------
+ * Rotating banner styles
+ * -------------------------------------------
+ **/
+.rotate-header-1 {
+  padding: 15px;
+  width: 450px;
+  background: #990000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+  background: -moz-linear-gradient(top, #990000, #7d110c);
+}
+.rotate-header-1 h1 {
+  line-height: 16pt;
+  margin: 0 0 10px 0;
+  color: #f8f3d2;
+  font-weight: bold;
+  font-size: 16pt;
+  display: block;
+  text-transform: none;
+  background: none;
+  width: 100%;
+  height: auto;
+}
+.rotate-header-1 p {
+  color: #f8f3d2;
+}
+.rotate-header-1 ul {
+  color: #f8f3d2;
+  padding-left: 15px;
+}
+.rotate-header-1 a {
+  color: #f8f3d2;
+  text-decoration: underline;
+}
+
+.rotate-header-2 {
+  margin-top: 5px;
+  border-left: 5px solid #7d110c;
+  padding: 10px 15px 15px 10px;
+  width: 450px;
+}
+.rotate-header-2 h1 {
+  font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+  border-bottom: 1px solid;
+  margin: 0 0 10px 0;
+  padding-top: 5px;
+  background: none;
+  width: 100%;
+  height: auto;
+}
+.rotate-header-2 a {
+  color: #f8f3d2;
+  text-decoration: underline;
+}
+
+.uc-folio-rotator .title h1 {
+  font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+}
+
+.uc-folio-rotator .pagers .rotator-pager {
+  margin: 0;
+}
+
+.uc-folio-rotator .rotator-footer {
+  position: absolute;
+  bottom: 0px;
+  z-index: 999;
+  width: 952px;
+  height: auto !important;
+  background-image: url("img/rotate/80.png");
+  background-repeat: repeat;
+  color: #F8F3D2;
+}
+
+.title-desc-container {
+  padding: 15px;
+}
+
+.title-desc-container .title h1 {
+  padding-bottom: 14px;
+}
+
+.desc a {
+  color: #f8f3d2;
+  text-decoration: underline;
+}
+
+.iupui-template-wrap, .uc-folio-rotator {
+  overflow: hidden;
+  width: 952px;
+  height: 452px;
+  position: relative;
+}
+
+.iupui-template .rotate-wrap .engage-content {
+  z-index: 500;
+  width: 952px !important;
+  height: 452px !important;
+}
+
+.iupui-template .info {
+  position: absolute;
+  top: 80px;
+  left: 435px;
+  width: 260px;
+  height: 120px;
+  padding: 20px;
+}
+
+.iupui-template h2.title {
+  color: #fff;
+  text-align: left;
+}
+
+.iupui-template-wrap .pagers, .uc-folio-rotator .pagers {
+  float: right;
+}
+
+.iupui-template-wrap .pagers a, .uc-folio-rotator .pagers a {
+  padding: 0;
+  margin: 0 0 0 0;
+  background: url("images/stagnate.png") no-repeat;
+  color: transparent;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 7px;
+}
+
+.iupui-template-wrap .pagers a.activeSlide, .uc-folio-rotator .pagers a.activeSlide {
+  background: url("images/selected.png") no-repeat;
+}
+
+.iupui-template-wrap .pagers .rotator-pager {
+  margin: 8px 6px 0 0;
+}
+
+#dnn_BannerPane {
+  position: relative;
+  border: 4px solid #f8f3d2;
+  overflow: visible;
+  width: 952px;
+  height: 452px;
+  outline: 1px solid #7d110c;
+}
+
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, div.rotate-header-2 {
+  background-image: url("img/rotate/80.png");
+  background-repeat: repeat;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f8f3d2;
+}
+
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, #dnn_BannerPane .uc-folio-rotator .rotator-footer {
+  position: absolute;
+  bottom: 0px;
+  z-index: 999;
+  width: 952px;
+  height: 30px;
+}
+
+/** 
+ * -------------------------------------------
+ * JagJobs XML Feed styles
+ * -------------------------------------------
+ **/
+.DNN_Feed_Item a {
+  font: 10pt Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+.DNN_Feed_Item {
+  display: none;
+  border-bottom: 1px solid #c6c6c6;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+span.JobTitle, span.OrgName_Exp {
+  display: block;
+}
+
+span.OrgName_Exp {
+  padding-top: 4px;
+}
+
+span.JobsLink {
+  display: block;
+}
+
+span.JobsLink a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/** 
+ * -------------------------------------------
+ * Notification styles
+ * -------------------------------------------
+ **/
+.notification {
+  padding: 7px 0 0;
+  display: none;
+}
+.notification .container {
+  margin: 0 auto;
+  width: 960px;
+}
+.notification .container div {
+  float: left;
+}
+.notification h3.notification-title {
+  font: italic 11pt/11pt Georgia, "Times New Roman", serif;
+  text-transform: uppercase;
+  color: #f8f3d2;
+  padding-right: 30px;
+  margin-left: 65px;
+  display: none;
+}
+.notification p {
+  font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+  color: #f8f3d2;
+  width: 660px;
+  line-height: 1.2em;
+  display: inline;
+  margin: 0 8px 10px 40px;
+}
+.notification p:first-child {
+  margin-left: 60px;
+}
+.notification p:last-child {
+  margin-bottom: 0px;
+}
+
+.notification-content {
+  padding: 0 0 7px;
+}
+.notification-content a:link {
+  font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+  color: #f8f3d2;
+  text-decoration: underline;
+}
+.notification-content a:hover {
+  text-decoration: none;
+}
+.notification-content a:visited {
+  color: #f8f3d2;
+}
+
+#notification-icon {
+  width: 42px;
+  height: 44px;
+  background: url("img/notification.png") -4px 0;
+  position: absolute;
+  margin-top: -13px;
+}
+
+/** 
+ * -------------------------------------------
+ * Responsive styles
+ * -------------------------------------------
+ **/
+@media screen and (max-width: 480px) {
+  input.TxtSearch {
+    width: 140px;
+    height: 23px;
+  }
+
+  div.quicklinks a {
+    font: 5pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+
+  ul.footer-links li {
+    font: 5pt Arial, Helvetica, sans-serif;
+  }
+}

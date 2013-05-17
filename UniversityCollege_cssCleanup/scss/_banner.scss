@@ -1,0 +1,163 @@
+/** 
+ * -------------------------------------------
+ * Rotating banner styles
+ * -------------------------------------------
+ **/
+.rotate-header-1{
+	padding: 15px;
+	width: 450px;
+	background: #990000;
+	
+	//Use gradient mixin here
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+	background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+	background: -moz-linear-gradient(top,  #990000,  #7d110c);
+	h1{
+		line-height: 16pt;
+		margin: 0 0 10px 0;
+		color: #f8f3d2;
+		font-weight: bold;
+		font-size: 16pt;
+		display: block;
+		text-transform: none;
+		background: none;
+		width: 100%;
+		height: auto;
+	}
+	p{
+		color: #f8f3d2;	
+	}
+	ul{
+		color: #f8f3d2;
+		padding-left: 15px;
+	}
+	a{
+		color: #f8f3d2;
+		text-decoration: underline;
+	}
+}
+
+.rotate-header-2{
+	margin-top: 5px;
+	border-left: 5px solid #7d110c;
+	padding: 10px 15px 15px 10px;
+	width: 450px;
+	h1{
+			font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+		border-bottom: 1px solid;
+		margin: 0 0 10px 0;
+		padding-top: 5px;
+		background: none;
+		width: 100%;
+		height: auto;
+	}
+	a{
+		color: #f8f3d2;
+		text-decoration: underline;
+	}
+}
+
+.uc-folio-rotator .title h1 {
+	font: bold 13pt/9pt "Trebuchet MS", Arial, sans-serif;
+}
+
+.uc-folio-rotator .pagers .rotator-pager {
+	margin: 0;
+}
+
+.uc-folio-rotator .rotator-footer {
+	position: absolute;
+	bottom: 0px;
+	z-index: 999;
+	width: 952px;
+	height: auto !important;
+	background-image: url('img/rotate/80.png');
+	background-repeat: repeat;
+	color: #F8F3D2;
+}
+
+.title-desc-container {
+	padding: 15px;
+}
+
+.title-desc-container  .title h1 {
+	padding-bottom: 14px;
+}
+
+.desc a {
+	color: #f8f3d2;
+	text-decoration: underline;
+}
+
+.iupui-template-wrap, .uc-folio-rotator {
+    overflow: hidden;
+    width: 952px;
+    height: 452px;
+    position:relative;
+}
+
+.iupui-template .rotate-wrap .engage-content {
+    z-index: 500;
+    width: 952px !important;
+    height: 452px !important;
+}
+
+.iupui-template .info {
+    position:absolute;
+    top: 80px;
+    left: 435px;
+    width:260px;
+    height:120px;
+    padding:20px;
+}
+
+.iupui-template h2.title {
+    color:#fff;
+    text-align:left;
+}
+
+.iupui-template-wrap .pagers, .uc-folio-rotator .pagers {
+    float: right;
+}
+
+.iupui-template-wrap .pagers a, .uc-folio-rotator .pagers a {
+	padding: 0;
+	margin: 0 0 0 0;
+	background: url('images/stagnate.png') no-repeat;
+	color: transparent;
+	display: inline-block;
+	text-indent: -9999px;
+	width: 7px;
+}
+
+.iupui-template-wrap .pagers a.activeSlide, .uc-folio-rotator .pagers a.activeSlide {
+    background: url('images/selected.png') no-repeat;
+}
+
+.iupui-template-wrap .pagers .rotator-pager {
+    margin: 8px 6px 0 0;
+}
+
+#dnn_BannerPane{
+	position: relative;
+	border: 4px solid #f8f3d2;
+	overflow: visible;
+	width: 952px;
+	height: 452px;
+	outline: 1px solid #7d110c;
+}
+
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, div.rotate-header-2{
+	background-image: url('img/rotate/80.png');
+	background-repeat: repeat;
+	background: rgba(0,0,0,.8);
+	color: #f8f3d2;
+}
+
+#dnn_BannerPane .iupui-template-wrap .rotator-footer, #dnn_BannerPane .uc-folio-rotator .rotator-footer {
+    position:absolute;
+    bottom: 0px;
+    z-index: 999;
+    width: 952px;
+    height: 30px;
+}
