@@ -1,3 +1,36 @@
+/**
+ * ----------------------------------------------
+ * Order in which the styles have been organized
+ * ----------------------------------------------
+ * 1.  Utility css
+ * 2.  CSS Reset
+ * 3.  Universals
+ * 4.  Typography
+ * 5.  Topbar
+ * 6.  Masthead
+ * 7.  Search Crawler
+ * 8.  Navigation
+ * 9.  Banner
+ * 10. Mainbody
+ * 11. Body Interior
+ * 12. Forms
+ * 13. Tables
+ * 14. Buttons
+ * 15. Gallery & Media
+ * 16. Emergency Alert Message
+ * 17. BRC Schedule
+ * 18. Professional Connection Central
+ * 20. Legacy Initiative
+ * 21. Mindsweep List
+ * 22. JagJobs XML Feed
+ * 23. Notifications
+ * 24. Calendar
+ * 25. FAQ Section
+ * 26. Footer
+ * 27. Responsive Support
+ * 28. Print Support
+ * -------------------------------------------
+ **/
 /** 
  * -------------------------------------------
  * Reset all the default styles
@@ -290,7 +323,7 @@ h5 {
 
 /** 
  * -------------------------------------------
- * Search Crawler
+ * Search Box styles
  * -------------------------------------------
  **/
 div.ModSearchCrawlerInputC {
@@ -333,6 +366,11 @@ a.navigation:hover {
   border: 1px solid #c6c6c6;
 }
 
+/** 
+ * -------------------------------------------
+ * Search Results styles
+ * -------------------------------------------
+ **/
 div.sc_item a.sc_title {
   font: 11pt Arial, Helvetica, sans-serif;
   color: #990000;
@@ -1266,133 +1304,6 @@ div.feature-body {
 }
 
 /** 
- * -------------------------------------------
- * Campus Emergency Alert Message
- * -------------------------------------------
- **/
-.campus_status_messages {
-  color: #858372;
-  font-family: Arial, Georgia, sans-serif;
-  font-size: .8em;
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.campus_status_messages a {
-  color: #858372;
-  text-decoration: underline;
-}
-
-.campus_status_messages a img {
-  border: none;
-}
-
-.campus_status_messages-normal {
-  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
-  background-color: #f8f3d2;
-  margin: 0 auto;
-}
-
-.campus_status_messages-advisory {
-  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
-  background-color: #f8f3d2;
-  margin: 0 auto;
-}
-
-.campus_status_messages-alert {
-  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
-  background-color: #f8f3d2;
-  margin: 0 auto;
-}
-
-.campus_status_messages-emergency {
-  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
-  background-color: #f8f3d2;
-  margin: 0 auto;
-}
-
-.campus_status_messages .large,
-.campus_status_messages .cmpstat_large {
-  min-height: 90px;
-  text-align: left;
-}
-
-.campus_status_messages .cmpstat_custom-large {
-  left: 562px;
-  min-height: 90px;
-  position: relative;
-  top: 0;
-}
-
-.campus_status_messages .cmpstat_custom-large h4 {
-  color: #990000;
-  float: left;
-  font-family: "Trade Gothic LT Std", Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 16pt;
-  height: auto;
-  line-height: 1;
-  padding: 38px 30px 0 0;
-  text-align: left;
-  text-transform: uppercase;
-  width: auto;
-}
-
-.campus_status_messages .large img,
-.campus_status_messages .cmpstat_large img {
-  display: none;
-  float: left;
-}
-
-.campus_status_messages .large.green,
-.campus_status_messages .cmpstat_custom-large.green,
-.campus_status_messages .cmpstat_large.cmpstat_green {
-  background-color: #f8f3d2;
-}
-
-.campus_status_messages .large.yellow,
-.campus_status_messages .cmpstat_custom-large.yellow,
-.campus_status_messages .cmpstat_large.cmpstat_yellow {
-  background-color: #f8f3d2;
-}
-
-.campus_status_messages .cmpstat_custom-large.cmpstat_yellow {
-  color: #858372;
-}
-
-.campus_status_messages .large.yellow a,
-.campus_status_messages .cmpstat_custom-large.yellow a,
-.campus_status_messages .cmpstat_custom-large.cmpstat_yellow a,
-.campus_status_messages .cmpstat_large.cmpstat_yellow a {
-  color: #858372;
-}
-
-.campus_status_messages .large.orange,
-.campus_status_messages .cmpstat_custom-large.orange,
-.campus_status_messages .cmpstat_large.cmpstat_orange {
-  background-color: #f8f3d2;
-}
-
-.campus_status_messages .large.red,
-.campus_status_messages .cmpstat_custom-large.red,
-.campus_status_messages .cmpstat_large.cmpstat_red {
-  background-color: #f8f3d2;
-}
-
-.campus_status_messages .large p,
-.campus_status_messages .cmpstat_custom-large p,
-.campus_status_messages .cmpstat_large p {
-  float: left;
-  font-size: 10pt;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0;
-  padding: 29px 0 0 0;
-  text-align: left;
-}
-
-/** 
  * ---------------------------------------------------
  * Barbara D. Jackson OFYSA Award 2012 Nomination Form
  * ---------------------------------------------------
@@ -2109,6 +2020,133 @@ div.nivoSlider {
 .nivoSlider a {
   float: left;
   padding: 0 10px 20px 10px;
+}
+
+/** 
+ * -------------------------------------------
+ * Campus Emergency Alert Message
+ * -------------------------------------------
+ **/
+.campus_status_messages {
+  color: #858372;
+  font-family: Arial, Georgia, sans-serif;
+  font-size: .8em;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.campus_status_messages a {
+  color: #858372;
+  text-decoration: underline;
+}
+
+.campus_status_messages a img {
+  border: none;
+}
+
+.campus_status_messages-normal {
+  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+  background-color: #f8f3d2;
+  margin: 0 auto;
+}
+
+.campus_status_messages-advisory {
+  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+  background-color: #f8f3d2;
+  margin: 0 auto;
+}
+
+.campus_status_messages-alert {
+  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+  background-color: #f8f3d2;
+  margin: 0 auto;
+}
+
+.campus_status_messages-emergency {
+  background: url(/Portals/_default/Skins/UniversityCollege/img/alert.png) 462px 20px no-repeat;
+  background-color: #f8f3d2;
+  margin: 0 auto;
+}
+
+.campus_status_messages .large,
+.campus_status_messages .cmpstat_large {
+  min-height: 90px;
+  text-align: left;
+}
+
+.campus_status_messages .cmpstat_custom-large {
+  left: 562px;
+  min-height: 90px;
+  position: relative;
+  top: 0;
+}
+
+.campus_status_messages .cmpstat_custom-large h4 {
+  color: #990000;
+  float: left;
+  font-family: "Trade Gothic LT Std", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  height: auto;
+  line-height: 1;
+  padding: 38px 30px 0 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.campus_status_messages .large img,
+.campus_status_messages .cmpstat_large img {
+  display: none;
+  float: left;
+}
+
+.campus_status_messages .large.green,
+.campus_status_messages .cmpstat_custom-large.green,
+.campus_status_messages .cmpstat_large.cmpstat_green {
+  background-color: #f8f3d2;
+}
+
+.campus_status_messages .large.yellow,
+.campus_status_messages .cmpstat_custom-large.yellow,
+.campus_status_messages .cmpstat_large.cmpstat_yellow {
+  background-color: #f8f3d2;
+}
+
+.campus_status_messages .cmpstat_custom-large.cmpstat_yellow {
+  color: #858372;
+}
+
+.campus_status_messages .large.yellow a,
+.campus_status_messages .cmpstat_custom-large.yellow a,
+.campus_status_messages .cmpstat_custom-large.cmpstat_yellow a,
+.campus_status_messages .cmpstat_large.cmpstat_yellow a {
+  color: #858372;
+}
+
+.campus_status_messages .large.orange,
+.campus_status_messages .cmpstat_custom-large.orange,
+.campus_status_messages .cmpstat_large.cmpstat_orange {
+  background-color: #f8f3d2;
+}
+
+.campus_status_messages .large.red,
+.campus_status_messages .cmpstat_custom-large.red,
+.campus_status_messages .cmpstat_large.cmpstat_red {
+  background-color: #f8f3d2;
+}
+
+.campus_status_messages .large p,
+.campus_status_messages .cmpstat_custom-large p,
+.campus_status_messages .cmpstat_large p {
+  float: left;
+  font-size: 10pt;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 29px 0 0 0;
+  text-align: left;
 }
 
 /** 
