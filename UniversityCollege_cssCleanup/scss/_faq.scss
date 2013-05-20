@@ -1,0 +1,32 @@
+/** 
+ * -------------------------------------------
+ * FAQ Page styles
+ * -------------------------------------------
+ **/
+.faq-question {
+	width: 100%;
+	background-color: #E0E0E0;
+	font-weight: bold;
+	padding: 5px 0 5px 5px;
+	color: #444;
+	&:hover{
+		text-decoration: underline;
+	}
+	div p{
+		display: inline;
+	}
+}
+
+.faq-answer {
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 5px;
+	strong{
+		font-weight: bold;
+	}
+}
+
+// User defined style (undefined on page)
+span#dnn_ctr14234_dnnTITLE_lblTitle {
+	font: 9pt Arial, Helvetica, sans-serif;
+}

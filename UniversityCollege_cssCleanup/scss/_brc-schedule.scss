@@ -1,0 +1,72 @@
+/** 
+ * -------------------------------------------
+ * BRC Schedule
+ * -------------------------------------------
+ **/
+table#brcSched {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+#brcSched th {
+	color: #444;
+}
+#brcSched td:first-child {
+    border-right: 1px solid #000;
+    text-align: right;
+}
+#brcSched td {
+    border-top: 1px solid #000;
+    font-size: 9pt;
+}
+.monday {
+    border-right: 1px solid #000 !important;
+}
+.tuesday {
+    border-right: 1px solid #000 !important;
+}
+.wednesday {
+    border-right: 1px solid #000 !important;
+}
+.thursday {
+    border-right: 1px solid #000 !important;
+}
+.n217 {
+    background-color: #7D110C;
+    border: none;
+    color: #fff;
+}
+.k341 {
+    background-color: #F8F3D2;
+    border: none;
+}
+.k101 {
+    background-color: #B0B2B4;
+    border: none;
+}
+.k103 {
+    background-color: #AF906A;
+    border: none;
+}
+.k324 {
+    background-color: #2D637F;
+    border: none;
+    color: #fff;
+}
+.k322 {
+    background-color: #6D6E70;
+    border: none;
+    color: #fff;
+}
+.n261 {
+    background-color: #808A53;
+    border: none;
+    color: #fff;
+}
+.n214 {
+    background-color: #6F679D;
+    border: none;
+    color: #fff;
+}

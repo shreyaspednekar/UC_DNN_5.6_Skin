@@ -1,0 +1,11 @@
+/** 
+ * -------------------------------------------
+ * Print Styles
+ * -------------------------------------------
+ **/
+@media print {
+	.footer{display:none;}
+	.masthead-interior{background-color:#FFF !important;}
+	.masthead{background-color:#FFF !important;filter:none}
+	
+}

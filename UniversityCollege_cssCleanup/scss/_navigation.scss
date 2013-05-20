@@ -37,11 +37,25 @@
 
 #navigation, #user{
 	li a{
+		cursor:pointer;
 		&:link, &:visited{
 			color: #f8f3d2;
 			text-decoration: none;			
 		}
 	}
+}
+
+#user{
+	font: 10pt Arial, Helvetica, sans-serif;
+	margin: 13px 0 0;
+	color: #f8f3d2;
+	display: inline-block;
+	float: right;
+	margin-bottom: 10px;
+}
+
+#user a:hover{
+	text-decoration: underline;
 }
 	
 #navigation .RadMenu_Default .rmRootGroup, #navigation .RadMenu_Default a.rmLink, #navigation .RadMenu_Default .rmGroup .rmText, #navigation .RadMenu_Default .rmVertical .rmText, #navigation .RadMenu_Default .rmLeftArrow, #navigation .RadMenu_Default .rmRightArrow, #navigation .RadMenu_Default .rmTopArrow, #navigation .RadMenu_Default .rmBottomArrow {
@@ -117,4 +131,62 @@
 
 .nav .rmSlide{
 	width: 200px;
+}
+
+/** 
+ * -------------------------------------------
+ * Quicklinks styles
+ * -------------------------------------------
+ **/
+#dnn_QuicklinksPane{
+	height: 25px;
+	text-align: center;
+}
+
+#quicklinks{
+	font: 8pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #f8f3d2;
+	text-align: center;
+	padding: 12px 0;
+	margin: 0 auto;
+	.quicklinks{
+		display: inline;
+		float: left;
+		ul li{
+			display: inline;
+			padding: 0 0 0 12px;
+			&:first-child, &.first{
+				padding: 0;
+			}
+			a{
+				&:link, &:visited, &:active{
+					color: #f8f3d2;
+					text-decoration: none;
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		span{
+			font-weight: bold;
+			text-transform: uppercase;
+			display: inline;
+			float: left;
+		}
+	}
+}
+
+#quicklinks-int{
+	margin: 0 0 10px;
+	background: url('img/quick-links.png') 0 0 no-repeat;
+	padding: 25px 0 0;
+	&.first{
+		padding: 0 0 6px;	
+	}
+	li{
+		padding: 2px 0 0;
+		font-size: 8pt;
+		list-style: none;
+	}
 }

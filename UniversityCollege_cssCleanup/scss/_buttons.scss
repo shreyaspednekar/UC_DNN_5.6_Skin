@@ -1,0 +1,52 @@
+/** 
+ * -------------------------------------------
+ * Call to the action button
+ * (Used on various sites)
+ * -------------------------------------------
+ **/
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/Chunkfive-webfont.eot');
+    src: url('fonts/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Chunkfive-webfont.woff') format('woff'),
+         url('fonts/Chunkfive-webfont.ttf') format('truetype'),
+         url('fonts/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+div.cta{
+	float: left;
+	clear: both;
+	margin: 5px 0;
+	width: 100%;
+	padding: 10px 0;
+}
+div.cta:hover{
+	opacity: .9;
+}
+a.cta{
+	font-family: ChunkFive, "Arial Black";
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 11pt;
+	height: 40px;
+	background: url('img/cta-bg.png');
+	line-height: 42px;
+	float: left;
+}
+span.cta{
+	width: 12px;
+	height: 40px;
+	float: left;
+}
+span.cta-before{
+	background: url('img/cta-bg-left.png');
+}
+span.cta-after{
+	background: url('img/cta-bg-right.png');
+}
+a.cta:link, a.cta:visited{
+	color: #f8f3d2;
+	text-shadow: #4b1210 0 1px;
+}

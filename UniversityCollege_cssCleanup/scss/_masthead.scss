@@ -22,9 +22,12 @@
 .masthead .container{
 	background: url('img/jag_logo_main.png') no-repeat 705px 0;
 }
-	
-.masthead-interior .ght{
-	width: 169px;
+
+.masthead-interior{
+	padding: 0 0 20px;
+	.ght{
+		width: 169px;	
+	}
 }
 
 #ucol-home{
