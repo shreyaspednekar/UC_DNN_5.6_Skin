@@ -1,0 +1,69 @@
+/** 
+ * -------------------------------------------
+ * Header CSS
+ * -------------------------------------------
+ **/
+#ucol-home{
+	display: block;
+	padding: 10px 0 0;
+	height: 17px;
+	width: 129px;
+	background: url('img/ucol_home.png') no-repeat 0 10px;
+}
+	
+#logo{
+	margin: 15px 0 35px;
+}
+
+#user{
+	width:300px;
+	margin: 0;
+	float: right;
+	display: inline-block;
+	font: 10pt Arial, Helvetica, sans-serif;
+	color: #f8f3d2;
+	p{
+		text-align: right;
+	}
+	a{
+		color: #f8f3d2;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+#search-container{
+	.ModSearchCrawlerInputC{
+		width:300px;
+		clear:both;
+	}
+	input[type="text"]{
+		width: 142px;
+		height: 25px;
+		padding: 0 3px;
+		display:inline-block;
+		border:none;
+		background: #f8f3d2;
+		border-radius: 0;
+		font: 8pt Arial, Helvetica, sans-serif;
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		&:focus{
+			outline:none;
+		}
+	}
+	input[type="submit"]{
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		border: 0;
+		background: url('img/search_btn.gif') 0 -1px;
+		border-radius: 0;
+		text-indent: -9999px;
+		clear: both;
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+	}
+}

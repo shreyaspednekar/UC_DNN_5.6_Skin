@@ -12,7 +12,7 @@
 	}
 	.RadMenu_Default{
 		a.rmlink{
-			font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+			font: 15px bold "Trebuchet MS", Arial, Helvetica, sans-serif;
 		}
 		.rmRootGroup{
 			border: none;
@@ -109,6 +109,7 @@
 	margin-top: -46px;
 	padding-top: 0;
 }
+
 #navigation li.rmItem div.rmSlide ul.rmGroup li.rmItem div.rmSlide ul.rmLevel3 {
 	border: 1px solid #7d110c;
 	margin-left: 25px;

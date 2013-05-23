@@ -368,7 +368,7 @@ a.navigation:hover {
 
 /** 
  * -------------------------------------------
- * Search Results styles
+ * Search Results
  * -------------------------------------------
  **/
 div.sc_item a.sc_title {
@@ -428,7 +428,7 @@ div.sc_navigation {
   float: none;
 }
 #navigation .RadMenu_Default a.rmlink {
-  font: bold 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font: 15px bold "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 #navigation .RadMenu_Default .rmRootGroup {
   border: none;
@@ -1491,6 +1491,23 @@ ul.roster {
   padding-left: 0px;
   width: 550px;
 }
+ul.roster li {
+  padding: 0;
+  width: 275px;
+  height: 120px;
+  float: left;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+ul.roster li img {
+  width: 75px;
+  height: 75px;
+  display: inline;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
 
 .rosterInformation {
   display: inline;
@@ -1511,25 +1528,6 @@ p.title {
   font: 10px;
   margin: 0;
   padding: 0;
-}
-
-ul.roster li {
-  padding: 0;
-  width: 275px;
-  height: 120px;
-  float: left;
-  margin: 0px;
-  padding: 0;
-  list-style: none;
-}
-
-ul.roster li img {
-  width: 75px;
-  height: 75px;
-  display: inline;
-  float: left;
-  margin: 0px;
-  padding: 0px;
 }
 
 /** 
@@ -2622,13 +2620,13 @@ td.evtWeekendDay {
 td.evtDay a {
   text-decoration: underline;
   padding: 0;
-  font-weight: regular;
+  font-weight: normal;
   font-size: 9pt;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 td.evtDay a:hover {
-  font: regular 9pt Arial, Helvetica, sans-serif;
+  font: normal 9pt Arial, Helvetica, sans-serif;
 }
 
 td.evtSelDay {

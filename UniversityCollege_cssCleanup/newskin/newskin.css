@@ -1,0 +1,919 @@
+/** 
+ * -------------------------------------------
+ * Normalize CSS
+ * -------------------------------------------
+ **/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** 
+ * -------------------------------------------
+ * Base CSS
+ * -------------------------------------------
+ **/
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font: 13px Arial, Helvetica, sans-serif;
+  color: #444444;
+  background: #121212;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+a:link, a:visited, a:active {
+  color: #7d110c;
+}
+a:hover {
+  color: #990000;
+}
+
+::-webkit-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::-moz-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::-o-selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+::selection {
+  color: #7d110c;
+  background: #f8f3d2;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  width: 175px;
+}
+
+.hide-element {
+  display: none;
+}
+
+.container {
+  width: 960px;
+  padding: 0 40px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.container:before, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.container:after {
+  clear: both;
+}
+
+/** 
+ * -------------------------------------------
+ * Typography CSS
+ * -------------------------------------------
+ **/
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 9pt;
+  padding: 0 0 6px 0;
+}
+
+h2 {
+  font-size: 18pt;
+  margin: 2px 0 7px;
+}
+
+h2, h2 .primHead {
+  font-style: italic;
+  color: #990000;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 13pt;
+  margin: 20px 0px 10px;
+}
+
+h3, h3 .secHead {
+  font-style: italic;
+  color: #990000;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 12pt;
+  margin: 25px 0 10px;
+}
+
+h5 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 10pt;
+  margin: 10px 0 10px;
+}
+
+.h11, .h13, .h15 {
+  font-family: Georgia, "Times New Roman", serif;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.h12, .h14 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.h11 {
+  font-weight: none;
+  font-size: 28px;
+}
+
+.h12 {
+  font-size: 18px;
+}
+
+.h13 {
+  font-size: 16px;
+  color: #900;
+}
+
+.h14 {
+  font-size: 12px;
+  color: #333;
+}
+
+.h15 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+/** 
+ * -------------------------------------------
+ * Topbar CSS
+ * -------------------------------------------
+ **/
+.topbar {
+  background: #121212;
+  border-bottom: 2px solid #b0b2b4;
+  width: 100%;
+  min-width: 1200px;
+}
+.topbar .container a {
+  width: 410px;
+  height: 45px;
+  display: block;
+  background: url("img/iupui_wordmark.png") no-repeat 0 14px;
+}
+
+/** 
+ * -------------------------------------------
+ * Masthead CSS
+ * -------------------------------------------
+ **/
+.all {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.masthead {
+  width: 100%;
+  min-width: 1200px;
+  background: #990000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+  background: -moz-linear-gradient(top, #990000, #7d110c);
+}
+.masthead .container {
+  background: url("img/jag_logo_main.png") no-repeat 705px 0;
+}
+
+.masthead-interior {
+  padding: 0 0 20px;
+}
+
+/** 
+ * -------------------------------------------
+ * Header CSS
+ * -------------------------------------------
+ **/
+#ucol-home {
+  display: block;
+  padding: 10px 0 0;
+  height: 17px;
+  width: 129px;
+  background: url("img/ucol_home.png") no-repeat 0 10px;
+}
+
+#logo {
+  margin: 15px 0 35px;
+}
+
+#user {
+  width: 300px;
+  margin: 0;
+  float: right;
+  display: inline-block;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #f8f3d2;
+}
+#user p {
+  text-align: right;
+}
+#user a {
+  color: #f8f3d2;
+  text-decoration: none;
+}
+#user a:hover {
+  text-decoration: underline;
+}
+
+#search-container .ModSearchCrawlerInputC {
+  width: 300px;
+  clear: both;
+}
+#search-container input[type="text"] {
+  width: 142px;
+  height: 25px;
+  padding: 0 3px;
+  display: inline-block;
+  border: none;
+  background: #f8f3d2;
+  border-radius: 0;
+  font: 8pt Arial, Helvetica, sans-serif;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+#search-container input[type="text"]:focus {
+  outline: none;
+}
+#search-container input[type="submit"] {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  border: 0;
+  background: url("img/search_btn.gif") 0 -1px;
+  border-radius: 0;
+  text-indent: -9999px;
+  clear: both;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+/** 
+ * -------------------------------------------
+ * Navigation CSS
+ * -------------------------------------------
+ **/
+#navigation {
+  height: 40px;
+  clear: both;
+}
+#navigation .RadMenu {
+  float: none;
+}
+#navigation .RadMenu_Default ul {
+  zoom: 1;
+}
+#navigation .RadMenu_Default ul:before, #navigation .RadMenu_Default ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#navigation .RadMenu_Default ul:after {
+  clear: both;
+}
+#navigation .RadMenu_Default .rmlink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+#navigation .RadMenu_Default .rmRootGroup {
+  border: none;
+  background: transparent;
+}
+#navigation span.rmText {
+  margin: 0;
+  padding: 0;
+}
+#navigation span.rmText:hover {
+  border-bottom: 2px solid #f8f3d2;
+}
+#navigation li a {
+  margin: 0 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+}
+#navigation li a:link, #navigation li a:visited {
+  color: #f8f3d2;
+  text-decoration: none;
+}
+#navigation li .rmItem span.rmExpandRight {
+  position: relative;
+  left: 0px;
+  background: url("img/dropdown-right.png") no-repeat 180px 2px;
+}
+#navigation li .rmFirst, #navigation li.rmFirst a {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#navigation .RadMenu_default .rmRootGroup, #navigation .RadMenu_default .rmLink,
+#navigation .RadMenu_default .rmGroup .rmText, #navigation .RadMenu_default .rmVertical .rmText,
+#navigation .RadMenu_default .rmLeftArrow, #navigation .RadMenu_default .rmRightArrow, #navigation .RadMenu_default .rmTopArrow, #navigation .RadMenu_default .rmBottomArrow {
+  background-image: none;
+  background: transparent;
+}
+#navigation .rmSlide {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+#navigation ul.rmGroup {
+  background: #f8f3d2;
+  padding: 5px 20px;
+  margin: 10px 0 0;
+  border: 1px solid #7d110c;
+  border-top: none;
+}
+#navigation ul.rmGroup .rmItem {
+  padding: 0;
+}
+#navigation ul.rmGroup span.rmText:hover {
+  border: none;
+  color: #7d110c;
+}
+#navigation .rmItem ul.rmLevel2, #navigation .rmItem ul.rmLevel3 {
+  border: 1px solid #7d110c;
+  margin-left: 25px;
+  margin-top: -46px;
+  padding-top: 5px;
+}
+#navigation .rmItem a {
+  white-space: pre-line;
+}
+
+#navigation ul.rmGroup li a {
+  width: 190px;
+  margin: 0;
+  padding: 10px 0;
+  display: block;
+  font-size: 9pt;
+  color: #858372;
+  text-shadow: 0px 1px 0px #ffffff;
+  border-bottom: 1px solid #adaa93;
+  border-top: 1px solid #fcf9e9;
+}
+#navigation ul.rmGroup li.rmFirst > a {
+  border-top: none !important;
+}
+#navigation ul.rmGroup li.rmLast > a {
+  border-bottom: none !important;
+}
+
+/** 
+ * -------------------------------------------
+ * Home Page Slideshow CSS
+ * -------------------------------------------
+ **/
+.iupui-template-wrap {
+  border: 4px #fff solid;
+}
+.iupui-template-wrap .desc {
+  width: 450px;
+  background: #990000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+  background: -moz-linear-gradient(top, #990000, #7d110c);
+}
+.iupui-template-wrap .desc > div {
+  padding: 20px;
+}
+.iupui-template-wrap .desc h1 {
+  line-height: 16pt;
+  margin: 0 0 10px 0;
+  color: #f8f3d2;
+  font-weight: 500;
+  font-size: 16pt;
+  display: block;
+  text-transform: none;
+  background: none;
+  width: 100%;
+  height: auto;
+}
+.iupui-template-wrap .desc p {
+  margin: 0;
+  color: #f8f3d2;
+  line-height: 1.5;
+}
+.iupui-template-wrap .desc ul {
+  color: #f8f3d2;
+  padding-left: 15px;
+}
+.iupui-template-wrap .desc a {
+  color: #f8f3d2;
+  text-decoration: underline;
+}
+
+/** 
+ * -------------------------------------------
+ * Homepage Quicklinks CSS
+ * -------------------------------------------
+ **/
+#quicklinks {
+  clear: both;
+}
+#quicklinks .quicklinks-title {
+  margin: 14px auto 0;
+  padding: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: Arial,Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 8pt;
+  color: #f8f3d2;
+}
+#quicklinks .quicklinks {
+  display: inline-block;
+  clear: both;
+}
+#quicklinks .quicklinks ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#quicklinks .quicklinks li {
+  display: inline-block;
+}
+#quicklinks .quicklinks a {
+  padding: 0 6px;
+  text-decoration: none;
+  font-size: 8.5pt;
+  color: #f8f3d2;
+}
+#quicklinks .quicklinks a:hover {
+  text-decoration: underline;
+}
+
+/** 
+ * -------------------------------------------
+ * Homepage Content CSS
+ * -------------------------------------------
+ **/
+.main-body {
+  background: #f2f2f2 url("img/content_bg.jpg");
+}
+.main-body .container {
+  background: url("img/content_bg_top.jpg") no-repeat 0 0;
+}
+
+#dnn_FirstPane, #dnn_SecondPane, #dnn_ThirdPane {
+  margin-top: 25px;
+  float: left;
+}
+#dnn_FirstPane h2, #dnn_SecondPane h2, #dnn_ThirdPane h2 {
+  padding-bottom: 0;
+}
+#dnn_FirstPane ol, #dnn_FirstPane ul, #dnn_SecondPane ol, #dnn_SecondPane ul, #dnn_ThirdPane ol, #dnn_ThirdPane ul {
+  font-size: 10pt;
+  line-height: 16px;
+  list-style-position: outside;
+  padding: 0 0 15px 15px;
+}
+
+#dnn_FirstPane, #dnn_SecondPane {
+  width: 320px;
+  margin-right: 40px;
+}
+
+#dnn_ThirdPane {
+  width: 240px;
+  margin: 18px 0 20px 0;
+}
+
+.ucol-news {
+  padding: 15px 0;
+  border-top: 1px solid #c6c6c6;
+}
+.ucol-news h4 {
+  font-size: #666;
+  font-size: 10pt;
+}
+.ucol-news a {
+  font-size: 9pt;
+}
+.ucol-news:first-child {
+  border-top: none;
+}
+.ucol-news .articleImage {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+.ucol-news .articleLatestSummary {
+  display: inline-block;
+  width: 75%;
+}
+.ucol-news .articleLatestSummary a {
+  float: left;
+  display: block;
+  padding-top: 10px;
+}
+
+.career-cal {
+  padding: 10px 0;
+}
+.career-cal acronym {
+  width: 45px;
+  height: 45px;
+  margin: 0 15px 0 0;
+  position: relative;
+  display: inline-block;
+  border: none;
+  background: url("img/event_date.png") no-repeat;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 10pt;
+  text-align: center;
+  color: #f8f3d2;
+  top: -30px;
+}
+.career-cal acronym span.calPubMonth {
+  display: block;
+  padding: 5px 0 0;
+  background-color: transparent;
+}
+.career-cal acronym span.calPubDate {
+  font-size: 14pt;
+  line-height: 80%;
+}
+.career-cal .title-desc {
+  width: 75%;
+  display: inline-block;
+}
+.career-cal span.ListTitle {
+  margin-bottom: 1px;
+  padding-bottom: 10px;
+  font-family: Georgia, "Times New Roman" serif;
+  font-size: 10pt;
+  float: left;
+  text-transform: uppercase;
+}
+
+.cal-view-more {
+  margin: 20px 0;
+  display: block;
+}
+
+/** 
+ * -------------------------------------------
+ * Footer CSS
+ * -------------------------------------------
+ **/
+.footer {
+  width: 100%;
+  border-top: 3px solid #7d110c;
+  background: #121212;
+  text-shadow: 0px 1px 0px #000000;
+  color: #858372;
+  zoom: 1;
+}
+.footer:before, .footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.footer:after {
+  clear: both;
+}
+
+#sub-navigation {
+  height: 20px;
+  margin: 20px 0 15px 0;
+}
+#sub-navigation .RadMenu {
+  float: none;
+}
+#sub-navigation .RadMenu .rmLink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+#sub-navigation .rmText {
+  margin: 0;
+  padding: 0;
+  color: #858372;
+}
+#sub-navigation .rmText:hover {
+  border-bottom: 1px solid #858372;
+}
+#sub-navigation .rmItem {
+  padding: 0;
+}
+#sub-navigation li {
+  float: left;
+}
+#sub-navigation li a {
+  margin: 0;
+  padding: 0 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-left: 1px solid #2a2a2a;
+}
+#sub-navigation li a:link, #sub-navigation li a:visited, #sub-navigation li a:active {
+  color: #858372;
+  text-decoration: none;
+}
+#sub-navigation li a:hover {
+  text-decoration: underline;
+}
+#sub-navigation li:first-child a {
+  padding-left: 0;
+  border-left: 0;
+}
+
+#left-footer {
+  float: left;
+  zoom: 1;
+}
+#left-footer:before, #left-footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#left-footer:after {
+  clear: both;
+}
+#left-footer ul.footer-links {
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-size: 8pt;
+}
+#left-footer ul.footer-links li {
+  list-style: none;
+  display: inline;
+}
+#left-footer ul.footer-links li a {
+  padding: 2px;
+  display: inline-block;
+  font-size: 7pt;
+  color: #858372;
+}
+#left-footer ul.footer-links.first {
+  margin-right: 10px;
+}
+#left-footer ul.footer-links.first li:first-child a {
+  padding-left: 0;
+}
+
+.footer-info {
+  width: 180px;
+  float: right;
+  margin: 10px 0;
+  border-left: 1px solid #2a2a2a;
+  padding: 0 0 0 40px;
+  font-size: 8pt;
+}
+.footer-info a {
+  font: 10pt "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.footer-info a:link, .footer-info a:visited, .footer-info a:active {
+  color: #858372;
+  text-decoration: none;
+}
+.footer-info a:hover {
+  text-decoration: underline;
+}

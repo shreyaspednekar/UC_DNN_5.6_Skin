@@ -45,7 +45,7 @@ a.navigation:hover {
 
 /** 
  * -------------------------------------------
- * Search Results styles
+ * Search Results
  * -------------------------------------------
  **/
 div.sc_item a.sc_title {
@@ -71,11 +71,9 @@ span.sc_path {
 	color: #B0B2B4	;
 }
 div.sc_sample:last-child {
-	display: none;
+	@include hide;
 }
 
 div.sc_navigation {
 	padding: 10px 0 0 0;
 }
-
-

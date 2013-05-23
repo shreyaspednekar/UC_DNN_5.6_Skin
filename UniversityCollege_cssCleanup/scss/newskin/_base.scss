@@ -1,0 +1,51 @@
+/** 
+ * -------------------------------------------
+ * Base CSS
+ * -------------------------------------------
+ **/
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #444444;
+	background: #121212;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+strong{ font-weight: bold;}
+em{font-style:italic;}
+
+a{
+	&:link, &:visited, &:active{
+		color: #7d110c;
+	}
+	
+	&:hover{
+		color: #990000;
+	}
+}
+
+@include selection(#7d110c, #f8f3d2);
+
+.left{
+	@include left;
+}
+	
+.right{
+	@include right;
+}
+
+.hide-element{
+	@include hide;
+}
+
+.container{
+	width: 960px;
+	padding: 0 40px;
+	margin: 0 auto;
+	@include clearfix;
+}

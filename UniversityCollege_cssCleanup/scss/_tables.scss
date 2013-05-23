@@ -87,6 +87,23 @@ ul.roster{
 	padding:0; 
 	padding-left:0px; 
 	width:550px;
+	li {
+		padding:0;
+		width:275px;
+		height:120px;
+		float:left;
+		margin:0px;
+		padding:0;
+		list-style:none;
+		img{
+			width:75px;
+			height:75px;
+			display:inline;
+			float:left;
+			margin:0px;
+			padding:0px;	
+		}
+	}
 }
 
 .rosterInformation {
@@ -110,24 +127,6 @@ p.title {
 	padding:0;
 }
 
-ul.roster li {
-	padding:0;
-	width:275px;
-	height:120px;
-	float:left;
-	margin:0px;
-	padding:0;
-	list-style:none;
-}
-
-ul.roster li img {
-	width:75px;
-	height:75px;
-	display:inline;
-	float:left;
-	margin:0px;
-	padding:0px;
-}
 
 /** 
  * -------------------------------------------
