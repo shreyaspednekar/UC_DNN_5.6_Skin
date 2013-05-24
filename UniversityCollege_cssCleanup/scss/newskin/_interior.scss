@@ -1,0 +1,87 @@
+/** 
+ * -------------------------------------------
+ * Interior page styles
+ * -------------------------------------------
+ **/
+
+.interior-head, .interior-container{
+	width: 960px;
+	margin: 0 auto;
+	.interior-content{
+		width: 920px;
+		margin: 0 auto;
+		overflow: visible;
+	}
+}
+
+.interior-head{
+	height: 79px;
+	background: url('img/int-content-top.jpg') repeat-x -6px 0px;
+	.interior-header{
+		padding-top:20px;
+	}
+}
+
+.interior-container{
+	background: url('img/content_bg.jpg');
+	@include clearfix;
+}
+
+.interior-body-type,
+.interior-body-type-no-banner,
+.interior-body-type-full-width,
+.interior-body-type-wide{
+	float:left;
+	.Normal{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:13px;
+		color: #444444;
+	}
+	p{
+		margin: 0 0 10px;
+		font-size:13px;
+	}
+	ul,ol{
+		margin: 10px 0;
+		padding-left: 15px;
+	}
+}
+
+
+.interior-body-type,
+.interior-body-type-no-banner,{
+	width: 550px;
+}
+
+.interior-body-type{
+	line-height:1.5;
+}
+
+.interior-body-type-full-width,
+.interior-body-type-wide {
+	width: 735px;
+}
+
+#interior-body{
+	margin:0 0 20px;
+	float:right;
+	@include clearfix;
+	.caption{
+		width:160px;
+		margin-top:10px;
+		float:right;
+	}
+}
+
+#side-navigation{
+	float: left;
+	.RadPanelBar{
+		width:165px;
+	}
+	a:link, a:visited, a:active{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+}

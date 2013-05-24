@@ -445,6 +445,7 @@ h5 {
 }
 #user p {
   text-align: right;
+  margin-bottom: 20px;
 }
 #user a {
   color: #f8f3d2;
@@ -794,6 +795,122 @@ h5 {
 .cal-view-more {
   margin: 20px 0;
   display: block;
+}
+
+/** 
+ * -------------------------------------------
+ * Interior page styles
+ * -------------------------------------------
+ **/
+.interior-head, .interior-container {
+  width: 960px;
+  margin: 0 auto;
+}
+.interior-head .interior-content, .interior-container .interior-content {
+  width: 920px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.interior-head {
+  height: 79px;
+  background: url("img/int-content-top.jpg") repeat-x -6px 0px;
+}
+.interior-head .interior-header {
+  padding-top: 20px;
+}
+
+.interior-container {
+  background: url("img/content_bg.jpg");
+  zoom: 1;
+}
+.interior-container:before, .interior-container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.interior-container:after {
+  clear: both;
+}
+
+.interior-body-type,
+.interior-body-type-no-banner,
+.interior-body-type-full-width,
+.interior-body-type-wide {
+  float: left;
+}
+.interior-body-type .Normal,
+.interior-body-type-no-banner .Normal,
+.interior-body-type-full-width .Normal,
+.interior-body-type-wide .Normal {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #444444;
+}
+.interior-body-type p,
+.interior-body-type-no-banner p,
+.interior-body-type-full-width p,
+.interior-body-type-wide p {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+.interior-body-type ul, .interior-body-type ol,
+.interior-body-type-no-banner ul,
+.interior-body-type-no-banner ol,
+.interior-body-type-full-width ul,
+.interior-body-type-full-width ol,
+.interior-body-type-wide ul,
+.interior-body-type-wide ol {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+.interior-body-type,
+.interior-body-type-no-banner {
+  width: 550px;
+}
+
+.interior-body-type {
+  line-height: 1.5;
+}
+
+.interior-body-type-full-width,
+.interior-body-type-wide {
+  width: 735px;
+}
+
+#interior-body {
+  margin: 0 0 20px;
+  float: right;
+  zoom: 1;
+}
+#interior-body:before, #interior-body:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#interior-body:after {
+  clear: both;
+}
+#interior-body .caption {
+  width: 160px;
+  margin-top: 10px;
+  float: right;
+}
+
+#side-navigation {
+  float: left;
+}
+#side-navigation .RadPanelBar {
+  width: 165px;
+}
+#side-navigation a:link, #side-navigation a:visited, #side-navigation a:active {
+  text-decoration: none;
+}
+#side-navigation a:hover {
+  text-decoration: underline;
 }
 
 /** 
