@@ -41,6 +41,9 @@
 		width:auto;
 		clear:both;
 	}
+	input[type="text"],input[type="submit"]{
+		margin: 0;
+	}
 	input[type="text"]{
 		width: 142px;
 		height: 25px;

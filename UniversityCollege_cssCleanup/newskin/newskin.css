@@ -460,6 +460,9 @@ h5 {
   width: auto;
   clear: both;
 }
+#search-container input[type="text"], #search-container input[type="submit"] {
+  margin: 0;
+}
 #search-container input[type="text"] {
   width: 142px;
   height: 25px;
@@ -586,7 +589,7 @@ h5 {
 }
 
 #navigation ul.rmGroup li a {
-  width: 190px;
+  width: 190px !important;
   margin: 0;
   padding: 10px 0;
   display: block;
@@ -989,9 +992,6 @@ h5 {
 }
 .interior-body-type-no-banner h3 {
   margin-top: 5px;
-}
-.interior-body-type-no-banner #genTbl {
-  width: 735px;
 }
 
 .interior-body-type-full-width,
