@@ -5,6 +5,7 @@
  **/
 #ucol-home{
 	display: block;
+	visibility: hidden;
 	padding: 10px 0 0;
 	height: 17px;
 	width: 129px;
@@ -37,7 +38,7 @@
 
 #search-container{
 	.ModSearchCrawlerInputC{
-		width:300px;
+		width:auto;
 		clear:both;
 	}
 	input[type="text"]{

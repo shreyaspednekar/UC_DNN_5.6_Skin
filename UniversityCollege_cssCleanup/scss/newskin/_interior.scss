@@ -20,10 +20,20 @@
 	.interior-header{
 		padding-top:20px;
 	}
+	#interior-bar{
+		width: 100%;
+		height: 2px;
+		margin: 8px 0 0;
+		background: url('img/bar.png') repeat-x 0 0;
+	}
+
 }
 
 .interior-container{
 	background: url('img/content_bg.jpg');
+}
+
+.interior-container > div{
 	@include clearfix;
 }
 
@@ -36,14 +46,37 @@
 		font-family:Arial, Helvetica, sans-serif;
 		font-size:13px;
 		color: #444444;
+		p{
+			text-align: left !important;
+		}
 	}
 	p{
 		margin: 0 0 10px;
 		font-size:13px;
+		font-family:Arial, Helvetica, sans-serif;
 	}
 	ul,ol{
 		margin: 10px 0;
 		padding-left: 15px;
+	}
+	blockquote, q{
+		margin:0;
+	}
+	h1{
+		width: 100%;
+		margin: 20px 0;
+		padding: 5px 0 0;
+		background: none;
+		text-transform: none;
+		font-size: 18pt;
+		color: #444444;
+	}
+	h2{
+		margin: 15px 0 0px;
+		padding-bottom:5px;
+		font-style: normal;
+		font-size: 14pt;
+		color: #444444;
 	}
 }
 
@@ -57,26 +90,102 @@
 	line-height:1.5;
 }
 
+.interior-body-type-no-banner{
+	h2{
+		margin-top:0;
+	}
+	h3{
+		margin-top: 5px;
+	}
+	#genTbl{
+		width:735px;
+	}
+}
+
 .interior-body-type-full-width,
 .interior-body-type-wide {
 	width: 735px;
 }
 
 #interior-body{
+	width:735px;
 	margin:0 0 20px;
 	float:right;
 	@include clearfix;
-	.caption{
+	.caption,.intSecondaryContent,.secondary-content{
 		width:160px;
 		margin-top:10px;
 		float:right;
+		h3{
+			margin-top: 15px;
+			font-size:14px;
+			color:#444;
+		}
+		ul,ol{
+			margin: 0;
+			padding: 0;
+			li{
+				margin: 0;
+				padding: 3px 0;
+				list-style-type: none;
+			}
+		}
+	}
+	.caption{
+		margin-top:20px;
+	}
+	.intSecondaryContent{
+		margin-top: 10px;
 	}
 }
 
 #side-navigation{
 	float: left;
 	.RadPanelBar{
-		width:165px;
+		width:170px;
+		.rpRootGroup{
+			margin-bottom:40px;
+			border:none;
+		}
+		.rpHeaderTemplate, .rpOut{
+			margin: 0;
+			padding:0;
+			border: none;
+		}
+		.rpLink{
+			border:none;
+		}
+		.rpItem{
+			border-top:1px #fff solid;
+			border-bottom:1px #ddd solid;
+		}
+		.rpFirst{
+			border-top:none;
+		}
+		.rpLast{
+			border-bottom:none;
+		}
+		.rpSlide{
+			margin-left: 10px;
+			.rpItem{
+				border-bottom: 1px solid #e2e2e2;
+				&.rpLast{
+					border-bottom:none;
+				}
+				a{
+					margin: 0;
+					padding: 5px 0;
+					color: #555;
+				}
+			}
+		}
+		.rpText{
+			margin: 0;
+			padding: 5px 0;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size:12px;
+			line-height: 1.2;
+		}
 	}
 	a:link, a:visited, a:active{
 		text-decoration: none;
@@ -85,3 +194,83 @@
 		text-decoration: underline;
 	}
 }
+
+/** 
+ * -------------------------------------------
+ * General Table CSS
+ * -------------------------------------------
+ **/
+ #genTbl {
+	margin:10px 0px 30px 0px;
+	width:100%;
+	th{
+		padding-bottom: 6px;
+		border-bottom: 1px solid #d2d2d2;
+		background: #f8f8f8;
+		text-align: left;
+		font-weight: bold;
+		color: #990000;
+	}
+	tr{
+		&:nth-child(odd){
+			background: #d2d2d2;		
+		}
+		&.oddrow{
+			background-color: #d2d2d2;
+		}
+	}
+	td{
+		padding: 5px 10px 5px 10px;
+		text-align: left;
+	}
+}
+
+
+/** 
+ * -------------------------------------------
+ * People Roster CSS
+ * -------------------------------------------
+ **/
+ul.roster{
+	width:550px;
+	margin:0px;
+	padding: 0px;
+	list-style:none;
+	@include clearfix;
+	li {
+		margin:0px;
+		padding:0px;
+		width:275px;
+		height:120px;
+		float:left;
+		list-style:none;
+		img{
+			width:75px;
+			height:75px;
+			margin:0;
+			padding:0;
+			float:left;
+			display:inline;
+		}
+		.rosterInformation {
+			width:160px;
+			margin:0;
+			padding:0 10px;
+			float:left;
+			display:inline;
+		}
+		.name,.title{
+			width:140px;
+			margin: 0;
+			padding: 0;
+		}
+		.name {
+			font-size:14px;
+			font-weight:bold;
+		}
+		.title {
+			font-size:12px;
+		}
+	}
+}
+

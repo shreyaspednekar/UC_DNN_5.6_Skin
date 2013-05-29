@@ -37,3 +37,21 @@
 		}
 	}
 }
+
+#quicklinks-int{
+	margin: 25px 0 10px;
+	background: url('img/quick-links.png') 0 0 no-repeat;
+	ul{
+		margin: 0;
+		padding:25px 0;
+		list-style: none;
+	}
+	&.first{
+		padding: 0 0 6px;	
+	}
+	li{
+		padding: 2px 0 0;
+		font-size: 8pt;
+		list-style: none;
+	}
+}
