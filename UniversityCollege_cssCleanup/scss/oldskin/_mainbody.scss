@@ -1,0 +1,246 @@
+/** 
+ * -------------------------------------------
+ * Site Main styles
+ * -------------------------------------------
+ **/
+.float-clear{
+	@include clearfix;
+}
+
+.main-body{
+	background: #f2f2f2 url('img/content_bg.jpg');
+	& .container{
+		background: url('img/content_bg_top.jpg') no-repeat 0 0;
+		@include clearfix;
+		#ContentPane{
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+#dnn_FirstPane, #dnn_SecondPane, #dnn_ThirdPane{
+	margin-top: 25px;
+	float:left;
+	ol,ul{
+		font-size: 10pt;
+		line-height: 16px;
+		list-style-position: outside;
+		padding: 0 0 15px 15px;
+	}
+}
+	
+#dnn_FirstPane, #dnn_SecondPane{
+	width: 320px;
+	margin-right: 40px;
+}
+	
+#dnn_ThirdPane{
+	width: 240px;
+	margin: 0 0 20px 0;
+}
+
+#dnn_FirstPane p{
+	padding-bottom: 15px;
+	font-size: 10pt;
+}
+
+#dnn_SecondPane{
+	.event{
+		background: url('img/event-border.png') repeat-x 0 0;
+	}
+	.first{
+		background: none;
+	}
+	p,table{
+		font-size: 10pt;
+		padding-bottom: 15px;
+	}
+	.PDP_Gallery_Module{
+		padding: 20px 0;
+		border-bottom: 1px solid #C6C6C6;
+		&:last-child{
+			border: none;
+		}
+	}
+}
+
+#news p{
+	&:first-child{
+		border-top: 0;
+	}
+	&:last-child{
+		border-bottom: 0;	
+	}
+}
+
+.events {
+	height: auto;
+	overflow-x: hidden;
+}
+
+.events-header{
+	padding-bottom: 4px;
+}
+	
+.event_info {
+	width: 255px;
+	margin: 16px 0 16px 0px;
+	float: left;
+}
+
+.event_info:first-child{
+	margin-top: 0;
+}
+
+.calPubSpan {
+	float: left;
+	clear: left;
+	margin-right:20px;
+}
+
+acronym.calPubSpan{
+	background: url('img/event_date.png') no-repeat;
+	width: 45px; height: 45px;
+	text-align: center;
+	color: #f8f3d2;
+	font: italic 9pt/6pt Georgia, "Times New Roman", serif;
+	margin-top: 18px;
+	margin-bottom:18px;
+	border: none;
+	span.calPubMonth{
+		display: block;
+		padding: 8px 0 0;
+		background-color: transparent;
+	}
+}
+
+.calPubDate {
+	font-size: 14pt;
+	line-height: 110%;
+}
+
+.title-desc{overflow:hidden;margin:0 0 18px 65px;}
+.title-desc .ListTitle{margin-top:14px;}
+.cal-view-more {display:block;margin:20px 0;}
+
+.ListTitle {
+	float: left;
+	text-transform: uppercase;
+	padding: 2px 0 0 0;
+	font: normal 10pt Georgia, "Times New Roman", serif;
+	display:block;
+	margin:0 0 8px;
+}
+	
+.ListEventDate, .ListEventDate span , .ListVenue{
+	float: left;
+	clear: left;
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	padding: 0 0 6px 0;
+	color: #555;}
+	
+.ListVenue{
+	padding: 0 0 8px;
+	width:100%;
+}
+	
+.ListContent {
+	float: left;
+	clear: both;
+	font-size: 10pt;
+	display:block;
+	width:100%;
+}
+
+.ListReadMore a{
+	font-size: 12px;
+	text-transform: lowercase;
+	padding-top: 8px;
+}
+	
+.DNN_ANN_viewtypeSelector{
+	display: none;
+}
+	
+#dnn_SecondPane div.ListTitleRow{
+	font: inherit;
+	background: none;}
+
+#dnn_ThirdPane em, #dnn_ThirdPane strong{
+	font-weight: 600;
+	color: #555555;
+}
+	
+#dnn_ThirdPane p{
+	margin: 0;
+}
+	
+#dnn_ThirdPane div.Normal{
+	margin-bottom: 20px;
+}
+	
+#dnn_ThirdPane .secHead{
+	font-size: 13pt;
+}
+	
+#current-feature a:link, #current-feature a:visited, #current-feature a:active{
+	color: #444444;
+}
+	
+#current-feature a:hover{
+	color: #666666;
+}
+	
+div.feature-body{
+	width: 230px;
+}
+	
+#play-video{
+	background: url('img/play_video.png') no-repeat 0 0;
+	display: block;
+	padding: 0 0 5px 20px;
+	float: left;
+}
+	
+#view-all{
+	float: right;
+}
+	
+.ucol-news{
+	border-top: 1px solid #c6c6c6;
+	padding: 15px 0;
+}
+	
+.ucol-news a{
+	font-size:9pt;
+}
+	
+#ucol-news .ucol-news h4{
+	color: #666;
+	font-size: 10pt;
+}
+	
+.ucol-news:first-child{
+	border: none;
+}
+
+.articleSummary {
+	display: inline-block;
+	width: 86%;
+}
+
+.articleLatestSummary {
+	display: inline-block;
+	width: 76%;
+	a{
+		display: block;
+		padding-top: 10px;
+	}
+}
+
+.articleImage {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+}

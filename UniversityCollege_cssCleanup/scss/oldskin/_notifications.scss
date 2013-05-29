@@ -1,0 +1,65 @@
+/** 
+ * -------------------------------------------
+ * Notification styles
+ * -------------------------------------------
+ **/
+.notification{
+	padding: 7px 0 0;
+	display: none;
+
+	.container{
+		margin: 0 auto;
+		width: 960px;
+		div{
+			float:left;
+		}
+	}
+	
+	h3.notification-title{
+		font: italic 11pt/11pt Georgia, "Times New Roman", serif;
+		text-transform: uppercase;
+		color: #f8f3d2;
+		padding-right: 30px;
+		margin-left: 65px;
+		display: none;
+	}
+	
+	p{
+		font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+		color: #f8f3d2;
+		width: 660px;
+		line-height: 1.2em;
+		display: inline;
+		margin: 0 8px 10px 40px;
+		&:first-child{
+			margin-left: 60px;
+		}
+		&:last-child{
+			margin-bottom:0px;
+		}
+	}
+}
+	
+.notification-content{
+	padding: 0 0 7px;
+	a{
+		&:link{
+			font: italic 10pt/15pt Georgia, "Times New Roman", serif;
+			color: #f8f3d2;
+			text-decoration: underline;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+		&:visited{
+			color: #f8f3d2;
+		}
+	}
+}
+	
+#notification-icon{
+	width: 42px; height: 44px;
+	background: url('img/notification.png') -4px 0;
+	position: absolute;
+	margin-top: -13px;
+}
