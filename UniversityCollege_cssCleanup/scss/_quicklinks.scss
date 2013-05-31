@@ -1,0 +1,57 @@
+/** 
+ * -------------------------------------------
+ * Homepage Quicklinks CSS
+ * -------------------------------------------
+ **/
+#quicklinks{
+	clear:both;
+	.quicklinks-title{
+		margin: 14px auto 0;
+		padding: 0;
+		display: inline-block;
+		text-transform: uppercase;
+		font-family:Arial,Helvetica, sans-serif;
+		font-weight: bold;
+		font-size:8pt;
+		color: #f8f3d2;
+	}
+	.quicklinks{
+		display:inline-block;
+		clear:both;
+		ul{
+			margin: 0;
+			padding: 0;
+			display:inline-block;
+		}
+		li{
+			display:inline-block;
+		}
+		a{
+			padding:0 6px;
+			text-decoration: none;
+			font-size:8.5pt;
+			color:#f8f3d2;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+#quicklinks-int{
+	margin: 25px 0 10px;
+	background: url('img/quick-links.png') 0 0 no-repeat;
+	ul{
+		margin: 0;
+		padding:25px 0;
+		list-style: none;
+	}
+	&.first{
+		padding: 0 0 6px;	
+	}
+	li{
+		padding: 2px 0 0;
+		font-size: 8pt;
+		list-style: none;
+	}
+}

@@ -1,0 +1,23 @@
+/** 
+ * -------------------------------------------
+ * Masthead CSS
+ * -------------------------------------------
+ **/
+ .all {
+	width: 100%;
+}
+
+.masthead{
+	width: 100%;
+	background: #990000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+	background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+	background: -moz-linear-gradient(top,  #990000,  #7d110c);
+	.container{
+		background: url('img/jag_logo_main.png') no-repeat 705px 0;
+	}
+}
+
+.masthead-interior{
+	padding: 0 0 20px;
+}
