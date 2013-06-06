@@ -1,0 +1,36 @@
+div.cta{
+	width: 100%;
+	margin: 5px 0;
+	padding: 10px 0;
+	float: left;
+	@include clearfix;
+	&:hover{
+		opacity:0.9;
+	}
+}
+a.cta{
+	font-family: ChunkFive, "Arial Black";
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 11pt;
+	height: 40px;
+	background: url('img/cta-bg.png');
+	line-height: 42px;
+	float: left;
+}
+a.cta:link, a.cta:visited{
+	color: #f8f3d2;
+	text-shadow: #4b1210 0 1px;
+}
+span.cta{
+	width: 12px;
+	height: 40px;
+	float: left;
+}
+span.cta-before{
+	background: url('img/cta-bg-left.png');
+}
+span.cta-after{
+	background: url('img/cta-bg-right.png');
+}
