@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'ChunkFive';
+  src: url("fonts/Chunkfive-webfont.eot");
+  src: url("fonts/Chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Chunkfive-webfont.woff") format("woff"), url("fonts/Chunkfive-webfont.ttf") format("truetype"), url("fonts/Chunkfive-webfont.svg#ChunkFiveRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /** 
  * -------------------------------------------
  * Normalize CSS
@@ -282,6 +290,57 @@ a:hover {
 }
 .container:after {
   clear: both;
+}
+
+div.cta {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 0;
+  float: left;
+  zoom: 1;
+}
+div.cta:before, div.cta:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+div.cta:after {
+  clear: both;
+}
+div.cta:hover {
+  opacity: 0.9;
+}
+
+a.cta {
+  font-family: ChunkFive, "Arial Black";
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11pt;
+  height: 40px;
+  background: url("img/cta-bg.png");
+  line-height: 42px;
+  float: left;
+}
+
+a.cta:link, a.cta:visited {
+  color: #f8f3d2;
+  text-shadow: #4b1210 0 1px;
+}
+
+span.cta {
+  width: 12px;
+  height: 40px;
+  float: left;
+}
+
+span.cta-before {
+  background: url("img/cta-bg-left.png");
+}
+
+span.cta-after {
+  background: url("img/cta-bg-right.png");
 }
 
 /** 
@@ -1029,6 +1088,10 @@ h5 {
   margin: 0;
   padding: 3px 0;
   list-style-type: none;
+}
+#interior-body .caption a, #interior-body .intSecondaryContent a, #interior-body .secondary-content a {
+  padding: 2px 0;
+  display: block;
 }
 #interior-body .caption {
   margin-top: 20px;
