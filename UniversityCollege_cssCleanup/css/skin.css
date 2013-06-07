@@ -847,20 +847,20 @@ h5 {
   display: inline-block;
   clear: both;
 }
-#dnn_QuicklinksPane #quicklinks .quicklinks ul, #dnn_QuicklinksPaneBig #quicklinks .quicklinks ul {
+#dnn_QuicklinksPane #quicklinks ul, #dnn_QuicklinksPaneBig #quicklinks ul {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-#dnn_QuicklinksPane #quicklinks .quicklinks li, #dnn_QuicklinksPaneBig #quicklinks .quicklinks li {
+#dnn_QuicklinksPane #quicklinks li, #dnn_QuicklinksPaneBig #quicklinks li {
   display: inline-block;
 }
-#dnn_QuicklinksPane #quicklinks .quicklinks a, #dnn_QuicklinksPaneBig #quicklinks .quicklinks a {
+#dnn_QuicklinksPane #quicklinks a, #dnn_QuicklinksPaneBig #quicklinks a {
   padding: 0 6px;
   text-decoration: none;
   font-size: 8.5pt;
 }
-#dnn_QuicklinksPane #quicklinks .quicklinks a:hover, #dnn_QuicklinksPaneBig #quicklinks .quicklinks a:hover {
+#dnn_QuicklinksPane #quicklinks a:hover, #dnn_QuicklinksPaneBig #quicklinks a:hover {
   text-decoration: underline;
 }
 

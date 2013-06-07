@@ -19,21 +19,21 @@
 		.quicklinks{
 			display:inline-block;
 			clear:both;
-			ul{
-				margin: 0;
-				padding: 0;
-				display: inline-block;
-			}
-			li{
-				display:inline-block;
-			}
-			a{
-				padding:0 6px;
-				text-decoration: none;
-				font-size:8.5pt;
-				&:hover{
-					text-decoration: underline;
-				}
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+		}
+		li{
+			display:inline-block;
+		}
+		a{
+			padding:0 6px;
+			text-decoration: none;
+			font-size:8.5pt;
+			&:hover{
+				text-decoration: underline;
 			}
 		}
 	}
