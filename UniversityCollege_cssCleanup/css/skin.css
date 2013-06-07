@@ -6,6 +6,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: UbuntuMedIt;
+  src: url("fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.eot");
+  src: url("fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.eot?#iefix") format("embedded-opentype"), url("fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: UbuntuIt;
+  src: url("fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.eot");
+  src: url("fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.ttf");
+}
+
 /** 
  * -------------------------------------------
  * Normalize CSS
@@ -667,82 +679,151 @@ h5 {
  * Home Page Slideshow CSS
  * -------------------------------------------
  **/
-#dnn_BannerPane {
+#dnn_BannerPaneBig, #dnn_BannerPaneSmall {
   width: 960px;
   height: auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
-
-.iupui-template-wrap {
-  width: 952px !important;
-  height: 452px !important;
+#dnn_BannerPaneBig .iupui-template-wrap, #dnn_BannerPaneSmall .iupui-template-wrap {
+  width: 952px;
   border: 4px #fff solid;
   position: relative;
-  overflow: hidden;
 }
-.iupui-template-wrap .info {
-  width: 260px;
-  height: 120px;
-  padding: 20px;
+#dnn_BannerPaneBig .iupui-template-wrap .info, #dnn_BannerPaneSmall .iupui-template-wrap .info {
+  width: 450px;
   position: absolute;
-  top: 80px !important;
-  left: 435px !important;
 }
-.iupui-template-wrap .desc {
+#dnn_BannerPaneBig .iupui-template-wrap .desc, #dnn_BannerPaneSmall .iupui-template-wrap .desc {
   width: 450px;
 }
-.iupui-template-wrap .desc h1 {
-  line-height: 16pt;
-  margin: 0 0 10px 0;
+#dnn_BannerPaneBig .iupui-template-wrap .desc h1, #dnn_BannerPaneBig .iupui-template-wrap .desc h2, #dnn_BannerPaneBig .iupui-template-wrap .desc h3, #dnn_BannerPaneBig .iupui-template-wrap .desc p, #dnn_BannerPaneBig .iupui-template-wrap .desc a, #dnn_BannerPaneSmall .iupui-template-wrap .desc h1, #dnn_BannerPaneSmall .iupui-template-wrap .desc h2, #dnn_BannerPaneSmall .iupui-template-wrap .desc h3, #dnn_BannerPaneSmall .iupui-template-wrap .desc p, #dnn_BannerPaneSmall .iupui-template-wrap .desc a {
   color: #f8f3d2;
-  font-weight: 500;
-  font-size: 16pt;
-  display: block;
-  text-transform: none;
-  background: none;
+}
+
+/** 
+ * -------------------------------------------
+ * Big Banner CSS
+ * -------------------------------------------
+ **/
+#dnn_BannerPaneBig .iupui-template-wrap {
+  height: 452px;
+}
+#dnn_BannerPaneBig .info {
+  top: 80px;
+  left: 435px;
+}
+#dnn_BannerPaneBig .desc h1 {
   width: 100%;
   height: auto;
+  margin: 0 0 10px 0;
+  display: block;
+  background: none;
+  text-transform: none;
+  line-height: 16pt;
+  font-weight: 500;
+  font-size: 16pt;
 }
-.iupui-template-wrap .desc p {
+#dnn_BannerPaneBig .desc p {
   margin: 0;
-  color: #f8f3d2;
   line-height: 1.5;
-}
-.iupui-template-wrap .desc ul {
   color: #f8f3d2;
+}
+#dnn_BannerPaneBig .desc ul {
   padding-left: 15px;
-}
-.iupui-template-wrap .desc a {
   color: #f8f3d2;
-  text-decoration: underline;
 }
-.iupui-template-wrap .rotate-header-1 {
+#dnn_BannerPaneBig .desc a {
+  text-decoration: underline;
+  color: #f8f3d2;
+}
+#dnn_BannerPaneBig .rotate-header-1 {
   padding: 20px;
   background: #990000;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
   background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
   background: -moz-linear-gradient(top, #990000, #7d110c);
 }
-.iupui-template-wrap .rotate-header-2 {
-  margin-top: 5px;
-  padding: 10px 15px 15px 10px;
-  border-left: 5px solid #7d110c;
-  background: rgba(0, 0, 0, 0.75);
+#dnn_BannerPaneBig .rotater-footer {
+  width: 952px;
 }
-.iupui-template-wrap .rotate-header-2 h1 {
+
+/** 
+ * -------------------------------------------
+ * Small Banner CSS
+ * -------------------------------------------
+ **/
+#dnn_BannerPaneSmall {
+  margin-bottom: 10px;
+}
+#dnn_BannerPaneSmall .iupui-template-wrap {
+  height: 220px;
+}
+#dnn_BannerPaneSmall .info {
+  top: -10px;
+  left: 465px;
+}
+#dnn_BannerPaneSmall .desc h1 {
   width: 100%;
   height: auto;
-  margin: 0 0 10px 0;
-  padding-top: 5px;
-  border-bottom: 1px solid;
+  margin: 0 0 20px 0;
+  display: block;
   background: none;
-  text-transform: uppercase;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 13pt;
+  text-transform: none;
+  font-family: UbuntuMedIt;
+  font-weight: bold;
+  font-size: 48pt;
+  line-height: 16pt;
 }
-.iupui-template-wrap .rotator-footer {
-  width: 952px;
+#dnn_BannerPaneSmall .desc h2, #dnn_BannerPaneSmall .desc p {
+  margin: 0;
+}
+#dnn_BannerPaneSmall .desc h2 {
+  padding: 15px 15px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 14pt;
+}
+#dnn_BannerPaneSmall .desc h3 {
+  position: absolute;
+  right: 35px;
+  bottom: -70px;
+  background: url("img/arrow.png/arrow.png") center right no-repeat;
+  font-family: UbuntuIt;
+  font-size: 16pt;
+}
+#dnn_BannerPaneSmall .desc p {
+  padding: 5px 15px 15px;
+  line-height: 1.4;
+}
+#dnn_BannerPaneSmall .rotate-header-2 {
+  padding: 15px;
+}
+#dnn_BannerPaneSmall .rotator-prev {
+  height: 34px;
+  width: 22px;
+  background-image: url("img/navbuttons/left-resting.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 40px;
+  left: -22px;
+  -webkit-box-shadow: -2px 0 5px 0 rgba(36, 36, 36, 0.5);
+}
+#dnn_BannerPaneSmall .rotator-prev:hover {
+  background-image: url("img/navbuttons/left-hover.png");
+}
+#dnn_BannerPaneSmall .rotator-next {
+  height: 34px;
+  width: 20px;
+  background-image: url("img/navbuttons/right-resting.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 40px;
+  right: -20px;
+  -webkit-box-shadow: 2px 0 5px 0 rgba(36, 36, 36, 0.5);
+}
+#dnn_BannerPaneSmall .rotator-next:hover {
+  background-image: url("img/navbuttons/right-hover.png");
 }
 
 /** 
@@ -750,10 +831,10 @@ h5 {
  * Homepage Quicklinks CSS
  * -------------------------------------------
  **/
-#quicklinks {
+#dnn_QuicklinksPane #quicklinks, #dnn_QuicklinksPaneBig #quicklinks {
   clear: both;
 }
-#quicklinks .quicklinks-title {
+#dnn_QuicklinksPane #quicklinks .quicklinks-title, #dnn_QuicklinksPaneBig #quicklinks .quicklinks-title {
   margin: 14px auto 0;
   padding: 0;
   display: inline-block;
@@ -761,30 +842,41 @@ h5 {
   font-family: Arial,Helvetica, sans-serif;
   font-weight: bold;
   font-size: 8pt;
-  color: #f8f3d2;
 }
-#quicklinks .quicklinks {
+#dnn_QuicklinksPane #quicklinks .quicklinks, #dnn_QuicklinksPaneBig #quicklinks .quicklinks {
   display: inline-block;
   clear: both;
 }
-#quicklinks .quicklinks ul {
+#dnn_QuicklinksPane #quicklinks .quicklinks ul, #dnn_QuicklinksPaneBig #quicklinks .quicklinks ul {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-#quicklinks .quicklinks li {
+#dnn_QuicklinksPane #quicklinks .quicklinks li, #dnn_QuicklinksPaneBig #quicklinks .quicklinks li {
   display: inline-block;
 }
-#quicklinks .quicklinks a {
+#dnn_QuicklinksPane #quicklinks .quicklinks a, #dnn_QuicklinksPaneBig #quicklinks .quicklinks a {
   padding: 0 6px;
   text-decoration: none;
   font-size: 8.5pt;
-  color: #f8f3d2;
 }
-#quicklinks .quicklinks a:hover {
+#dnn_QuicklinksPane #quicklinks .quicklinks a:hover, #dnn_QuicklinksPaneBig #quicklinks .quicklinks a:hover {
   text-decoration: underline;
 }
 
+#dnn_QuicklinksPane .quicklinks-title, #dnn_QuicklinksPane .quicklinks a {
+  color: #434343;
+}
+
+#dnn_QuicklinksPaneBig .quicklinks-title, #dnn_QuicklinksPaneBig .quicklinks a {
+  color: #f8f3d2;
+}
+
+/** 
+ * -------------------------------------------
+ * Quicklinks Sidebar CSS
+ * -------------------------------------------
+ **/
 #quicklinks-int {
   margin: 25px 0 10px;
   background: url("img/quick-links.png") 0 0 no-repeat;

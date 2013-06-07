@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/Chunkfive-webfont.eot');
+    src: url('fonts/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Chunkfive-webfont.woff') format('woff'),
+         url('fonts/Chunkfive-webfont.ttf') format('truetype'),
+         url('fonts/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: UbuntuMedIt;
+	src: url('fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.eot');
+    src: url('fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/real/Ubuntu/Ubuntu/Ubuntu-MediumItalic.ttf');
+}
+	
+@font-face {
+	font-family: UbuntuIt;
+	src: url('fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.eot');
+    src: url('fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.ttf');
+}
