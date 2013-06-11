@@ -1,3 +1,8 @@
+/** 
+ * -------------------------------------------
+ * All Webfonts included here (_webfonts.scss)
+ * -------------------------------------------
+ **/
 @font-face {
   font-family: 'ChunkFive';
   src: url("fonts/Chunkfive-webfont.eot");
@@ -676,6 +681,128 @@ h5 {
 
 /** 
  * -------------------------------------------
+ * Footer CSS
+ * -------------------------------------------
+ **/
+.footer {
+  background: #121212;
+  text-shadow: 0px 1px 0px #000000;
+  color: #858372;
+  zoom: 1;
+}
+.footer:before, .footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.footer:after {
+  clear: both;
+}
+
+#sub-navigation {
+  height: 20px;
+  margin: 20px 0 15px 0;
+}
+#sub-navigation .RadMenu {
+  float: none;
+}
+#sub-navigation .RadMenu .rmLink {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+#sub-navigation .rmText {
+  margin: 0;
+  padding: 0;
+  color: #858372;
+}
+#sub-navigation .rmText:hover {
+  border-bottom: 1px solid #858372;
+}
+#sub-navigation .rmItem {
+  padding: 0;
+}
+#sub-navigation li {
+  float: left;
+}
+#sub-navigation li a {
+  margin: 0;
+  padding: 0 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-left: 1px solid #2a2a2a;
+}
+#sub-navigation li a:link, #sub-navigation li a:visited, #sub-navigation li a:active {
+  color: #858372;
+  text-decoration: none;
+}
+#sub-navigation li a:hover {
+  text-decoration: underline;
+}
+#sub-navigation li:first-child a {
+  padding-left: 0;
+  border-left: 0;
+}
+
+#left-footer {
+  float: left;
+  zoom: 1;
+}
+#left-footer:before, #left-footer:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#left-footer:after {
+  clear: both;
+}
+#left-footer ul.footer-links {
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-size: 8pt;
+}
+#left-footer ul.footer-links li {
+  list-style: none;
+  display: inline;
+}
+#left-footer ul.footer-links li a {
+  padding: 2px;
+  display: inline-block;
+  font-size: 7pt;
+  color: #858372;
+}
+#left-footer ul.footer-links.first {
+  margin-right: 10px;
+}
+#left-footer ul.footer-links.first li:first-child a {
+  padding-left: 0;
+}
+
+.footer-info {
+  width: 180px;
+  float: right;
+  margin: 10px 0;
+  border-left: 1px solid #2a2a2a;
+  padding: 0 0 0 40px;
+  font-size: 8pt;
+}
+.footer-info a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 10pt;
+}
+.footer-info a:link, .footer-info a:visited, .footer-info a:active {
+  color: #858372;
+  text-decoration: none;
+}
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/** 
+ * -------------------------------------------
  * Home Page Slideshow CSS
  * -------------------------------------------
  **/
@@ -687,15 +814,12 @@ h5 {
 }
 #dnn_BannerPaneBig .iupui-template-wrap, #dnn_BannerPaneSmall .iupui-template-wrap {
   width: 952px;
-  border: 4px #fff solid;
+  border: 4px #f8f3d2 solid;
   position: relative;
 }
 #dnn_BannerPaneBig .iupui-template-wrap .info, #dnn_BannerPaneSmall .iupui-template-wrap .info {
-  width: 450px;
+  height: auto;
   position: absolute;
-}
-#dnn_BannerPaneBig .iupui-template-wrap .desc, #dnn_BannerPaneSmall .iupui-template-wrap .desc {
-  width: 450px;
 }
 #dnn_BannerPaneBig .iupui-template-wrap .desc h1, #dnn_BannerPaneBig .iupui-template-wrap .desc h2, #dnn_BannerPaneBig .iupui-template-wrap .desc h3, #dnn_BannerPaneBig .iupui-template-wrap .desc p, #dnn_BannerPaneBig .iupui-template-wrap .desc a, #dnn_BannerPaneSmall .iupui-template-wrap .desc h1, #dnn_BannerPaneSmall .iupui-template-wrap .desc h2, #dnn_BannerPaneSmall .iupui-template-wrap .desc h3, #dnn_BannerPaneSmall .iupui-template-wrap .desc p, #dnn_BannerPaneSmall .iupui-template-wrap .desc a {
   color: #f8f3d2;
@@ -710,8 +834,12 @@ h5 {
   height: 452px;
 }
 #dnn_BannerPaneBig .info {
+  width: 450px;
   top: 80px;
   left: 435px;
+}
+#dnn_BannerPaneBig .desc {
+  width: 450px;
 }
 #dnn_BannerPaneBig .desc h1 {
   width: 100%;
@@ -760,8 +888,12 @@ h5 {
   height: 220px;
 }
 #dnn_BannerPaneSmall .info {
+  width: 400px;
   top: -10px;
-  left: 465px;
+  left: 520px;
+}
+#dnn_BannerPaneSmall .desc {
+  width: 400px;
 }
 #dnn_BannerPaneSmall .desc h1 {
   width: 100%;
@@ -777,6 +909,7 @@ h5 {
 }
 #dnn_BannerPaneSmall .desc h2, #dnn_BannerPaneSmall .desc p {
   margin: 0;
+  background: rgba(0, 0, 0, 0.6);
 }
 #dnn_BannerPaneSmall .desc h2 {
   padding: 15px 15px 5px;
@@ -785,15 +918,15 @@ h5 {
   font-size: 14pt;
 }
 #dnn_BannerPaneSmall .desc h3 {
+  margin: 0;
   position: absolute;
   right: 35px;
-  bottom: -70px;
   background: url("img/arrow.png/arrow.png") center right no-repeat;
   font-family: UbuntuIt;
   font-size: 16pt;
 }
 #dnn_BannerPaneSmall .desc p {
-  padding: 5px 15px 15px;
+  padding: 5px 15px 10px;
   line-height: 1.4;
 }
 #dnn_BannerPaneSmall .rotate-header-2 {
@@ -1331,126 +1464,4 @@ ul.roster li .name {
 }
 ul.roster li .title {
   font-size: 12px;
-}
-
-/** 
- * -------------------------------------------
- * Footer CSS
- * -------------------------------------------
- **/
-.footer {
-  background: #121212;
-  text-shadow: 0px 1px 0px #000000;
-  color: #858372;
-  zoom: 1;
-}
-.footer:before, .footer:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.footer:after {
-  clear: both;
-}
-
-#sub-navigation {
-  height: 20px;
-  margin: 20px 0 15px 0;
-}
-#sub-navigation .RadMenu {
-  float: none;
-}
-#sub-navigation .RadMenu .rmLink {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 10pt;
-}
-#sub-navigation .rmText {
-  margin: 0;
-  padding: 0;
-  color: #858372;
-}
-#sub-navigation .rmText:hover {
-  border-bottom: 1px solid #858372;
-}
-#sub-navigation .rmItem {
-  padding: 0;
-}
-#sub-navigation li {
-  float: left;
-}
-#sub-navigation li a {
-  margin: 0;
-  padding: 0 12px;
-  text-decoration: none;
-  cursor: pointer;
-  border-left: 1px solid #2a2a2a;
-}
-#sub-navigation li a:link, #sub-navigation li a:visited, #sub-navigation li a:active {
-  color: #858372;
-  text-decoration: none;
-}
-#sub-navigation li a:hover {
-  text-decoration: underline;
-}
-#sub-navigation li:first-child a {
-  padding-left: 0;
-  border-left: 0;
-}
-
-#left-footer {
-  float: left;
-  zoom: 1;
-}
-#left-footer:before, #left-footer:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-#left-footer:after {
-  clear: both;
-}
-#left-footer ul.footer-links {
-  margin: 0;
-  padding: 0;
-  float: left;
-  font-size: 8pt;
-}
-#left-footer ul.footer-links li {
-  list-style: none;
-  display: inline;
-}
-#left-footer ul.footer-links li a {
-  padding: 2px;
-  display: inline-block;
-  font-size: 7pt;
-  color: #858372;
-}
-#left-footer ul.footer-links.first {
-  margin-right: 10px;
-}
-#left-footer ul.footer-links.first li:first-child a {
-  padding-left: 0;
-}
-
-.footer-info {
-  width: 180px;
-  float: right;
-  margin: 10px 0;
-  border-left: 1px solid #2a2a2a;
-  padding: 0 0 0 40px;
-  font-size: 8pt;
-}
-.footer-info a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 10pt;
-}
-.footer-info a:link, .footer-info a:visited, .footer-info a:active {
-  color: #858372;
-  text-decoration: none;
-}
-.footer-info a:hover {
-  text-decoration: underline;
 }

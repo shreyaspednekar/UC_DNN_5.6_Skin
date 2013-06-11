@@ -10,14 +10,13 @@
  	overflow:visible;
  	.iupui-template-wrap{
  		width:952px;
- 		border:4px #fff solid;
+ 		border:4px #f8f3d2 solid;
  		position:relative;
  		.info{
-			width:450px;
+ 			height:auto;
 			position:absolute;
 		}
 		.desc{
-			width:450px;
 			h1,h2,h3,p,a{
 				color:#f8f3d2;
 			}
@@ -35,10 +34,12 @@
 		height: 452px;
 	}
 	.info{
+		width:450px;
 		top: 80px;
 		left: 435px;
 	}
 	.desc{
+		width:450px;
 		h1{
 			width: 100%;
 			height: auto;
@@ -88,10 +89,12 @@
 		height: 220px;
 	}
 	.info{
+		width:400px;
 		top: -10px;
-		left: 465px;
+		left: 520px;
 	}
 	.desc{
+		width:400px;
 		h1{
 			width: 100%;
 			height: auto;
@@ -107,6 +110,7 @@
 		}
 		h2,p{
 			margin: 0;
+			background:rgba(0,0,0,0.6);
 		}
 		h2{
 			padding:15px 15px 5px;
@@ -115,15 +119,15 @@
 			font-size:14pt;
 		}
 		h3{
+			margin: 0;
 			position:absolute;
 			right:35px;
-			bottom: -70px;
 			background: url('img/arrow.png/arrow.png') center right no-repeat;
 			font-family: UbuntuIt;
 			font-size: 16pt;
 		}
 		p{
-			padding:5px 15px 15px;
+			padding:5px 15px 10px;
 			line-height:1.4;
 		}
 	}
