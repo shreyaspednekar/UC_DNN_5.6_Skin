@@ -4,7 +4,7 @@
  * -------------------------------------------
  **/
 
-#dnn_QuicklinksPane{
+#dnn_QuicklinksPane,#dnn_QuicklinksPaneBig{
 	#quicklinks{
 		clear:both;
 		.quicklinks-title{
@@ -41,6 +41,12 @@
 
 
 #dnn_QuicklinksPane{
+	.quicklinks-title,.quicklinks a{
+		color:#434343;
+	}
+}
+
+#dnn_QuicklinksPaneBig{
 	.quicklinks-title,.quicklinks a{
 		color:#f8f3d2;
 	}	

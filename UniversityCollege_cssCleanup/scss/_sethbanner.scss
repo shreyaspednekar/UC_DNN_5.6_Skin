@@ -1,0 +1,164 @@
+/** 
+ * -------------------------------------------
+ * Home Page Slideshow CSS
+ * -------------------------------------------
+ **/
+#dnn_BannerPaneBig, #dnn_BannerPaneSmall{
+	width:960px;
+ 	height:auto;
+ 	position:relative;
+ 	overflow:visible;
+ 	.iupui-template-wrap{
+ 		width:952px;
+ 		border:4px #f8f3d2 solid;
+ 		position:relative;
+ 		.info{
+ 			height:auto;
+			position:absolute;
+		}
+		.desc{
+			h1,h2,h3,p,a{
+				color:#f8f3d2;
+			}
+		}
+ 	}
+}
+
+/** 
+ * -------------------------------------------
+ * Big Banner CSS
+ * -------------------------------------------
+ **/
+#dnn_BannerPaneBig{
+	.iupui-template-wrap{
+		height: 452px;
+	}
+	.info{
+		width:450px;
+		top: 80px;
+		left: 435px;
+	}
+	.desc{
+		width:450px;
+		h1{
+			width: 100%;
+			height: auto;
+			margin: 0 0 10px 0;
+			display: block;
+			background: none;
+			text-transform: none;
+			line-height: 16pt;
+			font-weight: 500;
+			font-size: 16pt;
+		}
+		p{
+			margin: 0;
+			line-height:1.5;
+			color: #f8f3d2;
+		}
+		ul{
+			padding-left: 15px;
+			color: #f8f3d2;
+		}
+		a{
+			text-decoration: underline;
+			color: #f8f3d2;
+		}
+
+	}
+	.rotate-header-1{
+		padding:20px;
+		background: #990000;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
+		background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
+		background: -moz-linear-gradient(top,  #990000,  #7d110c);
+	}
+	.rotater-footer{
+		width:952px;
+	}
+}
+
+/** 
+ * -------------------------------------------
+ * Small Banner CSS
+ * -------------------------------------------
+ **/
+#dnn_BannerPaneSmall{
+	margin-bottom:10px;
+	.iupui-template-wrap{
+		height: 220px;
+	}
+	.info{
+		width:400px;
+		top: -10px;
+		left: 520px;
+	}
+	.desc{
+		width:400px;
+		h1{
+			width: 100%;
+			height: auto;
+			margin: 0 0 20px 0;
+			display: block;
+			background: none;
+			text-transform: none;
+			font-family: UbuntuMedIt;
+			font-weight: bold;
+			font-size: 48pt;
+			line-height: 16pt;
+			
+		}
+		h2,p{
+			margin: 0;
+			background:rgba(0,0,0,0.6);
+		}
+		h2{
+			padding:15px 15px 5px;
+			font-family:Arial, Helvetica, sans-serif;
+			font-style: normal;
+			font-size:14pt;
+		}
+		h3{
+			margin: 0;
+			position:absolute;
+			right:50px;
+			background: url('img/arrow.png/arrow.png') center right no-repeat;
+			font-family: UbuntuIt;
+			font-size: 16pt;
+		}
+		p{
+			padding:5px 15px 10px;
+			line-height:1.4;
+		}
+	}
+	.rotate-header-2{
+		padding:15px;
+	}
+	.rotator-prev{
+		height:34px;
+		width:22px;
+		background-image: url('img/navbuttons/left-resting.png');
+	    background-repeat: no-repeat;
+		position:absolute;
+		bottom: 40px;
+		left: -22px;
+		-webkit-box-shadow: -2px 0 5px 0 rgba(36, 36, 36, 0.5);
+		&:hover{
+			background-image: url('img/navbuttons/left-hover.png');	
+		}
+	}
+
+	.rotator-next{
+		height:34px;
+		width:20px;
+		background-image: url('img/navbuttons/right-resting.png');
+	    background-repeat: no-repeat;
+		position:absolute;
+		bottom: 40px;
+		right: -20px;
+		-webkit-box-shadow: 2px 0 5px 0 rgba(36, 36, 36, 0.5);
+		&:hover{
+			background-image: url('img/navbuttons/right-hover.png');	
+		}
+	}
+}

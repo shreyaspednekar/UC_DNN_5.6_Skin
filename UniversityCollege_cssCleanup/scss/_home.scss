@@ -69,11 +69,12 @@
 
 .career-cal{
 	padding: 10px 0;
+	position:relative;
 	acronym{
 		width: 45px;
 		height: 45px;
-		margin: 0 15px 0 0;
-		position:relative;
+		margin: 0;
+		position:absolute;
 		display: inline-block;
 		border: none;
 		background: url('img/event_date.png') no-repeat;
@@ -83,7 +84,6 @@
 		font-size:10pt;
 		text-align: center;
 		color: #f8f3d2;
-		top:-30px;
 		span.calPubMonth {
 			display: block;
 			padding: 5px 0 0;
@@ -96,6 +96,7 @@
 	}
 	.title-desc{
 		width:75%;
+		padding-left:60px;
 		display:inline-block;
 	}
 	span.ListTitle{
