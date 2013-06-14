@@ -43,11 +43,12 @@
 	}
 	input[type="text"],input[type="submit"]{
 		margin: 0;
+		padding:0 3px;
+		vertical-align:top;
 	}
 	input[type="text"]{
 		width: 142px;
 		height: 25px;
-		padding: 0 3px;
 		display:inline-block;
 		border:none;
 		background: #f8f3d2;

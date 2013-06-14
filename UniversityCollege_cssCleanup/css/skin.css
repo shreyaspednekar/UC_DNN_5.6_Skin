@@ -535,11 +535,12 @@ h5 {
 }
 #search-container input[type="text"], #search-container input[type="submit"] {
   margin: 0;
+  padding: 0 3px;
+  vertical-align: top;
 }
 #search-container input[type="text"] {
   width: 142px;
   height: 25px;
-  padding: 0 3px;
   display: inline-block;
   border: none;
   background: #f8f3d2;
@@ -970,6 +971,12 @@ h5 {
   margin: 18px 0 20px 0;
 }
 
+.ucol-news .articleImage, .article .articleImage {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
 .ucol-news {
   padding: 15px 0;
   border-top: 1px solid #c6c6c6;
@@ -984,19 +991,24 @@ h5 {
 .ucol-news:first-child {
   border-top: none;
 }
-.ucol-news .articleImage {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: top;
-}
 .ucol-news .articleLatestSummary {
   display: inline-block;
   width: 75%;
 }
 .ucol-news .articleLatestSummary a {
-  float: left;
   display: block;
-  padding-top: 10px;
+  padding-top: 3px;
+}
+
+.article {
+  margin-bottom: 20px;
+}
+.article .articleSummary {
+  display: inline-block;
+  width: 86%;
+}
+.article .articleCategories {
+  padding-bottom: 20px;
 }
 
 .career-cal {
@@ -1037,7 +1049,7 @@ h5 {
   padding-bottom: 10px;
   font-family: Georgia, "Times New Roman" serif;
   font-size: 10pt;
-  float: left;
+  display: block;
   text-transform: uppercase;
 }
 
@@ -1105,12 +1117,6 @@ h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #444444;
-}
-.interior-body-type .Normal p,
-.interior-body-type-no-banner .Normal p,
-.interior-body-type-full-width .Normal p,
-.interior-body-type-wide .Normal p {
-  text-align: left !important;
 }
 .interior-body-type p,
 .interior-body-type-no-banner p,
