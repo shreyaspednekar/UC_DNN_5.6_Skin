@@ -6,6 +6,7 @@ Short project to clean up the current CSS for the uc.iupui.edu websites. A new, 
 ###Table of contents
 All styles have been organized as shown below. The order in which they are included is in the order. For further detail you can look into [UniversityCollege_cssCleanup/scss/skin.scss](https://github.com/esickels/CSS-Clean-Up/blob/master/UniversityCollege_cssCleanup/scss/skin.scss)
 
+
 ####Universal Styles
 1. Mixins (Utility functions)
 2. Webfonts
