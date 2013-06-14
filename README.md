@@ -24,7 +24,7 @@ All styles have been organized as shown below. The order in which they are inclu
 4. Navigation
 5. Footer
 
-####Page specific
+####Page Styles
 1. Banner
 2. Quicklinks
 3. Home page
