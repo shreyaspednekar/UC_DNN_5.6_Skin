@@ -498,7 +498,6 @@ h5 {
  **/
 #ucol-home {
   display: block;
-  visibility: hidden;
   padding: 10px 0 0;
   height: 17px;
   width: 129px;
@@ -506,7 +505,7 @@ h5 {
 }
 
 #logo {
-  margin: 15px 0 35px;
+  margin: 14px 0 35px;
 }
 
 #user {
