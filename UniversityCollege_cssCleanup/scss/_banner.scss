@@ -1,18 +1,10 @@
-#dnn_BannerPane{
-	width:960px;
+#dnn_BannerPane, #dnn_IntBanner{
  	height:auto;
  	position:relative;
  	overflow:visible;
  	.iupui-template-wrap{
- 		width:952px;
- 		border:4px #f8f3d2 solid;
  		position:relative;
- 		.info, .desc{
- 			width:450px;
- 		}
  		.info{
- 			top: 70px;
-			left: 435px;
  			height:auto;
 			position:absolute;
 		}
@@ -64,3 +56,34 @@
 	}
 }
 
+
+#dnn_BannerPane{
+	width:960px;
+	.iupui-template-wrap{
+		width:952px;
+ 		border:4px #f8f3d2 solid;
+ 		.info, .desc{
+ 			width:450px;
+ 		}
+ 		.info{
+ 			top: 70px;
+ 			left: 435px;
+ 		}
+	}
+}
+
+#dnn_IntBanner{
+	width: 735px;
+	height: 264px;
+	.iupui-template-wrap{
+		width: 735px;
+		border: none;
+		.info, .desc{
+ 			width: 335px;
+ 		}
+		.info{
+			top: 50px;
+			left: 335px;
+		}
+	}
+}
