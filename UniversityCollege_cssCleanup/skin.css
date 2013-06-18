@@ -498,7 +498,6 @@ h5 {
  **/
 #ucol-home {
   display: block;
-  visibility: hidden;
   padding: 10px 0 0;
   height: 17px;
   width: 129px;
@@ -506,7 +505,7 @@ h5 {
 }
 
 #logo {
-  margin: 15px 0 35px;
+  margin: 14px 0 35px;
 }
 
 #user {
@@ -592,11 +591,11 @@ h5 {
 #navigation .RadMenu_Default .rmlink {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 15px;
 }
 #navigation .RadMenu_Default .rmRootGroup {
   border: none;
   background: transparent;
+  font-size: 15px;
 }
 #navigation span.rmText {
   margin: 0;
@@ -662,7 +661,13 @@ h5 {
   white-space: pre-line;
 }
 
-#navigation ul.rmGroup li a {
+#navigation ul.rmGroup li.rmFirst > a {
+  border-top: none !important;
+}
+#navigation ul.rmGroup li.rmLast > a {
+  border-bottom: none !important;
+}
+#navigation ul.rmGroup a {
   width: 190px !important;
   margin: 0;
   padding: 10px 0;
@@ -672,12 +677,6 @@ h5 {
   text-shadow: 0px 1px 0px #ffffff;
   border-bottom: 1px solid #adaa93;
   border-top: 1px solid #fcf9e9;
-}
-#navigation ul.rmGroup li.rmFirst > a {
-  border-top: none !important;
-}
-#navigation ul.rmGroup li.rmLast > a {
-  border-bottom: none !important;
 }
 
 /** 
@@ -787,6 +786,8 @@ h5 {
   margin: 10px 0;
   border-left: 1px solid #2a2a2a;
   padding: 0 0 0 40px;
+}
+.footer-info * {
   font-size: 8pt;
 }
 .footer-info a {
@@ -929,6 +930,10 @@ h5 {
   padding: 2px 0 0;
   font-size: 8pt;
   list-style: none;
+}
+#quicklinks-int li a {
+  padding: 2px 0;
+  display: block;
 }
 
 /** 
@@ -1373,4 +1378,87 @@ ul.roster li .name {
 }
 ul.roster li .title {
   font-size: 12px;
+}
+
+/** 
+ * -------------------------------------------
+ * Calendar CSS
+ * -------------------------------------------
+ **/
+#dnn_Calendar table.evt {
+  width: 98%;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+}
+#dnn_Calendar table.evt td {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#dnn_Calendar table.evt td.evtDayHeader {
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8pt;
+  color: #787676;
+}
+#dnn_Calendar table.evt td.evtDay {
+  color: #787676;
+  border: 1px solid #cfcfcf;
+  height: 115px;
+  padding: 3px 0 0 5px;
+  font-size: 9pt;
+  background: rgba(0, 0, 0, 0.02);
+}
+#dnn_Calendar table.evt td.evtDay > a {
+  padding: 2px 0 0 5px;
+  text-decoration: none;
+  font-size: 9pt;
+}
+#dnn_Calendar table.evt td.evtWeekendDay {
+  background: rgba(0, 0, 0, 0.02) !important;
+  background-color: #ececec;
+}
+#dnn_Calendar table.evt td.evtDayScroll {
+  padding: 0;
+  font-weight: normal;
+  text-decoration: none;
+}
+#dnn_Calendar table.evt td.evtDayScroll a {
+  font-size: 10pt;
+}
+#dnn_Calendar table.evt td.evtDayScroll a:hover {
+  text-decoration: underline;
+}
+#dnn_Calendar table.evt td.evtSelDay {
+  background: transparent;
+  outline: 1px solid maroon;
+}
+
+/** 
+ * -------------------------------------------
+ * FAQ Styles
+ * -------------------------------------------
+ **/
+.faq-question {
+  width: 100%;
+  padding: 5px 0 5px 5px;
+  background-color: #E0E0E0;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #444;
+}
+.faq-question p {
+  display: inline;
+}
+
+.faq-answer {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.faq-answer strong {
+  display: block;
+  font-weight: bold;
 }
