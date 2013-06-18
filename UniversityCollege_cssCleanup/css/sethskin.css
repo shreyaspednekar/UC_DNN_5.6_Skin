@@ -592,11 +592,11 @@ h5 {
 #navigation .RadMenu_Default .rmlink {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 15px;
 }
 #navigation .RadMenu_Default .rmRootGroup {
   border: none;
   background: transparent;
+  font-size: 15px;
 }
 #navigation span.rmText {
   margin: 0;
@@ -662,7 +662,13 @@ h5 {
   white-space: pre-line;
 }
 
-#navigation ul.rmGroup li a {
+#navigation ul.rmGroup li.rmFirst > a {
+  border-top: none !important;
+}
+#navigation ul.rmGroup li.rmLast > a {
+  border-bottom: none !important;
+}
+#navigation ul.rmGroup a {
   width: 190px !important;
   margin: 0;
   padding: 10px 0;
@@ -672,12 +678,6 @@ h5 {
   text-shadow: 0px 1px 0px #ffffff;
   border-bottom: 1px solid #adaa93;
   border-top: 1px solid #fcf9e9;
-}
-#navigation ul.rmGroup li.rmFirst > a {
-  border-top: none !important;
-}
-#navigation ul.rmGroup li.rmLast > a {
-  border-bottom: none !important;
 }
 
 /** 
@@ -787,6 +787,8 @@ h5 {
   margin: 10px 0;
   border-left: 1px solid #2a2a2a;
   padding: 0 0 0 40px;
+}
+.footer-info * {
   font-size: 8pt;
 }
 .footer-info a {

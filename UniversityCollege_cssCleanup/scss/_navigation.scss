@@ -16,11 +16,11 @@
 		.rmlink{
 			font-family:Arial, Helvetica, sans-serif;
 			font-weight:bold;
-			font-size:15px;
 		}
 		.rmRootGroup{
 			border: none;
 			background: transparent;
+			font-size: 15px;
 		}
 	}
 	span.rmText{
@@ -37,7 +37,7 @@
 			cursor:pointer;
 			font-family:Arial, Helvetica, sans-serif;
 			font-weight:bold;
-			font-size:15px;
+			font-size: 15px;
 			display:block;
 			&:link, &:visited{
 				color: #f8f3d2;
@@ -99,8 +99,17 @@
 }
 
 
-#navigation ul.rmGroup li
+#navigation ul.rmGroup
 {
+	li{
+		&.rmFirst > a{
+			border-top: none !important;
+		}
+
+		&.rmLast > a{
+			border-bottom:none !important;
+		}
+	}
 	a{
 		width: 190px !important;
 		margin: 0;
@@ -112,14 +121,7 @@
 		border-bottom: 1px solid #adaa93;
 		border-top: 1px solid #fcf9e9;
 	}
-	
-	&.rmFirst > a{
-		border-top: none !important;
-	}
-	
-	&.rmLast > a{
-    	border-bottom:none !important;
-    }
+
 }
 
 
