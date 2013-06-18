@@ -1,0 +1,21 @@
+.faq-question {
+	width: 100%;
+	padding: 5px 0 5px 5px;
+	background-color: #E0E0E0;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #444;
+	p{
+	  display: inline;  
+	}
+}
+
+.faq-answer {
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 5px;
+	strong{
+		display: block;
+		font-weight: bold;
+	}
+}
