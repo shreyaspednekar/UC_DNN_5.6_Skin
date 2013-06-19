@@ -452,6 +452,41 @@ h5 {
 
 /** 
  * -------------------------------------------
+ * JagJobs XML Feed CSS
+ * -------------------------------------------
+ **/
+#DNN_Feed {
+  padding-top: 10px;
+}
+
+.DNN_Feed_Item {
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  display: none;
+  border-bottom: 1px solid #c6c6c6;
+}
+.DNN_Feed_Item a {
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10pt;
+}
+
+span.JobTitle, span.OrgName_Exp, span.JobsLink {
+  display: block;
+}
+
+span.OrgName_Exp {
+  padding-top: 4px;
+}
+
+span.JobsLink a {
+  color: #444;
+  text-decoration: underline;
+}
+
+/** 
+ * -------------------------------------------
  * Topbar CSS
  * -------------------------------------------
  **/
@@ -989,6 +1024,9 @@ h5 {
   list-style-position: outside;
   padding: 0 0 15px 15px;
 }
+#dnn_FirstPane p, #dnn_SecondPane p, #dnn_ThirdPane p {
+  margin: 0 0 4px 0;
+}
 
 #dnn_FirstPane, #dnn_SecondPane {
   width: 320px;
@@ -1409,16 +1447,16 @@ ul.roster li .title {
  * Calendar CSS
  * -------------------------------------------
  **/
-#dnn_Calendar table.evt {
+table.evt {
   width: 98%;
   margin: 0 auto;
   background: transparent;
   border: none;
 }
-#dnn_Calendar table.evt td {
+table.evt td {
   font-family: Arial, Helvetica, sans-serif;
 }
-#dnn_Calendar table.evt td.evtDayHeader {
+table.evt td.evtDayHeader {
   padding: 2px 0;
   background: transparent;
   border: none;
@@ -1427,7 +1465,7 @@ ul.roster li .title {
   font-size: 8pt;
   color: #787676;
 }
-#dnn_Calendar table.evt td.evtDay {
+table.evt td.evtDay {
   color: #787676;
   border: 1px solid #cfcfcf;
   height: 115px;
@@ -1435,27 +1473,27 @@ ul.roster li .title {
   font-size: 9pt;
   background: rgba(0, 0, 0, 0.02);
 }
-#dnn_Calendar table.evt td.evtDay > a {
+table.evt td.evtDay > a {
   padding: 2px 0 0 5px;
   text-decoration: none;
   font-size: 9pt;
 }
-#dnn_Calendar table.evt td.evtWeekendDay {
+table.evt td.evtWeekendDay {
   background: rgba(0, 0, 0, 0.02) !important;
   background-color: #ececec;
 }
-#dnn_Calendar table.evt td.evtDayScroll {
+table.evt td.evtDayScroll {
   padding: 0;
   font-weight: normal;
   text-decoration: none;
 }
-#dnn_Calendar table.evt td.evtDayScroll a {
+table.evt td.evtDayScroll a {
   font-size: 10pt;
 }
-#dnn_Calendar table.evt td.evtDayScroll a:hover {
+table.evt td.evtDayScroll a:hover {
   text-decoration: underline;
 }
-#dnn_Calendar table.evt td.evtSelDay {
+table.evt td.evtSelDay {
   background: transparent;
   outline: 1px solid maroon;
 }
