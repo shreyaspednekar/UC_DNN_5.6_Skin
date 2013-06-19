@@ -59,6 +59,7 @@
 
 #dnn_BannerPane{
 	width:960px;
+	height: auto;
 	.iupui-template-wrap{
 		width:952px;
  		border:4px #f8f3d2 solid;
@@ -74,7 +75,7 @@
 
 #dnn_IntBanner{
 	width: 735px;
-	height: 264px;
+	height: auto;
 	.iupui-template-wrap{
 		width: 735px;
 		border: none;
