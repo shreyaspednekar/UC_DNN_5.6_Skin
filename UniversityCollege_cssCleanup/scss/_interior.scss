@@ -135,8 +135,8 @@
 	.intSecondaryContent{
 		margin-top: 10px;
 		img{
-			width: 100%;
-			height: auto;
+			width: 100% !important;
+			height: auto !important;
 			border: none;
 		}
 	}
