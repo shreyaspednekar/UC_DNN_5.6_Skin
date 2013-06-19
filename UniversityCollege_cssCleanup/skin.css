@@ -861,6 +861,7 @@ h5 {
 
 #dnn_BannerPane {
   width: 960px;
+  height: auto;
 }
 #dnn_BannerPane .iupui-template-wrap {
   width: 952px;
@@ -876,7 +877,7 @@ h5 {
 
 #dnn_IntBanner {
   width: 735px;
-  height: 264px;
+  height: auto;
 }
 #dnn_IntBanner .iupui-template-wrap {
   width: 735px;
