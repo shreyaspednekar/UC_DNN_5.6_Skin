@@ -83,7 +83,7 @@
 	}
 }
 
-.career-cal{
+.career-cal, .ModEventsCalendarC, .ModEventsCalendarSatelliteC, .events{
 	padding: 10px 0;
 	position:relative;
 	acronym{
@@ -110,20 +110,65 @@
 			line-height: 80%;
 		}
 	}
-	.title-desc{
+	.title-desc, .event_info{
 		width:75%;
 		padding-left:60px;
 		display:inline-block;
 	}
 	span.ListTitle{
-		margin-bottom: 1px;
-		padding-bottom: 10px;
 		font-family:Georgia, "Times New Roman" serif;
 		font-size:10pt;
 		display:block;
 		text-transform: uppercase;
 	}
+	span.ListEventDate{
+		margin-left: 55px;
+	}
+	div.ListContent{
+		padding:2px 0;
+	}
 }
+
+.career-cal{
+	span.ListTitle{
+		margin-bottom: 1px;
+		padding-bottom: 10px;
+	}
+}
+
+.ModEventsCalendarC, .ModEventsCalendarSatelliteC{
+	.Normal{
+		padding-top: 25px;
+		position: relative;
+	}
+	span.ListTitle{
+		padding: 2px 0;
+		margin-left: 55px;
+	}
+	div.ListContent, div.ListBtn{
+			margin-left: 55px;
+	}
+}
+
+.events{
+	.Normal{
+		width:100%;
+		height:55px;
+		padding: 15px 0 25px;
+	}
+	.event_info{
+		width: 80%;
+	}
+	div.ListTitleRow{
+		width:45px;
+		height: 45px;
+		position: absolute;
+	}
+	div.ListContent{
+		word-wrap:break-word;
+	}
+}
+
 .cal-view-more{
 	margin:20px 0;
 	display:block;
