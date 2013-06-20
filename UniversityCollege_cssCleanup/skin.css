@@ -1078,11 +1078,11 @@ span.JobsLink a {
   padding-bottom: 20px;
 }
 
-.career-cal {
+.career-cal, .ModEventsCalendarC, .ModEventsCalendarSatelliteC, .events {
   padding: 10px 0;
   position: relative;
 }
-.career-cal acronym {
+.career-cal acronym, .ModEventsCalendarC acronym, .ModEventsCalendarSatelliteC acronym, .events acronym {
   width: 45px;
   height: 45px;
   margin: 0;
@@ -1097,27 +1097,65 @@ span.JobsLink a {
   text-align: center;
   color: #f8f3d2;
 }
-.career-cal acronym span.calPubMonth {
+.career-cal acronym span.calPubMonth, .ModEventsCalendarC acronym span.calPubMonth, .ModEventsCalendarSatelliteC acronym span.calPubMonth, .events acronym span.calPubMonth {
   display: block;
   padding: 5px 0 0;
   background-color: transparent;
 }
-.career-cal acronym span.calPubDate {
+.career-cal acronym span.calPubDate, .ModEventsCalendarC acronym span.calPubDate, .ModEventsCalendarSatelliteC acronym span.calPubDate, .events acronym span.calPubDate {
   font-size: 14pt;
   line-height: 80%;
 }
-.career-cal .title-desc {
+.career-cal .title-desc, .career-cal .event_info, .ModEventsCalendarC .title-desc, .ModEventsCalendarC .event_info, .ModEventsCalendarSatelliteC .title-desc, .ModEventsCalendarSatelliteC .event_info, .events .title-desc, .events .event_info {
   width: 75%;
   padding-left: 60px;
   display: inline-block;
 }
-.career-cal span.ListTitle {
-  margin-bottom: 1px;
-  padding-bottom: 10px;
+.career-cal span.ListTitle, .ModEventsCalendarC span.ListTitle, .ModEventsCalendarSatelliteC span.ListTitle, .events span.ListTitle {
   font-family: Georgia, "Times New Roman" serif;
   font-size: 10pt;
   display: block;
   text-transform: uppercase;
+}
+.career-cal span.ListEventDate, .ModEventsCalendarC span.ListEventDate, .ModEventsCalendarSatelliteC span.ListEventDate, .events span.ListEventDate {
+  margin-left: 55px;
+}
+.career-cal div.ListContent, .ModEventsCalendarC div.ListContent, .ModEventsCalendarSatelliteC div.ListContent, .events div.ListContent {
+  padding: 2px 0;
+}
+
+.career-cal span.ListTitle {
+  margin-bottom: 1px;
+  padding-bottom: 10px;
+}
+
+.ModEventsCalendarC .Normal, .ModEventsCalendarSatelliteC .Normal {
+  padding-top: 25px;
+  position: relative;
+}
+.ModEventsCalendarC span.ListTitle, .ModEventsCalendarSatelliteC span.ListTitle {
+  padding: 2px 0;
+  margin-left: 55px;
+}
+.ModEventsCalendarC div.ListContent, .ModEventsCalendarC div.ListBtn, .ModEventsCalendarSatelliteC div.ListContent, .ModEventsCalendarSatelliteC div.ListBtn {
+  margin-left: 55px;
+}
+
+.events .Normal {
+  width: 100%;
+  height: 55px;
+  padding: 15px 0 25px;
+}
+.events .event_info {
+  width: 80%;
+}
+.events div.ListTitleRow {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+.events div.ListContent {
+  word-wrap: break-word;
 }
 
 .cal-view-more {
@@ -1459,6 +1497,7 @@ ul.roster li .title {
 table.tblNavLinks {
   height: 27px;
   margin-left: 20px;
+  margin-bottom: 20px;
   z-index: 100;
 }
 table.tblNavLinks td a.cal-left, table.tblNavLinks td a.cal-right {
@@ -1482,7 +1521,7 @@ table.tblNavLinks td input {
 }
 
 table.evt {
-  width: 98%;
+  width: 100%;
   margin: 10px auto 0;
   background: transparent;
   border: none;
@@ -1540,10 +1579,9 @@ span.evtTitle {
 }
 
 .evtBar {
-  width: 98%;
+  width: 100%;
   height: auto;
   position: relative;
-  left: 1%;
   z-index: 1;
 }
 .evtBar .evtbarBtn {
@@ -1592,13 +1630,34 @@ table.rcTable td a.rcCalPopup {
 }
 
 table.dvTable {
-  width: 98%;
   margin: 0 auto;
+  border: 1px #d2d2d2 solid;
+  border-collapse: collapse;
+}
+table.dvTable td.dvAllDay, table.dvTable td.dvEvent {
+  background: #ddd;
+  border: none;
+}
+table.dvTable td.dvTime, table.dvTable td.dvTime2 {
+  border-right: 1px #d2d2d2 solid;
+}
+table.dvTable td.dvTime2 {
+  border-bottom: 1px #d2d2d2 solid;
+}
+table.dvTable td.dvEvent {
+  padding-left: 10px;
+}
+table.dvTable td.dvNoEvent {
+  border-bottom: 1px #d2d2d2 solid !important;
+}
+table.dvTable td div.pop {
+  font-size: 12px;
 }
 
-.wvHeader {
-  width: 98%;
-  margin: 0 auto;
+div.wvHeader {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #6a6a6a;
 }
 
 /** 
