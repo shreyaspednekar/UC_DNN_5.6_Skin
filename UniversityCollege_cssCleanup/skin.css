@@ -494,6 +494,7 @@ span.JobsLink a {
   background: #121212;
   border-bottom: 2px solid #b0b2b4;
   width: 100%;
+  min-width: 1040px;
 }
 .topbar .container a {
   width: 410px;
@@ -513,6 +514,7 @@ span.JobsLink a {
 
 .masthead {
   width: 100%;
+  min-width: 1040px;
   background: #990000;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#990000', endColorstr='#7d110c');
   background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#7d110c));
@@ -720,6 +722,8 @@ span.JobsLink a {
  * -------------------------------------------
  **/
 .footer {
+  width: 100%;
+  min-width: 1040px;
   background: #121212;
   text-shadow: 0px 1px 0px #000000;
   color: #858372;
@@ -1325,7 +1329,7 @@ span.JobsLink a {
 }
 #interior-body .caption ul li, #interior-body .caption ol li, #interior-body .intSecondaryContent ul li, #interior-body .intSecondaryContent ol li, #interior-body .secondary-content ul li, #interior-body .secondary-content ol li {
   margin: 0;
-  padding: 3px 0;
+  padding: 0;
   list-style-type: none;
 }
 #interior-body .caption a, #interior-body .intSecondaryContent a, #interior-body .secondary-content a {
