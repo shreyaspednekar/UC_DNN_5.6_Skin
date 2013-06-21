@@ -49,3 +49,7 @@ a{
 	margin: 0 auto;
 	@include clearfix;
 }
+
+.ControlPanel, .PagingTable{
+	min-width: 1040px;
+}

@@ -3,13 +3,18 @@
  * Footer CSS
  * -------------------------------------------
  **/
-.footer{
-	width: 100%;
-	min-width: 1040px;
-	background: #121212;
-	text-shadow: 0px 1px 0px #000000;
-	color: #858372;
-	@include clearfix;
+.all{
+
+	.footer{
+		width: 100%;
+		background: #121212;
+		@include clearfix;
+		.container{
+			text-shadow: 0px 1px 0px #000000;
+			color: #858372;
+		}
+	}
+
 }
 
 #sub-navigation{
