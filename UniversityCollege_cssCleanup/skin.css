@@ -1,5 +1,13 @@
 /** 
  * -------------------------------------------
+ * Theme: University College
+ * Version: 0.1
+ * Author: Bhargav Anand Annavajhala
+ * Website: http://www.whoisandie.com
+ * -------------------------------------------
+ **/
+/** 
+ * -------------------------------------------
  * All Webfonts included here (_webfonts.scss)
  * -------------------------------------------
  **/
@@ -85,12 +93,15 @@ table {
  * -------------------------------------------
  **/
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   line-height: 1;
   font: 13px Arial, Helvetica, sans-serif;
   color: #444444;
   background: #121212;
+  position: relative;
+  overflow-y: scroll;
 }
 
 ol, ul {
@@ -147,8 +158,8 @@ a:hover {
 
 .container {
   width: 960px;
-  padding: 0 40px;
   margin: 0 auto;
+  padding: 0 40px;
   zoom: 1;
 }
 .container:before, .container:after {
@@ -163,6 +174,13 @@ a:hover {
 
 .ControlPanel, .PagingTable {
   min-width: 1040px;
+}
+
+#dnn_ctr9573_SiteSettings_UP > table {
+  width: inherit;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 div.cta {
