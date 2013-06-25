@@ -140,7 +140,7 @@
 
 .ModEventsCalendarC, .ModEventsCalendarSatelliteC{
 	.Normal{
-		padding-top: 35px;
+		padding: 20px 0 15px;
 		position: relative;
 	}
 	span.ListTitle{
@@ -149,6 +149,14 @@
 	}
 	div.ListContent, div.ListBtn{
 			margin-left: 55px;
+	}
+}
+
+.ModEventsCalendarC{
+	.Normal{
+		div.ListTitleRow{
+			padding-top: 30px;
+		}
 	}
 }
 
