@@ -1013,7 +1013,7 @@ span.JobsLink a {
 }
 
 .ModEventsCalendarC .Normal, .ModEventsCalendarSatelliteC .Normal {
-  padding-top: 50px;
+  padding-top: 35px;
   position: relative;
 }
 .ModEventsCalendarC span.ListTitle, .ModEventsCalendarSatelliteC span.ListTitle {
