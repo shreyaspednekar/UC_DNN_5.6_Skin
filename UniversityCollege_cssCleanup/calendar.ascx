@@ -30,7 +30,7 @@
 <script>
 $(function(){
 	    if ($('.user').text() == 'Login') {//Test its content
-	    $('.loginSep').hide(); //Hide "|" if necessary
+	    	$('.loginSep').hide(); //Hide "|" if necessary
 	    }
 });
 </script>

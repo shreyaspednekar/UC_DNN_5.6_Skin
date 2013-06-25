@@ -680,6 +680,7 @@ span.JobsLink a {
 #left-footer ul.footer-links li {
   list-style: none;
   display: inline;
+  color: #858372;
 }
 #left-footer ul.footer-links li a {
   padding: 2px;
@@ -703,6 +704,7 @@ span.JobsLink a {
 }
 .footer-info * {
   font-size: 8pt;
+  color: #858372;
 }
 .footer-info a {
   font-family: Arial, Helvetica, sans-serif;
@@ -1286,11 +1288,11 @@ span.JobsLink a {
  * General Table CSS
  * -------------------------------------------
  **/
-#genTbl {
+#genTbl, .genTbl {
   margin: 10px 0px 30px 0px;
   width: 100%;
 }
-#genTbl th {
+#genTbl th, .genTbl th {
   padding-bottom: 6px;
   border-bottom: 1px solid #d2d2d2;
   background: #f8f8f8;
@@ -1298,15 +1300,19 @@ span.JobsLink a {
   font-weight: bold;
   color: #990000;
 }
-#genTbl tr:nth-child(odd) {
+#genTbl tr:nth-child(odd), .genTbl tr:nth-child(odd) {
   background: #d2d2d2;
 }
-#genTbl tr.oddrow {
+#genTbl tr.oddrow, .genTbl tr.oddrow {
   background-color: #d2d2d2;
 }
-#genTbl td {
+#genTbl td, .genTbl td {
   padding: 5px 10px 5px 10px;
   text-align: left;
+}
+
+.genTbl {
+  border-bottom: 1px #d2d2d2 solid;
 }
 
 /** 

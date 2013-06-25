@@ -6,7 +6,7 @@
 <%@ Register TagPrefix="dnn" TagName="RadMenu" Src="~/Admin/Skins/DNNRadMenu/DNNRadMenu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="NAV" Src="~/Admin/Skins/Nav.ascx" %>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<meta name="viewport" content="width=device-width>
+<meta name="viewport" content="width=device-width">
 	 <div class="topbar">
 		<div class="container">
 			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"></a>
