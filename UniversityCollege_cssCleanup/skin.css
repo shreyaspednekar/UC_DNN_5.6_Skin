@@ -33,6 +33,44 @@
 
 /** 
  * -------------------------------------------
+ * Module Specific CSS
+ * -------------------------------------------
+ **/
+.repository_content table {
+  width: 100%;
+  border: none !important;
+}
+
+table#dnn_ctr11279_Repository_HeaderTable td table:first-child, table#dnn_ctr11279_Repository_HeaderTable td td:last-child.breadcrumb {
+  display: none;
+}
+table#dnn_ctr11279_Repository_HeaderTable table td {
+  padding: 15px !important;
+}
+table#dnn_ctr11279_Repository_HeaderTable select {
+  width: 150px !important;
+}
+
+table#dnn_ctr11279_Repository_DataTable {
+  margin-top: 10px;
+  background: #fff;
+}
+table#dnn_ctr11279_Repository_DataTable table {
+  padding: 20px;
+}
+table#dnn_ctr11279_Repository_DataTable table td {
+  padding: 0 !important;
+}
+table#dnn_ctr11279_Repository_DataTable table span.RepositoryTitle {
+  font-size: 18px;
+}
+
+table#dnn_ctr11279_Repository_FooterTable {
+  margin-top: 10px;
+}
+
+/** 
+ * -------------------------------------------
  * Reset CSS
  * -------------------------------------------
  **/
@@ -278,7 +316,7 @@ h4 {
 }
 
 h5 {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 10pt;
   margin: 10px 0 10px;
@@ -292,7 +330,7 @@ h5 {
 }
 
 .h12, .h14 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 12px;
@@ -1131,6 +1169,7 @@ span.JobsLink a {
 .interior-body-type-wide ol {
   margin: 10px 0;
   padding-left: 15px;
+  list-style-position: inside;
 }
 .interior-body-type blockquote, .interior-body-type q,
 .interior-body-type-no-banner blockquote,
