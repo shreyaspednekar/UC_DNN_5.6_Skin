@@ -1,0 +1,42 @@
+/** 
+ * -------------------------------------------
+ * Module Specific CSS
+ * -------------------------------------------
+ **/
+.repository_content{
+	table{
+		width: 100%;
+		border: none !important;
+	}
+}
+
+table#dnn_ctr11279_Repository_HeaderTable{
+	td{
+		table:first-child, td:last-child.breadcrumb{
+			display: none;
+		}
+	}
+	table td{
+		padding: 15px !important;
+	}
+	select{
+		width: 150px !important;
+	}
+}
+table#dnn_ctr11279_Repository_DataTable{
+	margin-top: 10px;
+	background: #fff;
+	table{
+		padding: 20px;
+		td{
+			padding: 0 !important;
+		}
+		span.RepositoryTitle{
+			font-size: 18px;
+		}
+	}
+}
+
+table#dnn_ctr11279_Repository_FooterTable{
+	margin-top: 10px;
+}
