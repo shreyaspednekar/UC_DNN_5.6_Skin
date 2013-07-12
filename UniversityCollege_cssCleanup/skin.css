@@ -513,7 +513,7 @@ span.JobsLink a {
   -moz-border-radius: 0;
 }
 
-/** 
+/**
  * -------------------------------------------
  * Navigation CSS
  * -------------------------------------------
@@ -602,8 +602,7 @@ span.JobsLink a {
 }
 #navigation .rmItem ul.rmLevel2, #navigation .rmItem ul.rmLevel3 {
   border: 1px solid #7d110c;
-  margin-left: 25px;
-  margin-top: -46px;
+  margin: -6px 0 0 25px;
   padding-top: 5px;
 }
 #navigation .rmItem a {
