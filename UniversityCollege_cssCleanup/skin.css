@@ -923,6 +923,7 @@ span.JobsLink a {
   width: 100%;
   min-width: 1040px;
   background: #f2f2f2 url("img/content_bg.jpg");
+  padding-bottom: 15px;
 }
 .main-body .container {
   background: url("img/content_bg_top.jpg") no-repeat 0 0;
