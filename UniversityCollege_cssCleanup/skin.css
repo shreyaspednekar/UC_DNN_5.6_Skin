@@ -1691,6 +1691,11 @@ div.desc a {
 	color: #f8f3d2;
 	text-decoration: underline;
 }
+
+div.desc span.noLinkUnder a{
+    text-decoration:none;
+}
+
 div.title-desc-container {
 	padding: 15px;
 }
