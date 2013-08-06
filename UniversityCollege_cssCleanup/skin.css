@@ -32,6 +32,12 @@
   src: url("fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/real/Ubuntu/Ubuntu/Ubuntu-Italic.ttf");
 }
 
+@font-face {
+  font-family: Oswald;
+  src: url("fonts/Oswald/Oswald-Regular.eot");
+  src: url("fonts/Oswald/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald/Oswald-Regular.ttf");
+}
+
 /** 
  * -------------------------------------------
  * Module Specific CSS
@@ -1113,7 +1119,11 @@ span.JobsLink a {
   background: url("img/int-content-top.jpg") repeat-x -6px 0px;
 }
 .interior-head .interior-header {
-  padding-top: 20px;
+  padding: 20px 0 0;
+  font-family: Oswald;
+  color: #444444;
+  font-size:28px;
+  text-transform:uppercase;
 }
 .interior-head #interior-bar {
   width: 100%;
@@ -1240,6 +1250,10 @@ span.JobsLink a {
 #interior-body:after {
   clear: both;
 }
+#interior-body #dnn_IntSecondaryContent {
+  width: 170px;
+  float: right;
+}
 #interior-body .caption, #interior-body .intSecondaryContent, #interior-body .secondary-content {
   width: 160px;
   margin-top: 10px;
@@ -1276,6 +1290,7 @@ span.JobsLink a {
 }
 
 #side-navigation {
+  width: 170px;
   float: left;
 }
 #side-navigation .RadPanelBar {
