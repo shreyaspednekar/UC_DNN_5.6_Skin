@@ -9,7 +9,13 @@
 <%@ Register TagPrefix="ddr" TagName="MENU" src="~/DesktopModules/DDRMenu/Menu.ascx" %>
 <%@ Register TagPrefix="ddr" Namespace="DotNetNuke.Web.DDRMenu.TemplateEngine"
   Assembly="DotNetNuke.Web.DDRMenu" %>
-
+<script type="text/javascript">
+//SEE status.js FOR DETAILS
+var crisis_com_show_all_clear = false;
+var crisis_com_campus = "iupui";
+var crisis_com_show_output = "large";
+</script>
+<script type="text/javascript" src="/Portals/_default/Skins/UniversityCollege/js/status.js"></script>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
  
  
