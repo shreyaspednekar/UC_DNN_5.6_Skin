@@ -905,10 +905,10 @@ span.JobsLink a {
 #quicklinks-int {
   margin: 25px 0 10px;
   background: url("img/quick-links.png") 0 0 no-repeat;
+  padding-top:25px;
 }
 #quicklinks-int ul {
   margin: 0;
-  padding: 25px 0;
   list-style: none;
 }
 #quicklinks-int.first {
