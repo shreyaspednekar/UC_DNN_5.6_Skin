@@ -76,8 +76,8 @@ table#dnn_ctr11279_Repository_FooterTable {
   margin-top: 10px;
 }
 
-#dnn_ctr14019_HtmlModule_lblContent{
-	padding-top:20px;
+ul[id$="dnnMODULEACTIONSMENU"]{
+	margin-top: 3px !important;
 }
 
 /** 
