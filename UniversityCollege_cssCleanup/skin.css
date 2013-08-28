@@ -1723,3 +1723,12 @@ div.title-desc-container  div.title h1 {
 }
 
 /*end folio*/
+
+#dnn_ContentPane .c_footer{
+    padding-top:95px;
+    padding-bottom:20px;
+}
+
+#dnn_ContentPane .ModuleTitle_MenuBar{
+    margin-left:-550px;
+}
