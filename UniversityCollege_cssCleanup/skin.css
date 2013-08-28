@@ -1724,11 +1724,13 @@ div.title-desc-container  div.title h1 {
 
 /*end folio*/
 
+/*Content Pane Action Menu Fix*/
 #dnn_ContentPane .c_footer{
-    padding-top:95px;
     padding-bottom:20px;
 }
 
-#dnn_ContentPane .ModuleTitle_MenuBar{
-    margin-left:-550px;
+#dnn_ContentPane .interior-body-type{
+    float:none;
 }
+
+/*End Content Pane Action Menu Fix*/
