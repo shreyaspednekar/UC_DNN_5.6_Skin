@@ -58,8 +58,8 @@ $(function(){
 				<div id="ContentPane" class="ContentPane" runat="server"></div>
 				<div class="interior-content">
 					<div id="side-navigation">
-						<dnn:RadPanelBar runat="server" id="DNNRadPanelBar1" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="2" ShowOnlyCurrent="RootItem"></dnn:RadPanelBar>
-						<div id="QuickLinksIntPane" class="ContentPane" runat="server"></div>
+					  <dnn:RADMENU runat="server" id= "dnnMENU2" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="2" ShowOnlyCurrent="RootItem" />
+<div id="QuickLinksIntPane" class="ContentPane" runat="server"></div>
 					</div>
 					<div id="interior-body">
 						<div id="IntBanner" class="ContentPane" runat="server"></div>
@@ -86,7 +86,7 @@ $(function(){
 					<li><a href="http://www.iupui.edu">IUPUI</a></li>
 				</ul>
 				<ul class="footer-links">
-					<li>Copyright &copy; 2002-2010 The Trustees of Indiana University</li> | 
+					<li>Copyright &copy; 2002-2013 The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li> | 
 					<li><a href="http://www.uc.iupui.edu/aboutus/privacypolicy.aspx">Privacy Policy</a></li>
 				</ul>			
