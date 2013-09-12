@@ -638,6 +638,92 @@ span.JobsLink a {
   border-top: 1px solid #fcf9e9;
 }
 
+#side-navigation
+{
+	width:170px !important;
+}
+	
+#side-navigation .RadMenu
+{
+	width:170px;
+	display:block;
+}
+
+#side-navigation .RadMenu_Default
+{
+	width:170px;
+	display:block;
+}
+	
+#side-navigation .rmLink
+{
+	width:170px;
+	display:block;
+}
+
+#side-navigation  .rmLink .rmRootLink
+{
+	width:170px;
+	display:block;
+}
+
+#side-navigation li a {
+	width:170px;
+	display:block;
+	margin: 0;
+	padding: 0;
+}
+	
+#side-navigation li
+{
+	width:170px;
+	display:block;
+}
+	
+#side-navigation .rmrootlink
+{
+	width:170px;
+	display:block;
+}
+#side-navigation .rmItem 
+{
+	border-top:1px #fff solid;
+	border-bottom:1px #ddd solid; 
+	width:170px;
+	display:block;
+	text-wrap:normal; !important
+	text-align:left;
+}
+  
+#side-navigation .rmFirst
+{
+	border-top:none;
+}
+	
+#side-navigation .rmLast
+{
+	border-bottom:none;
+}
+
+#side-navigation .rmText {
+  margin: 0;
+  padding: 5px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 12px;
+  line-height: 1.2;
+  display:block;
+  width:170px;
+  white-space:normal;
+ }
+
+
+
+#side-navigation span.rmText:hover
+{
+	text-decoration:underline;
+	cursor: pointer;
+}
+
 /** 
  * -------------------------------------------
  * Footer CSS
