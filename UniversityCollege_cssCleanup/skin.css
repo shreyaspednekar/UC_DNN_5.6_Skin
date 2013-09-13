@@ -991,7 +991,7 @@ span.JobsLink a {
  **/
 #quicklinks-int {
   margin: 25px 0 10px;
-   margin-top:200px;
+   float:left;
   background: url("img/quick-links.png") 0 0 no-repeat;
   padding-top:25px;
 }
