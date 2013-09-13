@@ -641,6 +641,7 @@ span.JobsLink a {
 #side-navigation
 {
 	width:170px !important;
+	opacity: 0.99;
 }
 	
 #side-navigation .RadMenu
