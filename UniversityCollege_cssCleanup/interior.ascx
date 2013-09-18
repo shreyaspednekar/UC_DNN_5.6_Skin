@@ -58,7 +58,7 @@ $(function(){
 				<div id="ContentPane" class="ContentPane" runat="server"></div>
 				<div class="interior-content">
 					<div id="side-navigation">
-					  <dnn:RADMENU runat="server" id= "dnnMENU2" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="2" ShowOnlyCurrent="RootItem" />
+					  <dnn:RADMENU runat="server" id= "dnnMENU2" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="2" ShowOnlyCurrent="ChildItems" />
 <div id="QuickLinksIntPane" class="ContentPane" runat="server"></div>
 					</div>
 					<div id="interior-body">
