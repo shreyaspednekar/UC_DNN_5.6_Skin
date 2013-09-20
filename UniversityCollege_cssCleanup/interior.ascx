@@ -6,6 +6,7 @@
 <%@ Register TagPrefix="dnn" TagName="RadMenu" Src="~/Admin/Skins/DNNRadMenu/DNNRadMenu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="NAV" Src="~/Admin/Skins/Nav.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="RadPanelBar" Src="~/Admin/Skins/DNNRadPanelBar/DNNRadPanelBar.ascx" %>
+<%@ Register TagPrefix="dnn" TagName="LEFTMENU" Src="~/Admin/Skins/LeftMenu.ascx" %>
 <script type="text/javascript">
 //SEE status.js FOR DETAILS
 var crisis_com_show_all_clear = false;
@@ -58,7 +59,7 @@ $(function(){
 				<div id="ContentPane" class="ContentPane" runat="server"></div>
 				<div class="interior-content">
 					<div id="side-navigation">
-					  <dnn:RADMENU runat="server" id= "dnnMENU2" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="2" ShowOnlyCurrent="ChildItems" />
+					  <dnn:LEFTMENU runat="server" id= "dnnMENU2" EnableEmbeddedSkins="false" ExpandDelay="600000" CollapseDelay="600000" MaxLevel="3" ShowOnlyCurrent="RootItem" />
 <div id="QuickLinksIntPane" class="ContentPane" runat="server"></div>
 					</div>
 					<div id="interior-body">
