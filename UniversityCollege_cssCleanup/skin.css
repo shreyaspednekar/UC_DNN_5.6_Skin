@@ -12,13 +12,15 @@
  * All Webfonts included here (_webfonts.scss)
  * -------------------------------------------
  **/
- @font-face {
+@font-face {
   font-family: "benton";
-  src:url('fonts/benton-sans-bold.ttf') format ('opentype');
+   src:url('fonts/benton-sans-bold.eot'); 
+	src:('fonts/benton-sans-bold.eot?#iefix') format("embedded-opentype");
+  src:url('fonts/benton-sans-bold.ttf') format('truetype');
+   
   font-style: normal;
   font-weight: normal;
 }
- 
 @font-face {
   font-family: 'ChunkFive';
   src: url("fonts/Chunkfive-webfont.eot");
@@ -1833,7 +1835,7 @@ div.title-desc-container  div.title h1 {
 /*------------------------------------------
 			CALL TO ACTION BUTTON
 --------------------------------------------*/
-.button {
+a.button {
 	padding:8px;
 	background-color: #7D1416;
 	border: none;
@@ -1845,7 +1847,7 @@ div.title-desc-container  div.title h1 {
 }
 /* ON HOVER */
 
-.button:hover {
+a.button:hover {
 	background:#456A7D;
 	color:white;
 }
