@@ -12,6 +12,13 @@
  * All Webfonts included here (_webfonts.scss)
  * -------------------------------------------
  **/
+ @font-face {
+  font-family: "benton";
+  src:url('fonts/benton-sans-bold.ttf') format ('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+ 
 @font-face {
   font-family: 'ChunkFive';
   src: url("fonts/Chunkfive-webfont.eot");
@@ -1822,3 +1829,27 @@ div.title-desc-container  div.title h1 {
 }
 
 /*End Content Pane Action Menu Fix*/
+
+/*------------------------------------------
+			CALL TO ACTION BUTTON
+--------------------------------------------*/
+.button {
+	padding:5px;
+	background-color: #7D1416;
+	border: none;
+	/* TEXT */
+	color: white;
+	text-align: center;
+	font: 18px "benton";
+	text-decoration:none;
+}
+/* ON HOVER */
+
+.button:hover {
+	background:#456A7D;
+	color:white;
+}
+
+/*------------------------------------------
+			END OF BUTTON
+--------------------------------------------*/
