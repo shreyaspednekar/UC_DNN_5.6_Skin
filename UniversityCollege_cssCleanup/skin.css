@@ -1845,7 +1845,7 @@ div.title-desc-container  div.title h1 {
 }
 /* ON HOVER */
 
- a:hover {
+.button:hover {
 	background:#456A7D;
 	color:white;
 }
