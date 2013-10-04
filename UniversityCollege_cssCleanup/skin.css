@@ -1855,3 +1855,95 @@ a.button:hover {
 /*------------------------------------------
 			END OF BUTTON
 --------------------------------------------*/
+
+/*----------- THIS IS THE UC FACULTY TABLE PARAMETERS-------- */
+#theuctable {
+	width:100%;
+}
+/*SEARCH BAR */
+
+#uc_search_Bar {
+	float:left;
+	padding-top:18px;
+}
+/* END OF SEARCH BAR */
+
+
+#faculty_members {
+	float:left;
+	padding:20px;
+	font-size:18px;
+	width:auto;
+	position:static;
+}
+#contact_members {
+	float:right;
+	padding:20px;
+	font-size:18px;
+}
+/* HEAD BANNER CONTAINING SEARCH BAR AND FACULTY AND CONTACT TEXT */
+
+#faculty_head {
+	background-color:#446A7D;
+	font-size:14px;
+	font-style:normal;
+	color: white;
+	margin:0;
+	padding:2px;
+	height:50px;
+	width:100%;
+	alignment-adjust:baseline;
+	border-bottom: 20px solid #FFF;
+}
+/* END OF HEAD BANNER CONTAINING SEARCH BAR AND FACULTY AND CONTACT TEXT */
+
+
+/*TABLE PARAMETERS */
+#ucfaculty {
+	font-family:"Georgia Pro";
+	height:auto;
+	position:static;
+	width:100%;
+}
+#ucfaculty td {
+	width: 90%;
+	font-size: 13px;
+	background-color:#E7E8E9;
+	padding: 4px;
+	padding-right:20px;
+	height:auto;
+	vertical-align:middle;
+	border-bottom: 20px solid #FFF;
+ position:;
+}
+#ucfaculty a:link {
+	color:#7D110C;
+	text-decoration:none;
+	font-weight:bold;
+}
+#ucfaculty td a:hover {
+	text-decoration:underline;
+	color:#7D110C;
+	font-weight:bold;
+}
+#ucfaculty td a:visited {
+	color:#7D110C;
+	font-weight:bold;
+}
+#tbtext {
+	width: 120px;
+	word-wrap: break-word;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:10px;
+}
+#ucfaculty img {
+	padding:12px;
+	float:left;
+}
+	/* TABLE PARAMETERS */
+
+	
+/*-------------- THIS IS THE END OF UC FACULTY TABLE PARAMETERS---------------- */
+
