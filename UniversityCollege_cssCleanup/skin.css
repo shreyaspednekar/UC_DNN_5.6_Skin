@@ -1,4 +1,4 @@
-/** 
+** 
  * -------------------------------------------
  * Theme: University College
  * Version: 0.1
@@ -1839,6 +1839,7 @@ a.button {
 	padding:8px;
 	background-color: #7D1416;
 	border: none;
+	display:inline-block;
 	/* TEXT */
 	color: white;
 	text-align: center;
