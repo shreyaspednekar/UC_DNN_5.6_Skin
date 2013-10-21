@@ -726,7 +726,9 @@ span.JobsLink a {
   white-space:normal;
  }
 
-
+#side-navigation .rpText{
+	width:150px;	
+}
 
 #side-navigation span.rmText:hover
 {
