@@ -7,7 +7,6 @@
 <%@ Register TagPrefix="dnn" TagName="MODULEACTIONSMENU" Src="~/DesktopModules/WatchersNET.SkinObjects.ModuleActionsMenu/ModuleActionsMenu.ascx" %>
 
 <dnn:ACTIONS runat="server" id="dnnACTIONS"  ProviderName="DNNMenuNavigationProvider" ExpandDepth="1" PopulateNodesFromClient="True" />
-<dnn:moduleactionsmenu id="dnnMODULEACTIONSMENU" runat="server" includejs="True" MenuIcon='~/DesktopModules/WatchersNET.SkinObjects.ModuleActionsMenu/skins/action.png' DisplayIcon='True' cssfile="ModuleMenu-White" IncludeCssFile="True" contextmode="True"></dnn:moduleactionsmenu>
 <div class="secondary-content">
 
 	<h2><dnn:TITLE runat="server" id="dnnTITLE" CssClass="primHead"/></h2>
