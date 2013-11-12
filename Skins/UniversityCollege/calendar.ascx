@@ -48,6 +48,7 @@ $(function(){
 			</div>
 			<div class="interior-head">
 				<div class="interior-content interior-header">
+				   	<div> <%=PortalSettings.ActiveTab.BreadCrumbs(0).TabName%> </div>
 					<div id="IntHeadPane" class="ContentPane" runat="server"></div>
 					<div id="interior-bar"></div>
 				</div>
