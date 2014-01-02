@@ -5,7 +5,7 @@
 <%@ Register TagPrefix="dnn" TagName="SEARCH" Src="~/Admin/Skins/Search.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="RadMenu" Src="~/Admin/Skins/DNNRadMenu/DNNRadMenu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="NAV" Src="~/Admin/Skins/Nav.ascx" %>
-<%@ Register TagPrefix="dnn" TagName="CURRENTDATE" Src="~/Admin/Skins/currentdate.ascx" %>
+<%@ Register TagPrefix="dnn" TagName="CURRENTYEAR" Src="~/Admin/Skins/currentyear.ascx" %>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <!--<meta name="viewport" content="width=device-width">-->
 	 <div class="topbar">
@@ -76,7 +76,7 @@ $(function(){
 					<li><a href="http://www.iupui.edu">IUPUI</a></li>
 				</ul>
 				<ul class="footer-links">
-					<li>Copyright &copy; 2002-<dnn:CURRENTDATE runat="server" class="curDate" /> The Trustees of Indiana University</li> | 
+					<li>Copyright &copy; 2002-<dnn:CURRENTYEAR runat="server" class="curDate" /> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li> | 
 					<li><a href="http://www.uc.iupui.edu/aboutus/privacypolicy.aspx">Privacy Policy</a></li>
 				</ul>			
