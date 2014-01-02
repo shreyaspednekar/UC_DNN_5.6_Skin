@@ -1963,3 +1963,8 @@ padding-bottom:10px;}
 .three_column_table td { padding-left:8px; padding-bottom:10px;
 }
 
+/*--------------Format of Date Token for Copyright----------------------------*/
+span.SkinObject{
+	color: rgb(133, 131, 114);
+	font-size: 8 pt;	
+}
