@@ -6,6 +6,7 @@
 <%@ Register TagPrefix="dnn" TagName="RadMenu" Src="~/Admin/Skins/DNNRadMenu/DNNRadMenu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="NAV" Src="~/Admin/Skins/Nav.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="RadPanelBar" Src="~/Admin/Skins/DNNRadPanelBar/DNNRadPanelBar.ascx" %>
+<%@ Register TagPrefix="dnn" TagName="CURRENTYEAR" Src="~/Admin/Skins/currentyear.ascx" %>
 <script type="text/javascript">
 //SEE status.js FOR DETAILS
 var crisis_com_show_all_clear = false;
@@ -80,7 +81,7 @@ $(function(){
 					<li><a href="http://www.iupui.edu">IUPUI</a></li>
 				</ul>
 				<ul class="footer-links">
-					<li>Copyright &copy; 2002-2010 The Trustees of Indiana University</li> | 
+					<li>Copyright &copy; 2002-<dnn:CURRENTYEAR runat="server" class="curDate" /> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li>
 				</ul>			
 			</div>
