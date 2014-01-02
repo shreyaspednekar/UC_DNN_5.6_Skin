@@ -57,7 +57,7 @@ var crisis_com_show_output = "large";
 					<li><a href="http://www.iupui.edu">IUPUI</a></li>
 				</ul>
 				<ul class="footer-links">
-					<li>Copyright &copy; 2002-2010 The Trustees of Indiana University</li> | 
+					<li>Copyright &copy; 2002-<%@ Register TagPrefix="dnn" TagName="CURRENTDATE" Src="~/Admin/Skins/currentdate.ascx" %> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li>
 				</ul>			
 			</div>
