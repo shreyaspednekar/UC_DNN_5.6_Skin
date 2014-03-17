@@ -5,12 +5,15 @@
 <%@ Register TagPrefix="dnn" TagName="SEARCH" Src="~/Admin/Skins/Search.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="RadMenu" Src="~/Admin/Skins/DNNRadMenu/DNNRadMenu.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="NAV" Src="~/Admin/Skins/Nav.ascx" %>
-<%@ Register TagPrefix="dnn" TagName="CURRENTYEAR" Src="~/Admin/Skins/currentyear.ascx" %>
+<%@ Register TagPrefix="dnn" TagName="YEAR" Src="~/Admin/Skins/currentyear.ascx" %>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<!--<meta name="viewport" content="width=device-width">-->
+<meta name="viewport" content="width=device-width">
 	 <div class="topbar">
-		<div class="container">
-			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"></a>
+	<div class="container1">
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img src="Portals/_default/Skins/UniversityCollege/img/IU.png" height="73" width="64" alt=" "></a>
+		</div>
+        <div class="container">
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img class="IULogo" src="Portals/_default/Skins/UniversityCollege/img/logoIU.png" alt=" "></a>
 		</div>
 	</div>
 <script type="text/javascript">
@@ -44,7 +47,7 @@ $(function(){
 				    <div id="VivoSearchPane" class="vivoSearch" runat="server"></div>
 			</div>
 			<div id="navigation">
-				<dnn:RADMENU runat="server" id= "dnnMENU" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" expandDelay="50" enablePageIcons="false"/>  
+				<dnn:RADMENU runat="server" id= "dnnMENU" EnableEmbeddedSkins="false" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" expandDelay="200" enablePageIcons="false"/>  
 			</div>
 			<div id="BannerPane" class="ContentPane" runat="server"></div>
 			<div id="QuicklinksPane" class="ContentPane" runat="server"></div>
@@ -64,19 +67,24 @@ $(function(){
 			<br class="float-clear"/>
 		</div>
 	</div>
-	<div class="footer">
+<div class="footerIndex">
+    <div class="footerTextIndexWrapper">
+        <div class="footerTextIndex">
+            <p>What Matters. Where it Matters.</p>
+        </div>
+        
+    </div>
+		<br />
 		<div class="container">
 			<div id="left-footer">
 				<div id="sub-navigation">
 					<dnn:RADMENU runat="server" id="dnnSUBNAV" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" MaxLevel="0" enablePageIcons="false" />
 				</div>
 				<ul class="footer-links first">
-					<li><a href="http://www.indiana.edu">Indiana University</a></li> | 
-					<li><a href="http://www.purdue.edu">Purdue University</a></li> | 
-					<li><a href="http://www.iupui.edu">IUPUI</a></li>
+                	<li><a alt="IU Homepage" href="http://www.iu.edu/"><img width="22" height="26" alt="" src="Portals/_default/Skins/UniversityCollege/img/IUfooter.png" /></a></li>
 				</ul>
-				<ul class="footer-links">
-					<li>Copyright &copy; 2002-<dnn:CURRENTYEAR runat="server" class="curDate" /> The Trustees of Indiana University</li> | 
+				<ul class="footer-links" style="margin-top:10px !important;">
+					<li><a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &copy; 2002-<dnn:YEAR runat="server" id="CopyrightYear"/> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li> | 
 					<li><a href="http://www.uc.iupui.edu/aboutus/privacypolicy.aspx">Privacy Policy</a></li>
 				</ul>			
