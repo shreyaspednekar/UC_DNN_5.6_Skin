@@ -20,8 +20,11 @@ var crisis_com_show_output = "large";
  
  
 	<div class="topbar">
-		<div class="container">
-			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"></a>
+	<div class="container1">
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img src="/Portals/_default/Skins/UniversityCollege/img/IU.png" height="73" width="64" alt=" "></a>
+		</div>
+        <div class="container">
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img class="IULogo" src="/Portals/_default/Skins/UniversityCollege/img/logoIU.png" alt=" "></a>
 		</div>
 	</div>
 	<div class="masthead masthead-interior">
@@ -48,7 +51,7 @@ $(function(){
 			</div>
 			<div id="navigation">
 				
-				<dnn:RADMENU runat="server" id= "dnnMENU" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" expandDelay="200" enablePageIcons="false"/>  
+				<dnn:RADMENU runat="server" id= "dnnMENU" EnableEmbeddedSkins="false" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" expandDelay="200" enablePageIcons="false"/>  
 			</div>
 			<div class="interior-head">
 				<div class="interior-content interior-header">
@@ -75,6 +78,16 @@ $(function(){
                     <br class="float-clear" />
                 </div>
 			</div>
+			      <div class="footerTextWrapper">
+        <div class="footerText">
+            <p>What Matters. Where it Matters.</p>
+        </div>
+    </div>
+		</div>
+	</div>
+	<div class="footerInterior">
+    	
+        <br />
 		</div>
 	</div>
 	<div class="footer">
@@ -84,12 +97,10 @@ $(function(){
 					<dnn:RADMENU runat="server" id="dnnSUBNAV" CssClass="nav" expandAnimationType="none" collapseAnimationType="none" collapseDelay="200" MaxLevel="0" enablePageIcons="false" />
 				</div>
 				<ul class="footer-links first">
-					<li><a href="http://www.indiana.edu">Indiana University</a></li> | 
-					<li><a href="http://www.purdue.edu">Purdue University</a></li> | 
-					<li><a href="http://www.iupui.edu">IUPUI</a></li>
+                	<li><a alt="IU Homepage" href="http://www.iu.edu/"><img width="22" height="26" alt="" src="/Portals/_default/Skins/UniversityCollege/img/IUfooter.png" /></a></li>
 				</ul>
-				<ul class="footer-links">
-					<li>Copyright &copy; 2002-<dnn:CURRENTYEAR runat="server" class="curDate" /> The Trustees of Indiana University</li> | 
+				<ul class="footer-links" style="margin-top:10px !important;">
+					<li><a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &copy; 2002-<dnn:CURRENTYEAR runat="server" id="CopyrightYear"/> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li> | 
 					<li><a href="http://www.uc.iupui.edu/aboutus/privacypolicy.aspx">Privacy Policy</a></li>
 				</ul>			
