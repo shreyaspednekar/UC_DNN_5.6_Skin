@@ -96,7 +96,7 @@ ul[id$="dnnMODULEACTIONSMENU"]{
  **/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a:hover, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -125,7 +125,7 @@ body {
 }
 
 ol, ul {
-  list-style: none;
+  list-style: inherit;
   list-style-position: outside;
   list-style-type: circle;
 }
@@ -157,13 +157,21 @@ body {
   line-height: 1;
   font: 13px Arial, Helvetica, sans-serif;
   color: #444444;
-  background: #121212;
+  background: #fff;
   position: relative;
   overflow-y: scroll;
 }
 
 ol, ul {
-  list-style: none;
+  list-style:inherit;
+}
+#dnn_IntContent ol{
+	list-style-position:outside !important;
+	list-style: decimal !important;
+}
+
+#dnn_IntContent ul{
+  list-style: square inside none;
 }
 
 strong {
@@ -176,9 +184,11 @@ em {
 
 a:link, a:visited, a:active {
   color: #7d110c;
+  text-decoration:none;
 }
 a:hover {
   color: #990000;
+  text-decoration:underline;
 }
 
 ::-webkit-selection {
@@ -203,6 +213,7 @@ a:hover {
 
 .left {
   float: left;
+  margin-top:20px;
 }
 
 .right {
@@ -220,6 +231,19 @@ a:hover {
   padding: 0 40px;
   zoom: 1;
 }
+.container1 {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+  zoom: 1;
+}
+
+.container1:before, .container1:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
 .container:before, .container:after {
   content: "\0020";
   display: block;
@@ -227,6 +251,9 @@ a:hover {
   overflow: hidden;
 }
 .container:after {
+  clear: both;
+}
+.container1:after {
   clear: both;
 }
 
@@ -300,6 +327,7 @@ span.cta-after {
 h1, h2, h3, h4, h5 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: normal;
+  letter-spacing:normal !important;
 }
 
 h1 {
@@ -422,9 +450,19 @@ span.JobsLink a {
  * Topbar CSS
  * -------------------------------------------
  **/
+.element-template{
+	 padding-top: 0px !important;}
+ .element-template .image-content {
+float: left !important;
+width: 440px;
+}
+.element-template .element-info {
+ float: right !important; 
+width: 440px;
+}
 .topbar {
-  background: #121212;
-  border-bottom: 2px solid #b0b2b4;
+  background: #EFE5C6;
+  border-bottom: 2px solid #fff;
   width: 100%;
   min-width: 1040px;
 }
@@ -432,7 +470,16 @@ span.JobsLink a {
   width: 410px;
   height: 45px;
   display: block;
-  background: url("img/iupui_wordmark.png") no-repeat 0 14px;
+}
+
+.topbar .container1 a {
+  height: 0px;
+  display: block;
+}
+
+.IULogo{
+	margin-top:10px;
+	margin-left:70px;
 }
 
 /** 
@@ -457,7 +504,7 @@ span.JobsLink a {
 }
 
 .masthead-interior {
-  padding: 0 0 20px;
+  padding: 0 0 40px;
 }
 
 /** 
@@ -544,6 +591,7 @@ span.JobsLink a {
 }
 #navigation .RadMenu {
   float: none;
+  z-index:100 !important;
 }
 #navigation .RadMenu_Default ul {
   zoom: 1;
@@ -554,6 +602,10 @@ span.JobsLink a {
   height: 0;
   overflow: hidden;
 }
+#navigation .RadMenu_Default .rmRootGroup a:hover { background:none !important;
+	}
+#navigation .RadMenu_Default .rmRootGroup a:link{ background:none !important;
+	}
 #navigation .RadMenu_Default ul:after {
   clear: both;
 }
@@ -569,6 +621,7 @@ span.JobsLink a {
 #navigation span.rmText {
   margin: 0;
   padding: 0;
+  line-height:normal;
 }
 #navigation span.rmText:hover {
   border-bottom: 2px solid #f8f3d2;
@@ -589,11 +642,14 @@ span.JobsLink a {
 #navigation li .rmItem span.rmExpandRight {
   position: relative;
   left: 0px;
-  background: url("img/dropdown-right.png") no-repeat 180px 2px;
+  background: url("img/dropdown-right.png") no-repeat 180px 2px !important;
 }
 #navigation li .rmFirst, #navigation li.rmFirst a {
   margin-left: 0;
   padding-left: 0;
+}
+.RadMenu_Default .rmVertical .rmSlide, .RadMenu_Default .rmSlide .rmSlide, .RadMenu_Default_Context .rmGroup .rmSlide {
+margin: 0 0 0 0px !important;
 }
 
 #navigation .RadMenu_default .rmRootGroup, #navigation .RadMenu_default .rmLink,
@@ -774,10 +830,10 @@ span.JobsLink a {
 #sub-navigation .rmText {
   margin: 0;
   padding: 0;
-  color: #858372;
+  color: rgb(145,4,3);
 }
 #sub-navigation .rmText:hover {
-  border-bottom: 1px solid #858372;
+  border-bottom: 1px solid #7d110c;
 }
 #sub-navigation .rmItem {
   padding: 0;
@@ -790,7 +846,7 @@ span.JobsLink a {
   padding: 0 12px;
   text-decoration: none;
   cursor: pointer;
-  border-left: 1px solid #2a2a2a;
+  border-left: 1px solid #858372;
 }
 #sub-navigation li a:link, #sub-navigation li a:visited, #sub-navigation li a:active {
   color: #858372;
@@ -802,6 +858,17 @@ span.JobsLink a {
 #sub-navigation li:first-child a {
   padding-left: 0;
   border-left: 0;
+}
+#sub-navigation .RadMenu_Default .rmRootGroup{
+	border:none !important;
+	background-image:none !important;
+	background-color:#fff !important;
+	}
+#sub-navigation .RadMenu_Default .rmRootGroup, .RadMenu_Default a.rmLink,
+.RadMenu_Default .rmGroup .rmText, .RadMenu_Default .rmVertical .rmText, 
+.RadMenu_Default .rmLeftArrow, .RadMenu_Default .rmRightArrow, .RadMenu_Default .rmTopArrow, 
+.RadMenu_Default .rmBottomArrow{
+	background-image:none !important;
 }
 
 #left-footer {
@@ -831,15 +898,20 @@ span.JobsLink a {
 #left-footer ul.footer-links li a {
   padding: 2px;
   display: inline-block;
-  font-size: 7pt;
+  font-size: 8pt;
   color: #858372;
+  text-decoration:none;
 }
+#left-footer ul.footer-links li a:hover{
+	text-decoration:underline;}
 #left-footer ul.footer-links.first {
   margin-right: 10px;
 }
 #left-footer ul.footer-links.first li:first-child a {
   padding-left: 0;
 }
+.footer-link first a{
+	text-decoration:none !important;}
 
 .footer-info {
   width: 180px;
@@ -925,6 +997,9 @@ span.JobsLink a {
   width: 960px;
   height: auto;
 }
+.DnnModule {
+position: relative;
+z-index: 1 !important;}
 #dnn_BannerPane .iupui-template-wrap {
   width: 952px;
   /*border: 4px #f8f3d2 solid;*/
@@ -1022,6 +1097,30 @@ span.JobsLink a {
   padding: 2px 0;
   display: block;
 }
+.Quicklinks
+{
+	
+	padding: 2px 0 0 !important;
+	padding-top:14px !important;
+	}
+.Quicklinks li
+{
+	display:inline !important;
+	padding: 2px 0 0 !important;
+	padding-top:25px !important;
+	font-size: 11px;
+font-weight: normal;
+	}
+.Quicklinks li a{
+	padding: 2px 0 !important;
+	color:#f8f3d2 !important;
+text-decoration:none !important;
+
+}
+.Quicklinks li a:hover
+{color:#f8f3d2; !important;
+text-decoration:underline !important;
+}
 
 /** 
  * -------------------------------------------
@@ -1068,6 +1167,12 @@ span.JobsLink a {
   width: 240px;
   margin: 18px 0 20px 0;
 }
+#dnn_ThirdPane .secondary-content .Normal a{
+	font-size: 11px;
+	}
+#dnn_ThirdPane .DnnModule-DNN_Quotes .secondary-content h3 {
+	height: 5px !important;}
+
 
 .ucol-news .articleImage, .article .articleImage {
   display: inline-block;
@@ -1108,7 +1213,9 @@ span.JobsLink a {
 .article .articleCategories {
   padding-bottom: 20px;
 }
-
+.career-cal {
+	 border-bottom: 1px solid #c6c6c6;
+	}
 .career-cal, .ModEventsCalendarC, .ModEventsCalendarSatelliteC, .events {
   padding: 10px 0;
   position: relative;
@@ -1201,6 +1308,9 @@ span.JobsLink a {
   margin: 20px 0;
   display: block;
 }
+form .actionMenu ul {
+z-index: 90 !important;
+}
 
 /** 
  * -------------------------------------------
@@ -1210,6 +1320,7 @@ span.JobsLink a {
 .interior-head, .interior-container {
   width: 960px;
   margin: 0 auto;
+  padding-top: 1px;
 }
 .interior-head .interior-content, .interior-container .interior-content {
   width: 920px;
@@ -1220,6 +1331,7 @@ span.JobsLink a {
 .interior-head {
   height: 79px;
   background: url("img/int-content-top.jpg") repeat-x -6px 0px;
+  overflow: overlay;
 }
 .interior-head .interior-header {
   padding: 20px 0 0;
@@ -1252,12 +1364,6 @@ span.JobsLink a {
   clear: both;
 }
 
-.interior-body-type,
-.interior-body-type-no-banner,
-.interior-body-type-full-width,
-.interior-body-type-wide {
-  float: left;
-}
 .interior-body-type .Normal,
 .interior-body-type-no-banner .Normal,
 .interior-body-type-full-width .Normal,
@@ -1442,6 +1548,9 @@ span.JobsLink a {
   font-size: 12px;
   line-height: 1.2;
 }
+#side-navigation .rpText {
+width: 150px;
+}
 #side-navigation a:link, #side-navigation a:visited, #side-navigation a:active {
   text-decoration: none;
 }
@@ -1460,6 +1569,7 @@ span.JobsLink a {
 }
 #genTbl th, .genTbl th {
   padding-bottom: 6px;
+  padding-left:10px;
   border-bottom: 1px solid #d2d2d2;
   background: #f8f8f8;
   text-align: left;
@@ -1800,7 +1910,6 @@ div.uc-folio-rotator div.rotator-footer {
 #dnn_BannerPane{
 position: relative;
 border: 4px solid #f8f3d2;
-overflow: visible;
 width: 952px;
 height: 452px;
 outline: 1px solid #7d110c;}
@@ -1956,15 +2065,129 @@ vertical-align:middle;
 /*-------------- THIS IS THE END OF UC FACULTY TABLE PARAMETERS---------------- */
 
 
-/* three_column_table*/
-.three_column_table { width:520px;
-padding-bottom:10px;}
+/*-------------- Add Spacing between Form Labels and Form Inputs--------------- */
 
-.three_column_table td { padding-left:8px; padding-bottom:10px;
+.DynamicForms_MainPanel .NormalTextBox {
+margin-left: 20px;
 }
+
 
 /*--------------Format of Date Token for Copyright----------------------------*/
 span.SkinObject{
 	color: rgb(133, 131, 114);
 	font-size: 8 pt;	
 }
+/******************CSS for Form and List on Resources Site *****************/
+
+#dnn_ctr4507_Default_List_grdData td{
+	padding-left:3px;
+	padding-bottom:10px;
+	padding-right:7px;
+}
+#dnn_ctr4507_Default_List_grdData th:nth-of-type(1){
+	width:5px;	
+}
+#dnn_ctr4507_Default_List_grdData th:nth-of-type(2){
+	width:12%;	
+}
+#dnn_ctr4507_Default_List_grdData th:nth-of-type(3){
+	width:12%;	
+}
+#dnn_ctr4507_Default_List_grdData th:nth-of-type(5){
+	width:15%;	
+}
+
+/******************Footer for interior pages*****************/
+
+.footerInterior{
+	border-top:6px solid rgb(239, 229, 198);
+	height:100% !important;	
+	
+}
+
+.footerText{
+	text-align:center;
+	width:444px;	
+	background: rgb(239,229,198);
+	height:42px;
+	line-height:42px;
+	margin-left: 258px;
+	position: absolute;
+	margin-top:20px;
+}
+
+.footerText p{
+	vertical-align:middle;
+	color: rgb(139,7,5);
+	font-size:24px;
+}
+
+.footer-links a{
+	color: rgb(139,7,5) !important;
+}
+
+.footer-links a:hover{
+	text-decoration:none !important;	
+}
+
+.footerInterior span.rmText:hover{
+	text-decoration:none !important;
+	border-color: rgb(139,7,5) !important;
+}
+
+/******************Footer for index pages*****************/
+
+.footerIndex{
+	border-top:6px solid rgb(139,7,5);
+	height:100% !important;	
+	background: rgb(239,229,198);
+	
+}
+
+.footerTextIndex{
+	text-align:center;
+	width:444px;	
+	background: rgb(139,7,5);
+	height:42px;
+	line-height:42px;
+	margin: 0px auto;
+}
+
+.footerTextIndex p{
+	vertical-align:middle;
+	color: rgb(255,255,255);
+	font-size:24px;
+	position:absolute;
+	margin-left:50px;
+	min-width:350px; 
+}
+
+.footer-links a{
+	color: rgb(139,7,5) !important;
+}
+
+.footerIndex #sub-navigation .rmItem{
+	background: rgb(239,229,198);
+}
+
+.footerTextIndexWrapper{
+	width:100%;
+	min-width:1040px;
+	margin-top: -24px;
+}
+
+.footerIndex .rmRootLink{
+	background: rgb(239,229,198) !important; 	
+}
+
+.footerIndex #sub-navigation .RadMenu_Default .rmRootGroup{
+	background-color: rgb(239,229,198) !important;
+	border-color: rgb(239,229,198) !important;	
+}
+
+.footerIndex span.rmText:hover{
+	text-decoration:none !important;
+	border-color: rgb(139,7,5) !important;
+}
+
+
