@@ -579,7 +579,8 @@ width: 440px;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
 }
-
+.vivoSearch{
+	margin-top: 35px;}
 /**
  * -------------------------------------------
  * Navigation CSS
