@@ -236,6 +236,7 @@ a:hover {
   margin: 0 auto;
   padding: 0 40px;
   zoom: 1;
+  position: relative;
 }
 
 .container1:before, .container1:after {
