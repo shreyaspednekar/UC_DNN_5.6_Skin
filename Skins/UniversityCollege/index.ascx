@@ -10,10 +10,10 @@
 <meta name="viewport" content="width=device-width">
 	 <div class="topbar">
 	<div class="container1">
-			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img src="Portals/_default/Skins/UniversityCollege/img/IU.png" height="73" width="64" alt=" "></a>
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img src="Portals/_default/Skins/UniversityCollege/img/trident-tab.gif" height="73" width="64" alt=" "></a>
 		</div>
         <div class="container">
-			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img class="IULogo" src="Portals/_default/Skins/UniversityCollege/img/logoIU.png" alt=" "></a>
+			<a href="http://www.iupui.edu/" alt="IUPUI Homepage"><img class="IULogo" src="Portals/_default/Skins/UniversityCollege/img/IULOGO.png" alt=" "></a>
 		</div>
 	</div>
 <script type="text/javascript">
