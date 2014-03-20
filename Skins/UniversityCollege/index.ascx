@@ -86,7 +86,7 @@ $(function(){
 				<ul class="footer-links" style="margin-top:10px !important;">
 					<li><a href="http://www.iu.edu/copyright/index.shtml">Copyright</a> &copy; 2002-<dnn:YEAR runat="server" id="CopyrightYear"/> The Trustees of Indiana University</li> | 
 					<li><a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></li> | 
-					<li><a href="http://www.uc.iupui.edu/aboutus/privacypolicy.aspx">Privacy Policy</a></li>
+					<li><a href="http://www.iupui.edu/privacy/">Privacy Notice</a></li>
 				</ul>			
 			</div>
 			<div class="footer-info">
