@@ -2106,6 +2106,7 @@ span.SkinObject{
 .footerInterior{
 	border-top:6px solid rgb(239, 229, 198);
 	height:100% !important;	
+	min-width:1040px !important;
 	
 }
 
@@ -2145,7 +2146,7 @@ span.SkinObject{
 	border-top:6px solid rgb(139,7,5);
 	height:100% !important;	
 	background: rgb(239,229,198);
-	
+	min-width:1040px !important;
 }
 
 .footerTextIndex{
