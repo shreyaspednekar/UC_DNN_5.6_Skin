@@ -1951,21 +1951,30 @@ div.title-desc-container  div.title h1 {
 			CALL TO ACTION BUTTON
 --------------------------------------------*/
 a.button {
-	padding:8px;
+	/*padding:8px;
 	background-color: #7D1416;
 	border: none;
 	display:inline-block;
-	/* TEXT */
+
 	color: white;
 	text-align: center;
 	font: 18px "benton";
-	text-decoration:none;
+	text-decoration:none;*/
+	margin:0px 5px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background: none repeat scroll 0% 0% #A90533;
 }
+
 /* ON HOVER */
 
 a.button:hover {
-	background:#456A7D;
-	color:white;
+	/*background:#456A7D;
+	color:white;*/
+	background:rgb(219,55,101);
 }
 
 /*------------------------------------------
