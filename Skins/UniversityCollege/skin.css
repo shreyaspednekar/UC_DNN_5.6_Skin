@@ -2,7 +2,6 @@
  * -------------------------------------------
  * Theme: University College
  * Version: 0.1
- * Author: Bhargav Anand Annavajhala
  * Website: http://www.whoisandie.com
  hi
  * -------------------------------------------
@@ -2068,8 +2067,7 @@ vertical-align:middle;
 	
 #tbtext {   width: 120px;
     word-wrap: break-word;
-	float:left;
-	padding-left:10px;
+	padding-left:0px;
 	padding-right:10px;
 	margin-bottom:10px;}
 
@@ -2080,6 +2078,80 @@ vertical-align:middle;
 
 	
 /*-------------- THIS IS THE END OF UC FACULTY TABLE PARAMETERS---------------- */
+
+
+
+
+
+/*TABLE PARAMETERS */
+ #uc_directory{
+	font-family:"Georgia Pro";
+	height:auto;
+	position:static;
+	width:100%;
+}
+#uc_directory td {
+	width: 90%;
+	font-size: 13px;
+	background-color:#E7E8E9;
+	padding: 4px;
+	padding-right:20px;
+	height:auto;
+	vertical-align:middle;
+	border-bottom: 20px solid #FFF;
+ position:;
+}
+#uc_directory a:link {
+
+	color:#7D110C;
+	text-decoration:none;
+	font-weight:bold;
+}
+#uc_directory td a:hover {
+	text-decoration:underline;
+	color:#7D110C;
+	font-weight:bold;
+}
+#uc_directory td a:visited {
+	color:#7D110C;
+	font-weight:bold;
+}
+#tbtext {
+	width: 120px;
+	word-wrap: break-word;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:10px;
+}
+#uc_directory img {
+	padding:12px;
+	float:left;
+}
+	/* TABLE PARAMETERS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------- Add Spacing between Form Labels and Form Inputs--------------- */
@@ -2118,8 +2190,9 @@ span.SkinObject{
 
 .footerInterior{
 	border-top:6px solid rgb(239, 229, 198);
-	height:100% !important;	
+	height:100% !important;
 	min-width:1040px !important;
+	
 	
 }
 
@@ -2156,10 +2229,11 @@ span.SkinObject{
 /******************Footer for index pages*****************/
 
 .footerIndex{
-	border-top:6px solid rgb(139,7,5);
+	border-top:6px solid rgb(139,7,5) !important;
 	height:100% !important;	
-	background: rgb(239,229,198);
+	background: rgb(239,229,198) !important;
 	min-width:1040px !important;
+	
 }
 
 .footerTextIndex{
