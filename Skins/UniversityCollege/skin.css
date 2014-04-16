@@ -506,7 +506,7 @@ width: 440px;
   background: -moz-linear-gradient(top, #a6070a, #7d110c);
 }
 .masthead .container {
-  background: url("img/jag_logo_main.png") no-repeat 705px 0;
+ 
 }
 
 .masthead-interior {
@@ -1337,7 +1337,7 @@ z-index: 90 !important;
 
 .interior-head {
   height: 79px;
-  background: url("img/int-content-top.jpg") repeat-x -6px 0px;
+  background: url("img/content_bg.jpg") repeat-x -6px 0px;
   overflow: overlay;
 }
 .interior-head .interior-header {
