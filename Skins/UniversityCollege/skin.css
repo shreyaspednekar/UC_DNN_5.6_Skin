@@ -1986,9 +1986,9 @@ a.button {
 	text-decoration: none;
 	color: #fff;
 	background: none repeat scroll 0% 0% #A90533;
-	float: left;
 	margin-top:12px;
 	margin-bottom:12px;
+	width:105px;
 }
 
 /* ON HOVER */
