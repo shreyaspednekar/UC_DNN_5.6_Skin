@@ -124,9 +124,25 @@ body {
 }
 
 ol, ul {
-  list-style: inherit;
-  list-style-position: outside;
-  list-style-type: circle;
+  list-style-type: none !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+#dnn_IntContent ul li{
+	list-style-type: none !important;
+	background-image: url(./img/firstBullet.png);
+	background-repeat: no-repeat !important;
+	background-position: 0px 6px;!important;
+	padding-left: 10px !important;
+}
+
+#dnn_IntContent ul ul li{
+	list-style-type: none !important;
+	background-image: url(./img/secondBullet.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	padding-left: 10px !important;	
 }
 
 blockquote, q {
