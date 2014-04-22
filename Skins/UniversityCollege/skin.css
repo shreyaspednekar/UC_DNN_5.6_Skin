@@ -1979,13 +1979,14 @@ a.button {
 	text-align: center;
 	font: 18px "benton";
 	text-decoration:none;*/
-	margin:0px 5px;
+	display: block;
 	padding: 10px 20px;
 	border-radius: 4px;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	background: none repeat scroll 0% 0% #A90533;
+	float: left;
 }
 
 /* ON HOVER */
