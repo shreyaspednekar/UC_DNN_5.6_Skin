@@ -1987,6 +1987,8 @@ a.button {
 	color: #fff;
 	background: none repeat scroll 0% 0% #A90533;
 	float: left;
+	margin-top:12px;
+	margin-bottom:12px;
 }
 
 /* ON HOVER */
