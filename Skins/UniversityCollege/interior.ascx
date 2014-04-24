@@ -111,3 +111,25 @@ $(function(){
 		</div>
 		<br class="float-clear" />
 	</div>
+	
+	<script type="text/javascript">
+	$("ol li").each(function(){
+	$(this).addClass("UCListItem");
+	$(this).html('<span class="UCListContent">' + $(this).html() + '</span>');	
+});
+
+$("ol ol li").each(function() {
+    $(this).addClass("innerUCListItem");
+});
+
+$(".UCListContent").css("font-size","12px");
+$(".innerUCListItem").css("font-size","10px");
+$(".UCListItem").css("color", "#B52D54");
+$(".UCListItem").css("font-weight", "bold");
+$(".UCListContent").css("color", "#444");
+$(".innerUCListItem .UCListContent").css("font-size","10px");
+$(".UCListItem").css("margin-left","10px");
+$(".innerUCListItem").css("margin-left","10px");
+$(".UCListContent").css("font-weight", "300");
+
+</script>
