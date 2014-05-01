@@ -145,6 +145,20 @@ ol, ul {
 	padding-left: 10px !important;	
 }
 
+@media only screen and (max-device-width: 480px) {
+	#dnn_IntContent ul li{
+	  list-style: square outside none !important;
+	  background-image: none !important;
+	  padding-left: 0px !important;
+	  margin-left:30px !important;
+	}
+	#dnn_IntContent ul ul li{
+	  list-style: disc outside none !important;
+	  background-image: none !important;
+	  padding-left: 0px !important;
+	}
+}
+
 blockquote, q {
   quotes: none;
 }
